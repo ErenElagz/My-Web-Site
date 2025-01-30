@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 
 function SocialButtons(props) {
   return (
-    <div className="flex bg-[#211122] rounded-[999] p-3 gap-3 items-center justify-center">
+    <div className="flex bg-[#211122] border border-white border-opacity-25 rounded-[999] p-3 gap-3 items-center justify-center">
       <Icon icon={props.icon} width="32" height="32" />
 
       <a
