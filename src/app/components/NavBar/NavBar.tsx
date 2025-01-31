@@ -8,13 +8,13 @@ function NavBar(props = { active: string }) {
         <p>ReadMe</p>
       </a>
       <a href="https://" target="_blank">
-        <p className="opacity-50">Blogs</p>
+        <p className="opacity-50 hover:opacity-100 transition-opacity duration-200">Blogs</p>
       </a>
       <a href="https://" target="_blank">
-        <p className="opacity-50">Projects</p>
+        <p className="opacity-50 hover:opacity-100 transition-opacity duration-200">Projects</p>
       </a>
       <a href="https://" target="_blank">
-        <p className="opacity-50">Item</p>
+        <p className="opacity-50 hover:opacity-100 transition-opacity duration-200">Item</p>
       </a>
     </div>
   );
