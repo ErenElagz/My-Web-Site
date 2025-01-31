@@ -8,8 +8,8 @@ import Button from "./components/Button/Button";
 
 export default function Home() {
   return (
-    <div className="w-6/12 mx-auto mt-6 gap-20">
-      
+    <div className="w-7/12 mx-auto mt-6 gap-20">
+      <LineerGradient />
       {/* Navigation */}
       <div className="w-full flex flex-row gap-[64px] items-center justify-between p-4">
         <Image src="/logo.png" alt="ErenElagz" width={40} height={40} />

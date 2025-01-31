@@ -1,27 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function NavBar(props) {
+function NavBar(props = { active: string }) {
   return (
     <div className="flex bg-[#FFFFFF16] w-min rounded-[999] py-3 px-8 gap-12 items-center">
       <a href="http://" target="_blank">
-        ReadMe
+        <p>ReadMe</p>
       </a>
       <a href="https://" target="_blank">
-        Blog
+        <p className="opacity-50">Blogs</p>
       </a>
       <a href="https://" target="_blank">
-        Projects
+        <p className="opacity-50">Projects</p>
       </a>
       <a href="https://" target="_blank">
-        Item
+        <p className="opacity-50">Item</p>
       </a>
     </div>
   );
 }
 
 NavBar.propTypes = {
-    active: PropTypes.string,
+  active: PropTypes.string,
 };
 
 export default NavBar;
