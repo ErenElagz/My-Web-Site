@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 import Image from "next/image";
 function Footer(props) {
   return (
-    <div className="absolute lg:w-6/12 md:w-11/12 mx-auto bottom-5 flex justify-between items-center">
+    <div className="absolute lg:w-6/12 md:w-11/12 mx-auto bottom-[12px] flex justify-between items-center">
    
    
       <div className="flex gap-5 items-center">
