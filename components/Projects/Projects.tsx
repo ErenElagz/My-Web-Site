@@ -1,12 +1,20 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import LinkButton from "../LinkButton/LinkButton";
+import Link from "next/link";
 
 export default function Projects() {
   return (
     <div className="w-full mt-20 flex flex-col gap-6">
       <div>
-        <h2 className="text-3xl">Projects</h2>
+        <div className="flex flex-row justify-between items-center">
+          <h2 className="text-3xl">Projects</h2>
+          <Link href={"/projects"}>
+            <p className="text-[18px] opacity-40 underline hover:opacity-100 ">
+              See All
+            </p>
+          </Link>
+        </div>
         <p className="text-xl opacity-50">Builded by me and my team.</p>
       </div>
 

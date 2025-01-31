@@ -7,7 +7,7 @@ export default function TopContainer() {
     <div className="w-full mt-16">
       <Image src="/logo.png" alt="ErenElagz" width={60} height={60} />
       <div>
-        <h1 className="text-5xl font-bold mt-10">ErenElagz</h1>
+        <h1 className="text-5xl font-bold mt-10 font-geist">ErenElagz</h1>
         <p className="text-3xl mt-2">Mobile App Developer & Designer</p>
         <p className="text-xl text-gray-400 mt-6 w-5/6">
           Hey 👋! My Name is Eren. Currently I am React Native Mobile App
