@@ -36,8 +36,12 @@ export default function Footer() {
           Item
         </Link>
       </div>
+
       {/* Right Side */}
       <div className="flex gap-5 items-center">
+        <div>
+          <p className="text-sm opacity-50">©2025 Eren Elagöz</p>
+        </div>
         <Link href="http://github.com/ErenElagz" target="_blank">
           <Icon
             className="opacity-50 hover:opacity-100 transition-opacity duration-200"

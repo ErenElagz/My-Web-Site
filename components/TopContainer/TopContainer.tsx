@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import SocialButtons from "../SocialButtons/SocialButtons";
+import Link from "next/link";
 export default function TopContainer() {
   return (
     <div className="w-full mt-16">
@@ -8,10 +9,17 @@ export default function TopContainer() {
       <div>
         <h1 className="text-5xl font-bold mt-10">ErenElagz</h1>
         <p className="text-3xl mt-2">Mobile App Developer & Designer</p>
-        <p className="text-base opacity-50 mt-6 w-5/6">
-          Hey! My Name is Eren. Currently I am React Native Mobile App Developer
-          and UI & UX Designer for he Mobile Apps. In these days I am working on
-          @HitBis: Bicycle Sharing App and Ride Assistant Service.
+        <p className="text-xl text-gray-400 mt-6 w-5/6">
+          Hey 👋! My Name is Eren. Currently I am React Native Mobile App
+          Developer and UI & UX Designer for he Mobile Apps. In these days I am
+          working on
+          <Link
+            href="/projects/hitbis"
+            className="font-bold text-blue-500 hover:underline"
+          >
+            &nbsp;@HitBis
+          </Link>
+          : Bicycle Sharing App and Ride Assistant Service.
         </p>
       </div>
 

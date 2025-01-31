@@ -1,25 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Icon } from "@iconify/react";
+import Link from "next/link";
 
-function LinkButton(props: { title: string; url: string; icon: string }) {
+function LinkButton(props: { title: string; url: string }) {
   return (
-    <div className="flex w-min bg-[#323232] rounded-[999] px-4 py-3 gap-2 items-center justify-center">
-      <Icon icon={props.icon} width="24" height="24" />
-
-      <a href={props.url} target="_blank">
-        <p className="text-base underline">{props.title}</p>
-      </a>
-
-      <Icon icon="ep:top-right" width="20" height="20" />
-    </div>
+    <Link
+      href={props.url}
+      className="flex w-min px-3 py-2 gap-1 items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-100"
+    >
+      <p className="whitespace-nowrap underline">{props.title}</p>
+      <Icon icon="ep:top-right" width="16" height="16" />
+    </Link>
   );
 }
 
 LinkButton.propTypes = {
   title: PropTypes.string,
   url: PropTypes.string,
-  icon: PropTypes.string,
 };
 
 export default LinkButton;
