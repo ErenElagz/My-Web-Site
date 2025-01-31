@@ -14,7 +14,7 @@ export default function Home() {
       <div className="w-full  flex flex-row gap-[64px] items-center justify-between">
         <Image src="/logo.png" alt="ErenElagz" width={32} height={32} />
         <NavBar />
-        <Button title=" Say Hi!.👋" />
+        <Button title=" Say Hi!.👋" url={"mailto:erenelagz@gmail.com"} />
       </div>
 
       {/* Top Container */}

@@ -13,7 +13,7 @@ export default function Spotlight() {
       </div>
 
       <div className="flex flex-row gap-4 box-border">
-        <div className="group w-full bg-[#fafafa] rounded-[16px] flex flex-col p-5 border-0 justify-between hover:border-[1px] transition-border duration-100">
+        <div className="group w-full bg-[--navBarBackground] rounded-[16px] flex flex-col p-5 border-0 justify-between hover:border-[1px] transition-border duration-100">
           <Link href="/projects/company-os">
             <div className="flex justify-between mb-4">
               <Icon
@@ -40,7 +40,7 @@ export default function Spotlight() {
           </Link>
         </div>
 
-        <div className="group w-full bg-[#fafafa] rounded-[16px] flex flex-col p-5 gap-4 border-0 justify-between hover:border-[1px] transition-border duration-100">
+        <div className="group w-full bg-[--navBarBackground] rounded-[16px] flex flex-col p-5 gap-4 border-0 justify-between hover:border-[1px] transition-border duration-100">
           <Link href="/projects/all-in-dev">
             <div className="flex justify-between mb-4">
               <Icon

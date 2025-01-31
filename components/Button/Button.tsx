@@ -1,14 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Icon, iconExists } from "@iconify/react";
 
-function Button(props) {
+function Button(props: any) {
   return (
-    <div className="flex bg-[#ffffff16] rounded-[999] px-4 py-3 items-center justify-center">
-      <a href={props.url} target="_blank">
+    <a href={props.url}>
+      <div className="flex bg-[--buttonBackground] rounded-[999] px-4 py-3 items-center justify-center">
         <p className="text-[16] ">{props.title}</p>
-      </a>
-    </div>
+      </div>
+    </a>
   );
 }
 

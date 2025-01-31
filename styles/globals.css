@@ -5,12 +5,18 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --navBarBackground: #f9f9f9;
+  --buttonBackground: #f9f9f9;
+  --buttonBorder: #17171750;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --navBarBackground: #171717;
+    --buttonBackground: #171717;
+    --buttonBorder: #ededed50;
   }
 }
 

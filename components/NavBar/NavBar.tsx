@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function NavBar(props) {
   return (
-    <nav className="flex bg-[#Fafafa] w-min rounded-[999] py-3 px-8 gap-12 items-center">
+    <nav className="flex bg-[--navBarBackground] w-min rounded-[999] py-3 px-8 gap-12 items-center">
       <Link href="/ ">
         <p className="opacity-50 hover:opacity-100 transition-opacity duration-200">
           ReadMe
