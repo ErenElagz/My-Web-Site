@@ -1,17 +1,16 @@
 import React from "react";
-import "./globals.css";
-import SocialButtons from "./components/SocialButtons/SocialButtons";
-import NavBar from "./components/NavBar/NavBar";
-import LineerGradient from "./components/LineerGradient/LineerGradient";
+import "../styles/globals.css";
 import Image from "next/image";
-import Button from "./components/Button/Button";
-import Footer from "./components/Footer/Footer";
-import LinkButton from "./components/LinkButton/LinkButton";
+import LinearGradient from "../components/LinearGradient/LinearGradient";
+import NavBar from "../components/NavBar/NavBar";
+import Button from "../components/Button/Button";
+import SocialButtons from "../components/SocialButtons/SocialButtons";
+import LinkButton from "../components/LinkButton/LinkButton";
 
 export default function Home() {
   return (
     <div className="lg:w-5/12 md:w-11/12 mx-auto mt-7 mb-24 gap-20">
-      <LineerGradient />
+      <LinearGradient />
       {/* Navigation */}
       <div className="w-full  flex flex-row gap-[64px] items-center justify-between">
         <Image src="/logo.png" alt="ErenElagz" width={40} height={40} />
@@ -23,7 +22,7 @@ export default function Home() {
       <div className="w-full mt-20 gap-8 flex flex-col">
         <Image src="/logo.png" alt="ErenElagz" width={80} height={80} />
         <div>
-          <h1 className="text-6xl mb-3 font-cal-sans font-semibold">ErenElagz</h1>
+          <h1 className="text-6xl mb-3 font-lexend">ErenElagz</h1>
           <p className="text-4xl text-[#AAAAAA] font-lexend font-light">
             Mobile App Developer & Designer
           </p>

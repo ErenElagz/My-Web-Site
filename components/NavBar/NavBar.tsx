@@ -1,22 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Link from "next/link";
 
-function NavBar(props = { active: string }) {
+function NavBar(props) {
   return (
-    <div className="flex bg-[#FFFFFF16] w-min rounded-[999] py-3 px-8 gap-12 items-center">
-      <a href="http://" target="_blank">
+    <nav className="flex bg-[#FFFFFF16] w-min rounded-[999] py-3 px-8 gap-12 items-center">
+      <Link href="/Home " target="_blank">
         <p>ReadMe</p>
-      </a>
-      <a href="https://" target="_blank">
+      </Link>
+      <Link href="/Blogs" target="_blank">
         <p className="opacity-50 hover:opacity-100 transition-opacity duration-200">Blogs</p>
-      </a>
-      <a href="https://" target="_blank">
+      </Link>
+      <Link href="https://" target="_blank">
         <p className="opacity-50 hover:opacity-100 transition-opacity duration-200">Projects</p>
-      </a>
-      <a href="https://" target="_blank">
+      </Link>
+      <Link href="https://" target="_blank">
         <p className="opacity-50 hover:opacity-100 transition-opacity duration-200">Item</p>
-      </a>
-    </div>
+      </Link>
+    </nav>
   );
 }
 
