@@ -10,7 +10,7 @@ import LinkButton from "./components/LinkButton/LinkButton";
 
 export default function Home() {
   return (
-    <div className="lg:w-6/12 md:w-11/12 mx-auto mt-7 mb-24 gap-20">
+    <div className="lg:w-5/12 md:w-11/12 mx-auto mt-7 mb-24 gap-20">
       <LineerGradient />
       {/* Navigation */}
       <div className="w-full  flex flex-row gap-[64px] items-center justify-between">
@@ -23,8 +23,8 @@ export default function Home() {
       <div className="w-full mt-20 gap-8 flex flex-col">
         <Image src="/logo.png" alt="ErenElagz" width={80} height={80} />
         <div>
-          <h1 className="text-6xl mb-3">ErenElagz</h1>
-          <p className="text-4xl text-[#AAAAAA]">
+          <h1 className="text-6xl mb-3 font-cal-sans font-semibold">ErenElagz</h1>
+          <p className="text-4xl text-[#AAAAAA] font-lexend font-light">
             Mobile App Developer & Designer
           </p>
         </div>
@@ -58,28 +58,139 @@ export default function Home() {
       {/* Spotlight */}
       <div className="w-full mt-12 gap-4 flex flex-col">
         <div>
-          <h2 className="text-[36px]">Spotlight</h2>
+          <h2 className="text-[36px] font-lexend">Spotlight</h2>
           <p className="text-[24px] opacity-50">
             Most recent projects and contributions.
           </p>
         </div>
         <div className="flex flex-row gap-4">
-          <div className="w-full bg-[#323232aa] rounded-[16px] flex flex-row p-4 gap-4">
-            <div className="w-full">
+          <div className="w-full bg-[#323232] rounded-[16px] flex flex-col p-4 pb-8 gap-4 justify-between">
+            <div className="flex flex-row gap-4 w-full justify-between items-center">
               <Image
                 src="/company-os.png"
-                alt="ErenElagz"
+                alt="Company OS Project"
                 width={100}
                 height={100}
               />
-              <div>
-                <p className="text-white text-4xl">Company OS </p>
-                <p className="text-white text-xl opacity-50 mt-2">
-                  Company and StartUp Managment Tool
-                </p>
+              <div className="flex flex-col gap-2">
+                <LinkButton
+                  title="Watch Video"
+                  url="/projects"
+                  icon="icon-park-solid:play"
+                />
+                <LinkButton
+                  title="Buy Now 29$"
+                  url="/projects"
+                  icon="icon-park-solid:shopping"
+                />
               </div>
             </div>
-            <div className="w-full h-full bg-[#323232] rounded-[16px]"></div>
+            <div>
+              <p className="text-white text-4xl">Company OS </p>
+              <p className="text-white text-xl opacity-50 mt-2">
+                Company and StartUp Managment Tool
+              </p>
+            </div>
+          </div>
+
+          <div className="w-full bg-[#323232aa] rounded-[16px] flex flex-col px-4 py-8 gap-4 justify-between">
+            <div className="flex flex-row gap-4 w-full justify-between items-center">
+              <Image
+                src="/github.png"
+                alt="All in Dev Project"
+                width={100}
+                height={100}
+              />
+              <div className="flex flex-col gap-2">
+                <LinkButton
+                  title="Watch Video"
+                  url="/projects"
+                  icon="icon-park-solid:play"
+                />
+                <LinkButton
+                  title="GitHub Repo"
+                  url="/projects"
+                  icon="icon-park-solid:star"
+                />
+              </div>
+            </div>
+            <div>
+              <p className="text-white text-4xl">All in Dev</p>
+              <p className="text-white text-xl opacity-50 mt-2">
+                3200 Developer & Designer Tools
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Projects */}
+      <div className="w-full mt-12 gap-4 flex flex-col">
+        <div>
+          <h2 className="text-[36px]">Projects</h2>
+          <p className="text-[24px] opacity-50">
+            Latest Projects builded by me. You can check the projects in below.
+          </p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <div className="w-full bg-[#323232aa] rounded-[16px] flex flex-col p-4 pb-8 gap-4 justify-between">
+            <div className="flex flex-row gap-4 w-full justify-between items-center">
+              <Image
+                src="/hitbis.png"
+                alt="Company OS Project"
+                width={100}
+                height={100}
+              />
+              <div className="flex flex-col gap-2 items-end">
+                <LinkButton
+                  title="Watch Video"
+                  url="/projects"
+                  icon="icon-park-solid:play"
+                />
+                <LinkButton
+                  title="GitHub Repo"
+                  url="/projects"
+                  icon="icon-park-outline:github"
+                />
+              </div>
+            </div>
+            <div>
+              <p className="text-white text-4xl">
+                HitBis
+              </p>
+              <p className="text-white text-xl opacity-50 mt-2">
+                Bicycle Sharing App, AI Based Ride Assistant
+              </p>
+            </div>
+          </div>
+
+          <div className="w-full bg-[#323232aa] rounded-[16px] flex flex-col px-4 py-8 gap-4 justify-between">
+            <div className="flex flex-row gap-4 w-full justify-between items-center">
+              <Image
+                src="/belen.png"
+                alt="All in Dev Project"
+                width={100}
+                height={100}
+              />
+              <div className="flex flex-col gap-2 items-end">
+                <LinkButton
+                  title="See Post"
+                  url="/projects"
+                  icon="akar-icons:linkedin-fill"
+                />
+                <LinkButton
+                  title="Finalist Project"
+                  url="/projects"
+                  icon="mdi:medal"
+                />
+              </div>
+            </div>
+            <div>
+              <p className="text-white text-4xl">Belen</p>
+              <p className="text-white text-xl opacity-50 mt-2">
+                AR & VR Integrated AI Based Tourism Assistant
+              </p>
+            </div>
           </div>
         </div>
       </div>
