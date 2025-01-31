@@ -8,7 +8,7 @@ function LinkButton(props: { title: string; url: string; icon: string }) {
       <Icon icon={props.icon} width="24" height="24" />
 
       <a href={props.url} target="_blank">
-        <p className="text-base whitespace-nowrap underline">{props.title}</p>
+        <p className="text-base underline">{props.title}</p>
       </a>
 
       <Icon icon="ep:top-right" width="20" height="20" />

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function NavBar(props) {
   return (
-    <nav className="flex bg-[#FFFFFF16] w-min rounded-[999] py-3 px-8 gap-12 items-center">
+    <nav className="flex bg-[#Fafafa] w-min rounded-[999] py-3 px-8 gap-12 items-center">
       <Link href="/Home " target="_blank">
         <p>ReadMe</p>
       </Link>
