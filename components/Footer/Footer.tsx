@@ -1,68 +1,68 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
-function Footer(props) {
-  return (
-    <div className="absolute lg:w-6/12 md:w-11/12 mx-auto bottom-[12px] flex justify-between items-center">
-   
-   
-      <div className="flex gap-5 items-center">
-        <Image src="/logo.png" width="32" height="32" alt="Logo Image" />
-        <a href="http://" target="_blank">
-          <p className="text-white opacity-60 text-base hover:opacity-100 transition-opacity duration-200">
-            ReadMe
-          </p>
-        </a>
-        <a href="http://" target="_blank">
-          <p className="text-white opacity-60 text-base hover:opacity-100 transition-opacity duration-200">
-            Blogs
-          </p>
-        </a>
-        <a href="http://" target="_blank">
-          <p className="text-white opacity-60 text-base hover:opacity-100 transition-opacity duration-200">
-            Projects
-          </p>
-        </a>
-        <a href="http://" target="_blank">
-          <p className="text-white opacity-60 text-base hover:opacity-100 transition-opacity duration-200">
-            Item
-          </p>
-        </a>
-      </div>
+import Link from "next/link";
 
+export default function Footer() {
+  return (
+    <div className="w-full mx-auto my-16 flex justify-between items-center">
+      {/* Left Side */}
       <div className="flex gap-5 items-center">
-        <a href="http://" target="_blank">
+        <Link href="/">
+          <Image src="/logo.png" width="32" height="32" alt="Logo Image" />
+        </Link>
+        <Link
+          href="/"
+          className="opacity-60 hover:opacity-100 transition-opacity duration-200"
+        >
+          ReadMe
+        </Link>
+        <Link
+          href="/blogs"
+          className="opacity-60 hover:opacity-100 transition-opacity duration-200"
+        >
+          Blogs
+        </Link>
+        <Link
+          href="/projects"
+          className="opacity-60 hover:opacity-100 transition-opacity duration-200"
+        >
+          Projects
+        </Link>
+        <Link
+          href="/"
+          className="opacity-60 hover:opacity-100 transition-opacity duration-200"
+        >
+          Item
+        </Link>
+      </div>
+      {/* Right Side */}
+      <div className="flex gap-5 items-center">
+        <Link href="http://github.com/ErenElagz" target="_blank">
           <Icon
             className="opacity-50 hover:opacity-100 transition-opacity duration-200"
             icon="akar-icons:github-fill"
-            width="32"
-            height="32"
+            width="24"
+            height="24"
           />
-        </a>{" "}
-        <a href="http://" target="_blank">
+        </Link>
+        <Link href="http://linkedin.com/in/ErenElagz" target="_blank">
           <Icon
             className="opacity-50 hover:opacity-100 transition-opacity duration-200"
             icon="akar-icons:linkedin-fill"
-            width="32"
-            height="32"
+            width="24"
+            height="24"
           />
-        </a>{" "}
-        <a href="http://" target="_blank">
+        </Link>
+        <Link href="http://x.com/ErenElagz" target="_blank">
           <Icon
             className="opacity-50 hover:opacity-100 transition-opacity duration-200"
             icon="akar-icons:x-fill"
-            width="32"
-            height="32"
+            width="24"
+            height="24"
           />
-        </a>
+        </Link>
       </div>
     </div>
   );
 }
-
-Footer.propTypes = {
-  active: PropTypes.string,
-};
-
-export default Footer;

@@ -3,11 +3,10 @@ import "../styles/globals.css";
 import Image from "next/image";
 import NavBar from "../components/NavBar/NavBar";
 import Button from "../components/Button/Button";
-import LinkButton from "../components/LinkButton/LinkButton";
 import TopContainer from "@/components/TopContainer/TopContainer";
 import Spotlight from "@/components/Spotlight/Spotlight";
 import Projects from "@/components/Projects/Projects";
-
+import Footer from "@/components/Footer/Footer";
 export default function Home() {
   return (
     <div className="lg:w-5/12 md:container flex flex-col mx-auto mt-6">
@@ -28,7 +27,7 @@ export default function Home() {
       <Projects />
 
       {/* Footer */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
