@@ -5,8 +5,7 @@ import Image from "next/image";
 import Button from "../components/Button/Button";
 import SocialButtons from "../components/SocialButtons/SocialButtons";
 import Link from "next/link";
-
-export default function Blogs() {
+export default function Designes() {
   return (
     <div className="lg:w-5/12 md:container flex flex-col mx-auto mt-6">
       {/* Navigation */}
@@ -15,40 +14,35 @@ export default function Blogs() {
         <NavBar />
         <Button title=" Say Hi!.👋" />
       </div>
-
       <div className="w-full mt-16">
         <Image src="/logo.png" alt="ErenElagz" width={60} height={60} />
         <div>
           <h1 className="text-5xl font-bold mt-10 font-geist">
-            Latest Blogs <span className="opacity-50">shared by</span> Me
-          </h1>
-          <p className="text-xl text-gray-400 mt-6 w-5/6">
-            Hey 👋! My Name is Eren. Currently I am React Native Mobile App
-            Developer and UI & UX Designer for the Mobile Apps. In these days I
-            am working on
-            <Link
-              href="/projects/hitbis"
-              className="font-bold text-blue-500 hover:underline"
-            >
-              &nbsp;@HitBis
-            </Link>
-            : Bicycle Sharing App and Ride Assistant Service. See you soon.
+            Interface Designs <span className="opacity-50">created by</span> Me
+          </h1>          <p className="text-xl text-gray-400 mt-6 w-5/6">
+            This is my design portfolio. I am a UI/UX Designer and React Native Mobile App Developer. I am working on
+            and designing mobile apps. I am also working on my personal projects. You can see my designs on Dribbble, Behance and Pinterest.
           </p>
         </div>
 
         <div className="flex flex-row gap-3 mt-6">
           <SocialButtons
-            title="My Medium Profile"
-            url="https://github.com/ErenElagz"
-            icon="akar-icons:medium-fill"
+            title="My Dribbble Profile"
+            url="https://dribbble.com/ErenElagz"
+            icon="akar-icons:dribbble-fill"
           />
           <SocialButtons
-            title="My Dev.to Account"
-            url="https://linkedin.com/in/ErenElagz"
-            icon="skill-icons:devto-dark"
+            title="My Behance Account"
+            url="https://behance.com/in/ErenElagz"
+            icon="akar-icons:behance-fill"
+          />
+          <SocialButtons
+            title="My Pinterest Account"
+            url="https://pinterest.com/ErenElagz"
+            icon="akar-icons:pinterest-fill"
           />
         </div>
-      </div>
+      </div>{" "}
     </div>
   );
 }

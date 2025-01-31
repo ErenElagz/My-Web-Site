@@ -82,9 +82,9 @@ export default function Projects() {
             height="80"
           />
           <div>
-            <p className="text-2xl mb-1">Routefizer</p>
+            <p className="text-2xl mb-1">Maps Optimizer</p>
             <p className="text-base opacity-50">
-              AI Route Creator and Optimizer
+              AI Route Creator and Best Route Optimizer
             </p>
           </div>
         </div>

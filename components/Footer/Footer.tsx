@@ -30,10 +30,10 @@ export default function Footer() {
           Projects
         </Link>
         <Link
-          href="/"
+          href="/designes"
           className="opacity-60 hover:opacity-100 transition-opacity duration-200"
         >
-          Item
+          Designs
         </Link>
       </div>
 

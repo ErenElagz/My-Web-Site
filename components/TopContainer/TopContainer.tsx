@@ -11,7 +11,7 @@ export default function TopContainer() {
         <p className="text-3xl mt-2">Mobile App Developer & Designer</p>
         <p className="text-xl text-gray-400 mt-6 w-5/6">
           Hey 👋! My Name is Eren. Currently I am React Native Mobile App
-          Developer and UI & UX Designer for he Mobile Apps. In these days I am
+          Developer and UI & UX Designer for the Mobile Apps. In these days I am
           working on
           <Link
             href="/projects/hitbis"
@@ -19,7 +19,7 @@ export default function TopContainer() {
           >
             &nbsp;@HitBis
           </Link>
-          : Bicycle Sharing App and Ride Assistant Service.
+          : Bicycle Sharing App and Ride Assistant Service. See you soon.
         </p>
       </div>
 
