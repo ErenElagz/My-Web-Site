@@ -6,10 +6,14 @@ import Footer from "@/components/Footer/Footer";
 import Image from "next/image";
 import { projects } from "@/data/projects";
 import { Icon } from "@iconify/react";
+import GradientOverlay from "@/components/GradientOverlay/GradientOverlay";
 
 export default function Projects() {
   return (
     <div className="lg:w-4/12 md:container flex flex-col mx-auto mt-6">
+      {/* Gradient Overlay */}
+      <GradientOverlay />
+
       {/* Navigation */}
       <NavBar />
 
@@ -42,12 +46,12 @@ export default function Projects() {
             key={project.id}
             className="hover:underline"
           >
-            <div className="w-full border rounded-3xl flex flex-row  justify-between">
+            <div className="w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-row  justify-between">
               <div className="flex flex-col gap-2 w-full p-5 py-8">
                 <p className="text-sm font-bold tracking-tight font-geist">
                   21/12/2009
                 </p>
-                <p className="text-base font-bold tracking-tight font-geist">
+                <p className="text-base font-semiBold tracking-tight font-geist">
                   {project.name}
                 </p>
                 <p className="text-sm text-gray-400 font-lexend">
@@ -65,7 +69,7 @@ export default function Projects() {
                       {project.stars} Stars
                     </p>
                   </div>
-                  <div className="flex flex-row gap-1 items-center border-l pl-4">
+                  <div className="flex flex-row gap-1 items-center border-l border-[--navBarBorder]  pl-4">
                     <Icon
                       width="20"
                       height="20"
@@ -78,7 +82,7 @@ export default function Projects() {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col w-full border-l overflow-hidden rounded-r-3xl">
+              <div className="flex flex-col w-full border-l border-[--navBarBorder]  overflow-hidden rounded-r-3xl">
                 <Image
                   src={project.image}
                   alt="Blog Image"

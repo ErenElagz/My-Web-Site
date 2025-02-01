@@ -22,7 +22,7 @@ export default function TopContainer() {
           In these days I am working on
           <Link
             href="/projects/hitbis"
-            className="font-bold text-blue-700 hover:underline"
+            className="font-semibold text-blue-400 hover:underline"
           >
             &nbsp;@HitBis
           </Link>

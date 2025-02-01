@@ -11,7 +11,7 @@ function NavBar() {
         <Image src="/logo.png" alt="ErenElagz" width={36} height={36} />
 
         {/* Navigation Bar */}
-        <nav className="navbar border">
+        <nav className="navbar">
           <Link href="/" className="navbarText">
             ReadMe
           </Link>

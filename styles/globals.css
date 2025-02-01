@@ -10,24 +10,26 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --navBarBackground: #f9f9f9;
-  --buttonBackground: #f9f9f9;
+  --navBarBackground: #aaaaaa10;
+  --navBarBorder: #17171720;
+  --buttonBackground: #f9f9f940;
   --buttonBorder: #17171750;
   --backgroundColor: #fafafa;
 }
 
 /* Dark Mode */
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --navBarBackground: #171717;
-    --buttonBackground: #171717;
+    --navBarBackground: #ffffff10;
+    --navBarBorder: #ffffff20;
+    --buttonBackground: #ffffff10;
     --buttonBorder: #ededed50;
     --backgroundColor: #171717;
   }
-} */
+}
 
 /* Global Styles */
 body {
@@ -51,6 +53,7 @@ body::-webkit-scrollbar {
   gap: 1.75rem;
   padding: 0.5rem 1.25rem;
   border-radius: 999;
+  border: 1px solid var(--navBarBorder);
 }
 
 .navbarText {

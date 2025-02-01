@@ -15,7 +15,7 @@ export default function Projects() {
       </div>
 
       {/* HitBis */}
-      <div className="w-full border rounded-3xl flex flex-col p-5 justify-between">
+      <div className="w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 justify-between">
         <Link href="/projects/company-os">
           <div className="flex justify-between mb-4 items-center">
             <Image
@@ -39,7 +39,7 @@ export default function Projects() {
             </div>
           </div>
           <div>
-            <p className="text-xl font-bold tracking-tight font-geist">
+            <p className="text-xl font-semiBold tracking-tight font-geist">
               HitBis: Bicycle Sharing App
             </p>
             <p className="text-base text-gray-500 font-lexend">
@@ -50,7 +50,7 @@ export default function Projects() {
       </div>
 
       {/* Belen */}
-      <div className="w-full border rounded-3xl flex flex-col p-5 justify-between">
+      <div className="w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 justify-between">
         <Link href="/projects/company-os">
           <div className="flex justify-between mb-4 items-center">
             <Image
@@ -74,7 +74,7 @@ export default function Projects() {
             </div>
           </div>
           <div>
-            <p className="text-xl font-bold tracking-tight font-geist">
+            <p className="text-xl font-semiBold tracking-tight font-geist">
               Belen: AI Based Tourism Assistant
             </p>
             <p className="text-base text-gray-500 font-lexend">

@@ -6,10 +6,13 @@ import Link from "next/link";
 import Footer from "@/components/Footer/Footer";
 import { designs } from "@/data/designs";
 import { Icon } from "@iconify/react";
-
+import GradientOverlay from "@/components/GradientOverlay/GradientOverlay";
 export default function Designes() {
   return (
     <div className="lg:w-4/12 md:container flex flex-col mx-auto mt-6">
+      {/* Gradient Overlay */}
+      <GradientOverlay />
+
       {/* Navigation */}
       <NavBar />
 
@@ -45,10 +48,10 @@ export default function Designes() {
       {/* Designs */}
       <div className="w-full mt-8 flex flex-col gap-4">
         {designs.map((design) => (
-          <Link href={design.figmaUrl} passHref key={design.id}>
-            <div className="w-full border rounded-3xl flex flex-row justify-between">
+          <div key={design.id}>
+            <div className="w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-row justify-between">
               <div className="flex flex-col gap-2 w-full p-5 py-8">
-                <p className="text-base font-bold tracking-tight font-geist">
+                <p className="text-base font-semiBold tracking-tight font-geist">
                   {design.name}
                 </p>
                 <p className="text-sm text-gray-400 font-lexend">
@@ -64,34 +67,34 @@ export default function Designes() {
                       width="20"
                       height="20"
                       icon="devicon:figma"
-                      className="text-purple-800"
+                      className="opacity-75 hover:opacity-100 transition-opacity duration-150"
                     />
                   </Link>
                   <Link
                     href={design.figmaUrl}
-                    className="flex flex-row gap-1 items-center border-l pl-4"
+                    className="flex flex-row gap-1 items-center border-l border-[--navBarBorder]  pl-4"
                   >
                     <Icon
                       width="20"
                       height="20"
                       icon="akar-icons:behance-fill"
-                      className="text-blue-700"
+                      className="opacity-75 hover:opacity-100 transition-opacity duration-150"
                     />
                   </Link>
                   <Link
                     href={design.figmaUrl}
-                    className="flex flex-row gap-1 items-center border-l pl-4"
+                    className="flex flex-row gap-1 items-center border-l border-[--navBarBorder] pl-4"
                   >
                     <Icon
                       width="20"
                       height="20"
                       icon="logos:dribbble-icon"
-                      className="text-[#484848]"
+                      className="opacity-75 hover:opacity-100 transition-opacity duration-150"
                     />
                   </Link>
                 </div>
               </div>
-              <div className="flex flex-col w-full border-l overflow-hidden rounded-r-3xl">
+              <div className="flex flex-col w-full border-l border-[--navBarBorder] overflow-hidden rounded-r-3xl">
                 <Image
                   src={design.image}
                   alt="Blog Image"
@@ -100,7 +103,7 @@ export default function Designes() {
                 />
               </div>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
 
