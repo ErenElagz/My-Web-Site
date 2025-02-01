@@ -1,6 +1,5 @@
 import React from "react";
 import LinkButton from "../LinkButton/LinkButton";
-import Link from "next/link";
 import Image from "next/image";
 export default function Projects() {
   return (
@@ -16,7 +15,7 @@ export default function Projects() {
 
       {/* HitBis */}
       <div className="w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 justify-between">
-        <Link href="/projects/company-os">
+        <div>
           <div className="flex justify-between mb-4 items-center">
             <Image
               src="/company-os.png"
@@ -46,12 +45,12 @@ export default function Projects() {
               IoT Based Bicycle Renting App and AI Based Ride Assistant.
             </p>
           </div>
-        </Link>
+        </div>
       </div>
 
       {/* Belen */}
       <div className="w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 justify-between">
-        <Link href="/projects/company-os">
+        <div>
           <div className="flex justify-between mb-4 items-center">
             <Image
               src="/company-os.png"
@@ -81,9 +80,8 @@ export default function Projects() {
               AR/VR Supported Tourism Assistant App for the Travelers.
             </p>
           </div>
-        </Link>
+        </div>
       </div>
-
     </div>
   );
 }

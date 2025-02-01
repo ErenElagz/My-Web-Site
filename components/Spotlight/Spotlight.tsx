@@ -1,7 +1,5 @@
 import React from "react";
-import { Icon } from "@iconify/react";
 import LinkButton from "../LinkButton/LinkButton";
-import Link from "next/link";
 import Image from "next/image";
 
 export default function Spotlight() {
@@ -12,14 +10,14 @@ export default function Spotlight() {
           Spotlight
         </h2>
         <p className="text-[18px] text-gray-600 mt-2">
-          Most recent projects and products I've built.
+          Most recent projects and products I have built.
         </p>
       </div>
 
       <div className="flex flex-row gap-4 box-border">
         {/* Company Os */}
         <div className="w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 justify-between">
-          <Link href="/projects/company-os">
+          <div>
             <div className="flex justify-between mb-4 items-center">
               <Image
                 src="/company-os.png"
@@ -49,12 +47,12 @@ export default function Spotlight() {
                 Company Managment Tool
               </p>
             </div>
-          </Link>
+          </div>
         </div>
 
         {/* All in Dev */}
         <div className="w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 justify-between">
-          <Link href="/projects/company-os">
+          <div>
             <div className="flex justify-between mb-4 items-center">
               <Image
                 src="/all-in-dev.png"
@@ -84,7 +82,7 @@ export default function Spotlight() {
                 3200 Developer Tools, Resources
               </p>
             </div>
-          </Link>
+          </div>
         </div>
       </div>
     </div>
