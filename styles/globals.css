@@ -35,6 +35,9 @@ body {
   background: var(--background);
   font-family: "Geist", sans-serif;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 .font-lexend {
   font-family: "Lexend", sans-serif;
