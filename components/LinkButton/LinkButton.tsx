@@ -9,7 +9,7 @@ interface LinkButtonProps {
 
 function LinkButton(props: LinkButtonProps) {
   return (
-    <Link
+    <a
       href={props.url}
       className="flex w-min px-3 py-2 gap-1 items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-100"
     >
@@ -22,7 +22,7 @@ function LinkButton(props: LinkButtonProps) {
         height="16"
         className="text-[--foreground]"
       />
-    </Link>
+    </a>
   );
 }
 

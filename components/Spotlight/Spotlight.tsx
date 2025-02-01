@@ -2,11 +2,12 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import LinkButton from "../LinkButton/LinkButton";
 import Link from "next/link";
+
 export default function Spotlight() {
   return (
     <div className="w-full mt-20 flex flex-col gap-6">
       <div>
-        <h2 className="text-3xl">Spotlight</h2>
+        <h2 className="text-3xl font-lexend">Spotlight</h2>
         <p className="text-xl opacity-50">
           Most recent projects and contributions.
         </p>
