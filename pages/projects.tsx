@@ -54,7 +54,7 @@ export default function Projects() {
               />
             </div>
           </div>
-        </Link>{" "}        <Link href="/projects/company-os" passHref className="hover:underline">
+        </Link>        <Link href="/projects/company-os" passHref className="hover:underline">
           <div className="w-full border rounded-3xl flex flex-row  justify-between">
             <div className="flex flex-col gap-3 w-full p-5 py-8">
               <p className="text-sm font-bold tracking-tight font-geist">
@@ -77,7 +77,7 @@ export default function Projects() {
               />
             </div>
           </div>
-        </Link>{" "}        <Link href="/projects/company-os" passHref className="hover:underline">
+        </Link>        <Link href="/projects/company-os" passHref className="hover:underline">
           <div className="w-full border rounded-3xl flex flex-row  justify-between">
             <div className="flex flex-col gap-3 w-full p-5 py-8">
               <p className="text-sm font-bold tracking-tight font-geist">
@@ -100,7 +100,7 @@ export default function Projects() {
               />
             </div>
           </div>
-        </Link>{" "}        <Link href="/projects/company-os" passHref className="hover:underline">
+        </Link>        <Link href="/projects/company-os" passHref className="hover:underline">
           <div className="w-full border rounded-3xl flex flex-row  justify-between">
             <div className="flex flex-col gap-3 w-full p-5 py-8">
               <p className="text-sm font-bold tracking-tight font-geist">
@@ -123,7 +123,7 @@ export default function Projects() {
               />
             </div>
           </div>
-        </Link>{" "}        <Link href="/projects/company-os" passHref className="hover:underline">
+        </Link>        <Link href="/projects/company-os" passHref className="hover:underline">
           <div className="w-full border rounded-3xl flex flex-row  justify-between">
             <div className="flex flex-col gap-3 w-full p-5 py-8">
               <p className="text-sm font-bold tracking-tight font-geist">
@@ -146,7 +146,7 @@ export default function Projects() {
               />
             </div>
           </div>
-        </Link>{" "}        <Link href="/projects/company-os" passHref className="hover:underline">
+        </Link>        <Link href="/projects/company-os" passHref className="hover:underline">
           <div className="w-full border rounded-3xl flex flex-row  justify-between">
             <div className="flex flex-col gap-3 w-full p-5 py-8">
               <p className="text-sm font-bold tracking-tight font-geist">
@@ -169,7 +169,7 @@ export default function Projects() {
               />
             </div>
           </div>
-        </Link>{" "}
+        </Link>
       </div>
 
       <Footer />
