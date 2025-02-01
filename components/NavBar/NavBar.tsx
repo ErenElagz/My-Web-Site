@@ -1,30 +1,47 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import Button from "../Button/Button";
 
 function NavBar() {
   return (
-    <nav className="flex bg-[--navBarBackground] w-min rounded-[999] py-3 px-8 gap-12 items-center">
-      <Link href="/ ">
-        <p className="opacity-50 hover:opacity-100 transition-opacity duration-200">
-          ReadMe
-        </p>
-      </Link>
-      <Link href="/blogs">
-        <p className="opacity-50 hover:opacity-100 transition-opacity duration-200">
-          Blogs
-        </p>
-      </Link>
-      <Link href="/projects">
-        <p className="opacity-50 hover:opacity-100 transition-opacity duration-200">
-          Projects
-        </p>
-      </Link>
-      <Link href="/designs">
-        <p className="opacity-50 hover:opacity-100 transition-opacity duration-200">
-          Designs
-        </p>
-      </Link>
-    </nav>
+    <div>
+      <div className="w-full flex  items-center justify-between">
+        {/* Left Image */}
+        <Image src="/logo.png" alt="ErenElagz" width={36} height={36} />
+
+        {/* Navigation Bar */}
+        <nav className="flex bg-[--navBarBackground] border w-min rounded-[999] py-2 px-6 gap-8 items-center">
+          <Link
+            href="/"
+            className="opacity-50 hover:opacity-100 transition-opacity duration-150"
+          >
+            ReadMe
+          </Link>
+          <Link
+            href="/blogs"
+            className="opacity-50 hover:opacity-100 transition-opacity duration-150"
+          >
+            Blogs
+          </Link>
+          <Link
+            href="/projects"
+            className="opacity-50 hover:opacity-100 transition-opacity duration-150"
+          >
+            Projects
+          </Link>
+          <Link
+            href="/designs"
+            className="opacity-50 hover:opacity-100 transition-opacity duration-150"
+          >
+            Designs
+          </Link>
+        </nav>
+
+        {/* Right Button */}
+        <Button title=" Say Hi!👋" url={"mailto:erenelagz@gmail.com"} />
+      </div>
+    </div>
   );
 }
 
