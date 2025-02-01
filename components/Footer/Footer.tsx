@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="w-full mx-auto my-16 flex justify-between items-center">
+    <div className="footer">
       {/* Left Side */}
       <div className="flex gap-5 items-center">
         <Link href="/">
@@ -13,25 +13,25 @@ export default function Footer() {
         </Link>
         <Link
           href="/"
-          className="opacity-60 hover:opacity-100 transition-opacity duration-200"
+          className="footerText"
         >
           ReadMe
         </Link>
         <Link
           href="/blogs"
-          className="opacity-60 hover:opacity-100 transition-opacity duration-200"
+          className="footerText"
         >
           Blogs
         </Link>
         <Link
           href="/projects"
-          className="opacity-60 hover:opacity-100 transition-opacity duration-200"
+          className="footerText"
         >
           Projects
         </Link>
         <Link
           href="/designes"
-          className="opacity-60 hover:opacity-100 transition-opacity duration-200"
+          className="footerText"
         >
           Designs
         </Link>
@@ -39,12 +39,9 @@ export default function Footer() {
 
       {/* Right Side */}
       <div className="flex gap-5 items-center">
-        <div>
-          <p className="text-sm opacity-50">©2025 Eren Elagöz</p>
-        </div>
         <Link href="http://github.com/ErenElagz" target="_blank">
           <Icon
-            className="opacity-50 hover:opacity-100 transition-opacity duration-200"
+            className="footerText"
             icon="akar-icons:github-fill"
             width="24"
             height="24"
@@ -52,7 +49,7 @@ export default function Footer() {
         </Link>
         <Link href="http://linkedin.com/in/ErenElagz" target="_blank">
           <Icon
-            className="opacity-50 hover:opacity-100 transition-opacity duration-200"
+            className="footerText"
             icon="akar-icons:linkedin-fill"
             width="24"
             height="24"
@@ -60,7 +57,7 @@ export default function Footer() {
         </Link>
         <Link href="http://x.com/ErenElagz" target="_blank">
           <Icon
-            className="opacity-50 hover:opacity-100 transition-opacity duration-200"
+            className="footerText"
             icon="akar-icons:x-fill"
             width="24"
             height="24"

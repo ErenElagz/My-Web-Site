@@ -52,3 +52,25 @@ body {
   transition: all 0.25s ease;
 }
 
+/* Footer Style */
+
+.footer {
+  color: var(--foreground);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.75rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.footerText {
+  color: var(--foreground);
+  font-weight: 400;
+  opacity: 0.4;
+}
+
+.footerText:hover {
+  opacity: 1;
+  transition: all 0.25s ease;
+}
