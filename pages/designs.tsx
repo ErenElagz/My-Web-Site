@@ -38,77 +38,147 @@ export default function Designes() {
           icon="akar-icons:pinterest-fill"
         />
       </div>
-
-      <div className="w-full mt-12 flex flex-col gap-6">
+      <div className="w-full mt-8 flex flex-col gap-4">
         {/* HitBis */}
-        <div className="w-full border rounded-3xl flex flex-col p-5 justify-between">
-          <Link href="/projects/company-os">
-            <div className="flex justify-between mb-4 items-center">
+        <Link href="/projects/company-os" passHref className="hover:underline">
+          <div className="w-full border rounded-3xl flex flex-row  justify-between">
+            <div className="flex flex-col gap-3 w-full p-5 py-8">
+              <p className="text-sm font-bold tracking-tight font-geist">
+                21/07/2025
+              </p>
+              <p className="text-base font-bold tracking-tight font-geist">
+                Best React Native Map Libraries, Comparison of the 7 Map Module
+              </p>
+              <p className="text-sm text-gray-400 font-lexend">
+                Top React Native Map Libraries based on performance and
+                features.
+              </p>
+            </div>
+            <div className="flex flex-col w-full border-l overflow-hidden rounded-r-3xl">
               <Image
-                src="/company-os.png"
-                alt="Company OS"
-                width={72}
-                height={72}
+                src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*KTl3-WbilK8qvMt8EnUEwA.jpeg" // ✅ URL'den resim alır
+                alt="Blog Image"
+                width={750} // Genişlik belirtmek zorundasın
+                height={760} // Yükseklik belirtmek zorundasın
               />
-
-              <div className="flex flex-col gap-3">
-                <LinkButton
-                  title="Watch the Video"
-                  url="https://github.com/ErenElagz"
-                  icon="mdi:play"
-                />
-                <LinkButton
-                  title="Buy Now 12$"
-                  url="https://github.com/ErenElagz"
-                  icon="akar-icons:github-fill"
-                />
-              </div>
             </div>
-            <div>
-              <p className="text-xl font-bold tracking-tight font-geist">
-                HitBis: Bicycle Sharing App
+          </div>
+        </Link>{" "}        <Link href="/projects/company-os" passHref className="hover:underline">
+          <div className="w-full border rounded-3xl flex flex-row  justify-between">
+            <div className="flex flex-col gap-3 w-full p-5 py-8">
+              <p className="text-sm font-bold tracking-tight font-geist">
+                21/07/2025
               </p>
-              <p className="text-base text-gray-500 font-lexend">
-                IoT Based Bicycle Renting App and AI Based Ride Assistant.
+              <p className="text-base font-bold tracking-tight font-geist">
+                Best React Native Map Libraries, Comparison of the 7 Map Module
+              </p>
+              <p className="text-sm text-gray-400 font-lexend">
+                Top React Native Map Libraries based on performance and
+                features.
               </p>
             </div>
-          </Link>
-        </div>
-
-        {/* Belen */}
-        <div className="w-full border rounded-3xl flex flex-col p-5 justify-between">
-          <Link href="/projects/company-os">
-            <div className="flex justify-between mb-4 items-center">
+            <div className="flex flex-col w-full border-l overflow-hidden rounded-r-3xl">
               <Image
-                src="/company-os.png"
-                alt="Company OS"
-                width={72}
-                height={72}
+                src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*KTl3-WbilK8qvMt8EnUEwA.jpeg" // ✅ URL'den resim alır
+                alt="Blog Image"
+                width={750} // Genişlik belirtmek zorundasın
+                height={760} // Yükseklik belirtmek zorundasın
               />
-
-              <div className="flex flex-col gap-3">
-                <LinkButton
-                  title="Watch the Video"
-                  url="https://github.com/ErenElagz"
-                  icon="mdi:play"
-                />
-                <LinkButton
-                  title="Buy Now 12$"
-                  url="https://github.com/ErenElagz"
-                  icon="akar-icons:github-fill"
-                />
-              </div>
             </div>
-            <div>
-              <p className="text-xl font-bold tracking-tight font-geist">
-                Belen: AI Based Tourism Assistant
+          </div>
+        </Link>{" "}        <Link href="/projects/company-os" passHref className="hover:underline">
+          <div className="w-full border rounded-3xl flex flex-row  justify-between">
+            <div className="flex flex-col gap-3 w-full p-5 py-8">
+              <p className="text-sm font-bold tracking-tight font-geist">
+                21/07/2025
               </p>
-              <p className="text-base text-gray-500 font-lexend">
-                AR/VR Supported Tourism Assistant App for the Travelers.
+              <p className="text-base font-bold tracking-tight font-geist">
+                Best React Native Map Libraries, Comparison of the 7 Map Module
+              </p>
+              <p className="text-sm text-gray-400 font-lexend">
+                Top React Native Map Libraries based on performance and
+                features.
               </p>
             </div>
-          </Link>
-        </div>
+            <div className="flex flex-col w-full border-l overflow-hidden rounded-r-3xl">
+              <Image
+                src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*KTl3-WbilK8qvMt8EnUEwA.jpeg" // ✅ URL'den resim alır
+                alt="Blog Image"
+                width={750} // Genişlik belirtmek zorundasın
+                height={760} // Yükseklik belirtmek zorundasın
+              />
+            </div>
+          </div>
+        </Link>{" "}        <Link href="/projects/company-os" passHref className="hover:underline">
+          <div className="w-full border rounded-3xl flex flex-row  justify-between">
+            <div className="flex flex-col gap-3 w-full p-5 py-8">
+              <p className="text-sm font-bold tracking-tight font-geist">
+                21/07/2025
+              </p>
+              <p className="text-base font-bold tracking-tight font-geist">
+                Best React Native Map Libraries, Comparison of the 7 Map Module
+              </p>
+              <p className="text-sm text-gray-400 font-lexend">
+                Top React Native Map Libraries based on performance and
+                features.
+              </p>
+            </div>
+            <div className="flex flex-col w-full border-l overflow-hidden rounded-r-3xl">
+              <Image
+                src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*KTl3-WbilK8qvMt8EnUEwA.jpeg" // ✅ URL'den resim alır
+                alt="Blog Image"
+                width={750} // Genişlik belirtmek zorundasın
+                height={760} // Yükseklik belirtmek zorundasın
+              />
+            </div>
+          </div>
+        </Link>{" "}        <Link href="/projects/company-os" passHref className="hover:underline">
+          <div className="w-full border rounded-3xl flex flex-row  justify-between">
+            <div className="flex flex-col gap-3 w-full p-5 py-8">
+              <p className="text-sm font-bold tracking-tight font-geist">
+                21/07/2025
+              </p>
+              <p className="text-base font-bold tracking-tight font-geist">
+                Best React Native Map Libraries, Comparison of the 7 Map Module
+              </p>
+              <p className="text-sm text-gray-400 font-lexend">
+                Top React Native Map Libraries based on performance and
+                features.
+              </p>
+            </div>
+            <div className="flex flex-col w-full border-l overflow-hidden rounded-r-3xl">
+              <Image
+                src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*KTl3-WbilK8qvMt8EnUEwA.jpeg" // ✅ URL'den resim alır
+                alt="Blog Image"
+                width={750} // Genişlik belirtmek zorundasın
+                height={760} // Yükseklik belirtmek zorundasın
+              />
+            </div>
+          </div>
+        </Link>{" "}        <Link href="/projects/company-os" passHref className="hover:underline">
+          <div className="w-full border rounded-3xl flex flex-row  justify-between">
+            <div className="flex flex-col gap-3 w-full p-5 py-8">
+              <p className="text-sm font-bold tracking-tight font-geist">
+                21/07/2025
+              </p>
+              <p className="text-base font-bold tracking-tight font-geist">
+                Best React Native Map Libraries, Comparison of the 7 Map Module
+              </p>
+              <p className="text-sm text-gray-400 font-lexend">
+                Top React Native Map Libraries based on performance and
+                features.
+              </p>
+            </div>
+            <div className="flex flex-col w-full border-l overflow-hidden rounded-r-3xl">
+              <Image
+                src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*KTl3-WbilK8qvMt8EnUEwA.jpeg" // ✅ URL'den resim alır
+                alt="Blog Image"
+                width={750} // Genişlik belirtmek zorundasın
+                height={760} // Yükseklik belirtmek zorundasın
+              />
+            </div>
+          </div>
+        </Link>{" "}
       </div>
 
       <Footer />
