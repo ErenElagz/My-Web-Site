@@ -6,13 +6,13 @@ import Footer from "@/components/Footer/Footer";
 import Image from "next/image";
 import { projects } from "@/data/projects";
 import { Icon } from "@iconify/react";
-import GradientOverlay from "@/components/GradientOverlay/GradientOverlay";
+import GradientOverlayTop from "@/components/GradientOverlay/GradientOverlayBottom";
 
 export default function Projects() {
   return (
     <div className="lg:w-4/12 md:container flex flex-col mx-auto mt-6">
       {/* Gradient Overlay */}
-      <GradientOverlay />
+      <GradientOverlayTop />
 
       {/* Navigation */}
       <NavBar />
@@ -46,7 +46,7 @@ export default function Projects() {
             key={project.id}
             className="hover:underline"
           >
-            <div className="w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-row  justify-between">
+            <div className="w-full border border-[--navBarBorder] bg-[#ffffff10] rounded-3xl flex flex-row  justify-between">
               <div className="flex flex-col gap-2 w-full p-5 py-8">
                 <p className="text-sm font-bold tracking-tight font-geist">
                   21/12/2009

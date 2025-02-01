@@ -6,7 +6,7 @@ import Link from "next/link";
 import Footer from "@/components/Footer/Footer";
 import { blogs } from "@/data/blogs";
 import { Icon } from "@iconify/react";
-import GradientOverlay from "@/components/GradientOverlay/GradientOverlay";
+import GradientOverlay from "@/components/GradientOverlay/GradientOverlayBottom";
 
 export default function Blogs() {
   return (
@@ -45,7 +45,7 @@ export default function Blogs() {
       <div className="w-full mt-8 flex flex-col gap-4">
         {blogs.map((blog) => (
           <div key={blog.id} className="hover:underline">
-            <div className="w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-row  justify-between">
+            <div className="w-full border border-[--navBarBorder] bg-[#ffffff10] rounded-3xl flex flex-row  justify-between">
               <div className="flex flex-col gap-2 w-full p-5 py-8">
                 <p className="text-sm font-bold tracking-tight font-geist">
                   {blog.date}

@@ -18,7 +18,7 @@
 }
 
 /* Dark Mode */
-
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -29,7 +29,7 @@
     --buttonBorder: #ededed50;
     --backgroundColor: #171717;
   }
-}
+} */
 
 /* Global Styles */
 body {
@@ -76,7 +76,7 @@ body::-webkit-scrollbar {
   align-items: center;
   gap: 1.75rem;
   padding: 0.5rem;
-  margin: 2rem 0;
+  margin: 4rem 0;
 }
 
 .footerText {
