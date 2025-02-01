@@ -48,7 +48,7 @@ export default function Designes() {
           <Link href={design.figmaUrl} passHref key={design.id}>
             <div className="w-full border rounded-3xl flex flex-row justify-between">
               <div className="flex flex-col gap-2 w-full p-5 py-8">
-                <p className="text-xl font-bold tracking-tight font-geist">
+                <p className="text-base font-bold tracking-tight font-geist">
                   {design.name}
                 </p>
                 <p className="text-sm text-gray-400 font-lexend">

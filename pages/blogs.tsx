@@ -5,6 +5,8 @@ import SocialButtons from "../components/SocialButtons/SocialButtons";
 import Link from "next/link";
 import Footer from "@/components/Footer/Footer";
 import { blogs } from "@/data/blogs";
+import { Icon } from "@iconify/react";
+
 export default function Blogs() {
   return (
     <div className="lg:w-4/12 md:container flex flex-col mx-auto mt-6">
@@ -38,12 +40,7 @@ export default function Blogs() {
       {/* Blogs */}
       <div className="w-full mt-8 flex flex-col gap-4">
         {blogs.map((blog) => (
-          <Link
-            href={blog.url}
-            passHref
-            key={blog.id}
-            className="hover:underline"
-          >
+          <div key={blog.id} className="hover:underline">
             <div className="w-full border rounded-3xl flex flex-row  justify-between">
               <div className="flex flex-col gap-2 w-full p-5 py-8">
                 <p className="text-sm font-bold tracking-tight font-geist">
@@ -55,6 +52,30 @@ export default function Blogs() {
                 <p className="text-sm text-gray-400 font-lexend">
                   {blog.description}
                 </p>
+                <div className="flex flex-row gap-4 mt-4 items-center ">
+                  <Link
+                    href={blog.mediumUrl}
+                    className="flex flex-row gap-1 items-center "
+                  >
+                    <Icon
+                      width="20"
+                      height="20"
+                      icon="jam:medium"
+                      className="text-black"
+                    />
+                  </Link>
+                  <Link
+                    href={blog.devtoUrl}
+                    className="flex flex-row gap-1 items-center border-l pl-4"
+                  >
+                    <Icon
+                      width="20"
+                      height="20"
+                      icon="fa6-brands:dev"
+                      className="text-blue-700"
+                    />
+                  </Link>
+                </div>
               </div>
               <div className="flex flex-col w-full border-l overflow-hidden rounded-r-3xl">
                 <Image
@@ -65,7 +86,7 @@ export default function Blogs() {
                 />
               </div>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
 

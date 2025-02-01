@@ -74,8 +74,8 @@ export default function Projects() {
                     />
                   </div>
                   <p className="text-sm text-gray-500 font-medium">
-                      {project.stars} Forks
-                    </p>
+                    {project.stars} Forks
+                  </p>
                 </div>
               </div>
               <div className="flex flex-col w-full border-l overflow-hidden rounded-r-3xl">
