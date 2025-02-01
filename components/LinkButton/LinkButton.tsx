@@ -10,19 +10,12 @@ interface LinkButtonProps {
 
 function LinkButton(props: LinkButtonProps) {
   return (
-    <a
+    <Link
       href={props.url}
       className="flex w-min bg-[#000] items-center opacity-50 hover:opacity-100 transition-all duration-150 justify-center rounded-[999] p-1"
     >
-      <Link href="http://x.com/ErenElagz" target="_blank">
-        <Icon
-          className="text-[#fff]"
-          width="24"
-          height="24"
-          icon={props.icon}
-        />
-      </Link>
-    </a>
+      <Icon className="text-[#fff]" width="24" height="24" icon={props.icon} />
+    </Link>
   );
 }
 
