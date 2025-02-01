@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "../components/NavBar/NavBar";
-import "../styles/globals.css";
 import Image from "next/image";
 import Button from "../components/Button/Button";
 import SocialButtons from "../components/SocialButtons/SocialButtons";
@@ -69,7 +68,7 @@ export default function Blogs() {
               </p>
             </div>
           </div>
-          <div className="flex w-full bg-gray-900 border-[#f0f0f0] border">
+          <div className="flex w-full bg-[--backgroundColor] border-[#f0f0f0] border">
             <div className="hidden w-full flex group-hover:flex flex-col items-end p-4">
               <LinkButton
                 title="Watch the Video"
@@ -96,7 +95,7 @@ export default function Blogs() {
               <p className="text-base opacity-50">AI Based Tourism Assistant</p>
             </div>
           </div>
-          <div className="flex w-full bg-gray-900 border-[#f0f0f0] border">
+          <div className="flex w-full bg-[--backgroundColor] border-[#f0f0f0] border">
             <div className="hidden w-full flex group-hover:flex flex-col items-end p-4">
               <LinkButton
                 title="Watch the Video"
@@ -124,7 +123,7 @@ export default function Blogs() {
               </p>
             </div>
           </div>
-          <div className="flex w-full bg-gray-900 border-[#f0f0f0] border">
+          <div className="flex w-full bg-[--backgroundColor] border-[#f0f0f0] border">
             <div className="hidden w-full flex group-hover:flex flex-col items-end p-4">
               <LinkButton
                 title="Watch the Video"

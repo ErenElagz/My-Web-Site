@@ -1,8 +1,14 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
-function SocialButtons(props: { title: string; url: string; icon: string }) {
+
+interface SocialButtonsProps {
+  title: string;
+  url: string;
+  icon: string;
+}
+
+function SocialButtons(props: SocialButtonsProps) {
   return (
     <Link href={props.url} target="_blank">
       <div className="flex bg-[--buttonBackground] opacity-60 hover:opacity-100 transition:opacity duration-300 border-1 rounded-lg p-2 border border-[--buttonBorder] gap-2 items-center justify-center">
@@ -12,11 +18,5 @@ function SocialButtons(props: { title: string; url: string; icon: string }) {
     </Link>
   );
 }
-
-SocialButtons.propTypes = {
-  title: PropTypes.string,
-  url: PropTypes.string,
-  icon: PropTypes.string,
-};
 
 export default SocialButtons;

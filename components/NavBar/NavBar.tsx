@@ -1,8 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Link from "next/link";
 
-function NavBar(props) {
+function NavBar() {
   return (
     <nav className="flex bg-[--navBarBackground] w-min rounded-[999] py-3 px-8 gap-12 items-center">
       <Link href="/ ">
@@ -28,9 +27,5 @@ function NavBar(props) {
     </nav>
   );
 }
-
-NavBar.propTypes = {
-  active: PropTypes.string,
-};
 
 export default NavBar;

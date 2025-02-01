@@ -8,6 +8,7 @@
   --navBarBackground: #f9f9f9;
   --buttonBackground: #f9f9f9;
   --buttonBorder: #17171750;
+  --backgroundColor: #fafafa;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +18,7 @@
     --navBarBackground: #171717;
     --buttonBackground: #171717;
     --buttonBorder: #ededed50;
+    --backgroundColor: #171717;
   }
 }
 
