@@ -1,7 +1,9 @@
+/* Tailwind Config */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Light Mode */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -11,6 +13,7 @@
   --backgroundColor: #fafafa;
 }
 
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -22,8 +25,30 @@
   }
 }
 
+/* Global Styles */
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-geist), sans-serif;
 }
+
+/* NavBar Style */
+.navbar {
+  background: var(--navBarBackground);
+  color: var(--foreground);
+  display: flex;
+  gap: 1.75rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 999;
+}
+
+.navbarText {
+  color: var(--foreground);
+  font-weight: 400;
+  opacity: 0.4;
+}
+
+.navbarText:hover {
+  opacity: 1;
+  transition: all 0.25s ease;
+}
+

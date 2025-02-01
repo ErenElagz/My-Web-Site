@@ -11,29 +11,17 @@ function NavBar() {
         <Image src="/logo.png" alt="ErenElagz" width={36} height={36} />
 
         {/* Navigation Bar */}
-        <nav className="flex bg-[--navBarBackground] border w-min rounded-[999] py-2 px-6 gap-8 items-center">
-          <Link
-            href="/"
-            className="opacity-50 hover:opacity-100 transition-opacity duration-150"
-          >
+        <nav className="navbar border">
+          <Link href="/" className="navbarText">
             ReadMe
           </Link>
-          <Link
-            href="/blogs"
-            className="opacity-50 hover:opacity-100 transition-opacity duration-150"
-          >
+          <Link href="/blogs" className="navbarText">
             Blogs
           </Link>
-          <Link
-            href="/projects"
-            className="opacity-50 hover:opacity-100 transition-opacity duration-150"
-          >
+          <Link href="/projects" className="navbarText">
             Projects
           </Link>
-          <Link
-            href="/designs"
-            className="opacity-50 hover:opacity-100 transition-opacity duration-150"
-          >
+          <Link href="/designs" className="navbarText">
             Designs
           </Link>
         </nav>
