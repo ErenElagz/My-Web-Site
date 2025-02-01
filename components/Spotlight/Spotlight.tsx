@@ -12,7 +12,7 @@ export default function Spotlight() {
           Spotlight
         </h2>
         <p className="text-[18px] text-gray-600 mt-2">
-          Most recent projects and contributions.
+          Most recent projects and products I've built.
         </p>
       </div>
 
