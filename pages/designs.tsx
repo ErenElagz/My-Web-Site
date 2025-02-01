@@ -18,7 +18,7 @@ export default function Designes() {
         <div>
           <h1 className="text-5xl font-bold mt-10 font-geist">
             Interface Designs <span className="opacity-50">created by</span> Me
-          </h1>{" "}
+          </h1>
           <p className="text-xl text-gray-400 mt-6 w-5/6">
             This is my design portfolio. I am a UI/UX Designer and React Native
             Mobile App Developer. I am working on and designing mobile apps. I

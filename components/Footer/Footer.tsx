@@ -11,28 +11,16 @@ export default function Footer() {
         <Link href="/">
           <Image src="/logo.png" width="32" height="32" alt="Logo Image" />
         </Link>
-        <Link
-          href="/"
-          className="footerText"
-        >
+        <Link href="/" className="footerText">
           ReadMe
         </Link>
-        <Link
-          href="/blogs"
-          className="footerText"
-        >
+        <Link href="/blogs" className="footerText">
           Blogs
         </Link>
-        <Link
-          href="/projects"
-          className="footerText"
-        >
+        <Link href="/projects" className="footerText">
           Projects
         </Link>
-        <Link
-          href="/designes"
-          className="footerText"
-        >
+        <Link href="/designs" className="footerText">
           Designs
         </Link>
       </div>

@@ -5,23 +5,23 @@ import Link from "next/link";
 interface LinkButtonProps {
   title: string;
   url: string;
+  icon: string;
 }
 
 function LinkButton(props: LinkButtonProps) {
   return (
     <a
       href={props.url}
-      className="flex w-min px-3 py-2 gap-1 items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-100"
+      className="flex w-min bg-[#000] items-center opacity-50 hover:opacity-100 transition-all duration-150 justify-center rounded-[999] p-1"
     >
-      <p className="whitespace-nowrap underline text-[--foreground]">
-        {props.title}
-      </p>
-      <Icon
-        icon="ep:top-right"
-        width="16"
-        height="16"
-        className="text-[--foreground]"
-      />
+      <Link href="http://x.com/ErenElagz" target="_blank">
+        <Icon
+          className="text-[#fff]"
+          width="24"
+          height="24"
+          icon={props.icon}
+        />
+      </Link>
     </a>
   );
 }

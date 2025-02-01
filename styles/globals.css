@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/geist");
+
 /* Tailwind Config */
 @tailwind base;
 @tailwind components;
@@ -14,7 +17,8 @@
 }
 
 /* Dark Mode */
-@media (prefers-color-scheme: dark) {
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
@@ -23,12 +27,17 @@
     --buttonBorder: #ededed50;
     --backgroundColor: #171717;
   }
-}
+} */
 
 /* Global Styles */
 body {
   color: var(--foreground);
   background: var(--background);
+  font-family: "Geist", sans-serif;
+}
+
+.font-lexend {
+  font-family: "Lexend", sans-serif;
 }
 
 /* NavBar Style */
@@ -61,13 +70,13 @@ body {
   align-items: center;
   gap: 1.75rem;
   padding: 0.5rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .footerText {
   color: var(--foreground);
   font-weight: 400;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .footerText:hover {

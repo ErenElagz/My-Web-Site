@@ -7,7 +7,7 @@ import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
-    <div className="lg:w-5/12 md:container flex flex-col mx-auto mt-6">
+    <div className="lg:w-4/12 md:container flex flex-col mx-auto mt-6">
       {/* Linear Gradient */}
 
       {/* Navigation */}

@@ -2,20 +2,27 @@ import React from "react";
 import Image from "next/image";
 import SocialButtons from "../SocialButtons/SocialButtons";
 import Link from "next/link";
+
 export default function TopContainer() {
   return (
     <div className="w-full mt-16">
-      <Image src="/logo.png" alt="ErenElagz" width={60} height={60} />
+      <Image src="/logo.png" alt="ErenElagz" width={72} height={72} />
       <div>
-        <h1 className="text-5xl font-bold mt-10 font-geist">ErenElagz</h1>
-        <p className="text-3xl mt-2">Mobile App Developer & Designer</p>
-        <p className="text-xl text-gray-400 mt-6 w-5/6">
-          Hey 👋! My Name is Eren. Currently I am React Native Mobile App
-          Developer and UI & UX Designer for the Mobile Apps. In these days I am
-          working on
+        <h1 className="text-5xl font-medium tracking-tight font-lexend mt-10">
+          ErenElagz
+        </h1>
+        <p className="text-4xl text-gray-400 font-thin mt-2  tracking-tight font-lexend">
+          Mobile App Developer & Designer
+        </p>
+        <p className="text-base text-gray-600  mt-6">
+          Hi 👋, I am Eren. Currently I am React Native Mobile App Developer and
+          UI & UX Designer for the Mobile Apps.
+        </p>
+        <p className="text-base text-gray-600 mt-4">
+          In these days I am working on
           <Link
             href="/projects/hitbis"
-            className="font-bold text-blue-500 hover:underline"
+            className="font-bold text-blue-700 hover:underline"
           >
             &nbsp;@HitBis
           </Link>
