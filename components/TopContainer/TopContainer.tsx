@@ -11,14 +11,14 @@ export default function TopContainer() {
         <h1 className="text-5xl font-medium tracking-tight font-lexend mt-10">
           ErenElagz
         </h1>
-        <p className="text-4xl text-gray-400 font-thin mt-2  tracking-tight font-lexend">
+        <p className="text-4xl text-gray-300 font-thin mt-2  tracking-tight font-lexend">
           Mobile App Developer & Designer
         </p>
-        <p className="text-base text-gray-600  mt-6">
+        <p className="text-base text-gray-500  mt-6">
           Hi 👋, I am Eren. Currently I am React Native Mobile App Developer and
           UI & UX Designer for the Mobile Apps.
         </p>
-        <p className="text-base text-gray-600 mt-4">
+        <p className="text-base text-gray-500 mt-4">
           In these days I am working on
           <Link
             href="/projects/hitbis"
