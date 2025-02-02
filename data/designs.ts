@@ -13,7 +13,7 @@ export const designs = [
   },
   {
     id: 2,
-    title: "Agriculture Drone Landing Page",
+    title: "Agriculture Drone Tech Web Site Landing Page",
     description: "A landing page design for an agriculture drone company.",
     figmaUrl: "https://www.figma.com/",
     behanceUrl:

@@ -15,8 +15,8 @@ interface BlogCardProps {
 
 export default function BlogCard(props: BlogCardProps) {
   return (
-    <div key={props.id}>
-      <div className="hover:underline w-full border border-[--navBarBorder] bg-[#ffffff10] rounded-3xl flex flex-row  justify-between">
+    <a key={props.id} href={props.mediumUrl || props.devtoUrl || "#"}>
+      <div className="hover:underline w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-row  justify-between">
         <div className="flex flex-col gap-2 w-full p-4 md:p-5  md:py-8  ">
           <p className="text-sm font-semibold tracking-tight opacity-50">
             {props.date}
@@ -53,6 +53,6 @@ export default function BlogCard(props: BlogCardProps) {
           </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 }

@@ -8,7 +8,7 @@ import GradientOverlayTop from "@/components/GradientOverlay/GradientOverlayTop"
 import GradientOverlayBottom from "@/components/GradientOverlay/GradientOverlayBottom";
 export default function Blogs() {
   return (
-    <div className="px-4 lg:w-4/12 flex flex-col mx-auto  m-3 md:mt-6">
+    <div className="max-w-[660px] px-4 lg:w-4/12 flex flex-col mx-auto  m-3 md:mt-6">
       {/* Gradient Overlay */}
       <GradientOverlayTop />
 
@@ -28,18 +28,18 @@ export default function Blogs() {
       {/* Social Buttons */}
       <div className="flex flex-row gap-3 mt-6 flex-wrap">
         <SocialButtons
-          title="My Medium Profile"
+          title="Medium"
           url="https://medium.com/@ErenElagz"
           icon="akar-icons:medium-fill"
         />
         <SocialButtons
-          title="My Dev.to Account"
+          title="Dev.to"
           url="https://dev.to/ErenElagz"
           icon="skill-icons:devto-dark"
         />
         <SocialButtons
           title="Add me on RSS"
-          url="https://dev.to/ErenElagz"
+          url="https://morss.it/https://medium.com/feed/@erenelagz"
           icon="foundation:rss"
         />
       </div>

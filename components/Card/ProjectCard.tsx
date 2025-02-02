@@ -21,7 +21,7 @@ export default function ProjectCard(props: ProjectCardProps) {
       key={props.id}
       className="hover:underline"
     >
-      <div className="w-full border border-[--navBarBorder] bg-[#ffffff10] rounded-3xl flex flex-row  justify-between">
+      <div className="w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-row  justify-between">
         <div className="flex flex-col gap-2 w-full p-4 md:p-5  md:py-4  ">
           <Icon icon={props.icon} width="32" height="32" />
           <p className="text-base font-semibold mt-2 tracking-tight font-geist">

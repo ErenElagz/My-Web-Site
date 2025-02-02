@@ -22,7 +22,7 @@ export const iotProjects = [
     id: 3,
     title: "Esp32-Robotic-Arm-Controller",
     description:
-      "Amazon Price Prediction using Polynomal Regresion Model of Machine Learning",
+      "Robotic Arm Controller using ESP32 and Blynk IoT Platform",
     githubUrl: "https://github.com/ErenElagz/Esp32-Robotic-Arm-Controller",
     stars: 0,
     forks: 0,

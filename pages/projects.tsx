@@ -12,7 +12,7 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 export default function Projects() {
   return (
-    <div className="px-4 lg:w-4/12 flex flex-col mx-auto  m-3 md:mt-6">
+    <div className="max-w-[660px]  px-4 lg:w-4/12 flex flex-col mx-auto  m-3 md:mt-6">
       {/* Gradient Overlay */}
       <GradientOverlayTop />
 
@@ -33,7 +33,7 @@ export default function Projects() {
       {/* Social Buttons */}
       <div className="flex flex-row gap-3 mt-6 flex-wrap">
         <SocialButtons
-          title="My GitHub Profile"
+          title="See more on GitHub"
           url="https://github.com/ErenElagz"
           icon="akar-icons:github-fill"
         />

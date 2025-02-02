@@ -9,7 +9,7 @@ import DesignCard from "@/components/Card/DesignCard";
 
 export default function Designes() {
   return (
-    <div className="px-4 lg:w-4/12 flex flex-col mx-auto  m-3 md:mt-6">
+    <div className="max-w-[660px] px-4 lg:w-4/12 flex flex-col mx-auto m-3 md:mt-6">
       {/* Gradient Overlay */}
       <GradientOverlayTop />
 
@@ -22,24 +22,25 @@ export default function Designes() {
           Design Portfolio
         </h1>
         <p className="text-base text-gray-500 mt-3">
-          I am also designing. You can check my other designs in Dribbble and Behance.
+          I am also designing. You can check my other designs in Dribbble and
+          Behance.
         </p>
       </div>
 
       {/* Social Buttons */}
       <div className="flex flex-row gap-3 mt-6 flex-wrap">
         <SocialButtons
-          title="My Dribbble Profile"
+          title="Dribbble"
           url="https://dribbble.com/ErenElagz"
           icon="akar-icons:dribbble-fill"
         />
         <SocialButtons
-          title="My Behance Account"
+          title="Behance"
           url="https://behance.com/ErenElagz"
           icon="akar-icons:behance-fill"
         />
         <SocialButtons
-          title="My Pinterest Account"
+          title="Pinterest"
           url="https://pinterest.com/ErenElagz"
           icon="akar-icons:pinterest-fill"
         />

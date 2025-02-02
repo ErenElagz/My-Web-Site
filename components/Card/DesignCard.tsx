@@ -16,13 +16,16 @@ interface DesignCardProps {
 
 export default function DesignCard(props: DesignCardProps) {
   return (
-    <div key={props.id}>
-      <div className="w-full border border-[--navBarBorder] bg-[#ffffff10] rounded-3xl flex flex-row justify-between">
+    <a
+      key={props.id}
+      href={props.behanceUrl || props.dribbbleUrl || props.figmaUrl || "#"}
+    >
+      <div className="w-full border border-[--navBarBorder] hover:underline bg-[#ffffff05] rounded-3xl flex flex-row justify-between">
         <div className="flex flex-col gap-2 w-full p-4 md:p-5  md:py-8  ">
           <p className="text-base font-semibold tracking-tight font-geist">
             {props.title}
           </p>
-          <p className="text-sm text-gray-400 font-lexend">
+          <p className="text-sm hidden sm:block text-gray-400 font-lexend">
             {props.description}
           </p>
 
@@ -63,9 +66,15 @@ export default function DesignCard(props: DesignCardProps) {
           </div>
         </div>
         <div className="flex flex-col w-full border-l border-[--navBarBorder] overflow-hidden rounded-r-3xl">
-          <Image src={props.image} alt="Blog Image" width={750} height={450} />
+          <Image
+            src={props.image}
+            alt="Blog Image"
+            width={500}
+            height={300}
+            className="object-cover object-center w-full h-full"
+          />
         </div>
       </div>
-    </div>
+    </a>
   );
 }
