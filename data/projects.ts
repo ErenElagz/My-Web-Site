@@ -26,25 +26,5 @@ export const projects = [
     stars: 3,
     forks: 1,
     icon: "fa6-solid:route",
-  },
-  {
-    id: 5,
-    title: "Farm-Simulator-Game",
-    description:
-      "a Web Based Farming Simulator Game, Weekly prices, Marketplaces and more...",
-    githubUrl: "https://github.com/ErenElagz/Farm-Simulator-Game",
-    stars: 3,
-    forks: 3,
-    icon: "fa6-solid:route",
-  },
-  {
-    id: 6,
-    title: "Internship-Managment-Desktop-App",
-    description:
-      "the Internship Managment Software Using Electron-React-TailwindCSS",
-    githubUrl: "https://github.com/ErenElagz/Internship-Managment-Desktop-App",
-    stars: 1,
-    forks: 1,
-    icon: "fa6-solid:route",
   }
 ];
