@@ -3,11 +3,11 @@ export const iotProjects = [
     id: 1,
     title: "HitBis: Bicycle Renting System",
     description:
-      "HITBIS: AI-Powered Route & Bike Rental App HITBIS combines AI route planning, bike rentals, and social media. Users can create and share routes, rent bikes from stations, and connect with others, b…",
+      "HitBis: AI-Powered Route & Bike Rental App HitBis combines AI route planning, bike rentals, and social media. Users can create and share routes, rent bikes from stations, and connect with others, b…",
     githubUrl: "https://github.com/ErenElagz/HitBis",
     stars: 0,
     forks: 0,
-    icon: "solar:hospital-bold",
+    icon: "tabler:bike",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ export const iotProjects = [
     githubUrl: "https://github.com/ErenElagz/Blynk-Robotic-Arm",
     stars: 0,
     forks: 0,
-    icon: "tabler:message-chatbot-filled",
+    icon: "mdi:robot",
   },
   {
     id: 3,
@@ -26,6 +26,6 @@ export const iotProjects = [
     githubUrl: "https://github.com/ErenElagz/Esp32-Robotic-Arm-Controller",
     stars: 0,
     forks: 0,
-    icon: "fa6-solid:route",
+    icon: "mdi:arm-barrier-up",
   },
 ];

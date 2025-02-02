@@ -8,7 +8,7 @@ export const aiProjects = [
       "https://github.com/ErenElagz/Video-Games-Sales-Future-Prediction-Using-Linear-Regression",
     stars: 0,
     forks: 0,
-    icon: "solar:hospital-bold",
+    icon: "mingcute:game-2-fill",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const aiProjects = [
       "https://github.com/ErenElagz/Price-Prediction-Using-LSTM-Algorithm-in-Neural-Networks",
     stars: 0,
     forks: 0,
-    icon: "tabler:message-chatbot-filled",
+    icon: "mingcute:brain-fill",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const aiProjects = [
       "https://github.com/ErenElagz/AMAZON-PRICE-PREDICTION-MACHINE_LEARNING",
     stars: 0,
     forks: 0,
-    icon: "fa6-solid:route",
+    icon: "ri:amazon-fill",
   },
   {
     id: 4,
@@ -40,6 +40,6 @@ export const aiProjects = [
     githubUrl: "https://github.com/ErenElagz/Bitcoin-Price-Prediction",
     stars: 0,
     forks: 0,
-    icon: "fa6-solid:route",
+    icon: "ri:btc-fill",
   },
 ];

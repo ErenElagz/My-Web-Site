@@ -21,7 +21,7 @@ export default function TopContainer() {
         <p className="text-base text-gray-500 mt-4">
           In these days I am working on
           <Link
-            href="/projects/hitbis"
+            href="https://github.com/ErenElagz/HitBis"
             className="font-semibold text-blue-400 hover:underline"
           >
             &nbsp;@HitBis

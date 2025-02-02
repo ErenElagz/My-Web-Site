@@ -1,33 +1,38 @@
 export const designs = [
   {
     id: 1,
-    title: "Modern SaaS Dashboard UI",
+    title: "Tourism App Preferences Screens Design",
     description: "A clean and minimal dashboard UI for SaaS platforms.",
-    figmaUrl: "https://www.figma.com/file/abcd1234/saas-dashboard-ui",
-    behanceUrl: "https://www.behance.net/gallery/12345678/SaaS-Dashboard",
-    dribbbleUrl: "https://www.behance.net/gallery/12345678/SaaS-Dashboard",
+    figmaUrl: "https://www.figma.com",
+    behanceUrl:
+      "https://www.behance.net/gallery/217550203/App-Preferences-Screens-for-Tourism-Mobile-Apps",
+    dribbbleUrl:
+      "https://dribbble.com/shots/25521277-App-Preferences-Screens-for-Tourism-and-Entertainment-Apps",
     image:
-      "https://miro.medium.com/v2/resize:fit:720/format:webp/1*KTl3-WbilK8qvMt8EnUEwA.jpeg",
+      "https://cdn.dribbble.com/userupload/18941436/file/original-cec20d5dd1d941f86edaf17693819afa.png?crop=8x6-794x596",
   },
   {
     id: 2,
-    title: "E-commerce Mobile App",
-    description: "An intuitive e-commerce mobile app UI/UX design.",
-    figmaUrl: "https://www.figma.com/file/abcd5678/ecommerce-app",
+    title: "Agriculture Drone Landing Page",
+    description: "A landing page design for an agriculture drone company.",
+    figmaUrl: "https://www.figma.com/",
     behanceUrl:
-      "https://www.behance.net/gallery/87654321/E-commerce-Mobile-App",
-    dribbbleUrl: "https://www.behance.net/gallery/12345678/SaaS-Dashboard",
+      "https://www.behance.net/gallery/217841173/Farming-Drone-echnologies-Website-Landing-Page-Design",
+    dribbbleUrl:
+      "https://dribbble.com/shots/25450152-Agriculture-Drone-Technology-Website-Landing-Page-Design",
     image:
-      "https://miro.medium.com/v2/resize:fit:720/format:webp/1*KTl3-WbilK8qvMt8EnUEwA.jpeg",
+      "https://cdn.dribbble.com/userupload/18356941/file/original-87e645c49eb4122cd70784e6edbda2c5.png?crop=13x10-789x592",
   },
   {
     id: 3,
-    title: "Cryptocurrency Web App UI",
-    description: "A crypto trading platform UI design with dark mode support.",
-    figmaUrl: "https://www.figma.com/file/xyz123/crypto-web-app",
-    behanceUrl: "https://www.behance.net/gallery/56789123/Crypto-Web-App",
-    dribbbleUrl: "https://www.behance.net/gallery/12345678/SaaS-Dashboard",
+    title: "City Information and Reviewing Concept Design",
+    description: "A mobile app design for reviewing and exploring cities.",
+    figmaUrl: "https://www.figma.com/",
+    behanceUrl:
+      "https://www.behance.net/gallery/217840785/City-Infomation-and-Reviewing-Mobile-App-Design",
+    dribbbleUrl:
+      "https://dribbble.com/shots/25537268-City-Information-anf-Reviewing-Mobile-App-UI-Screen-Design",
     image:
-      "https://miro.medium.com/v2/resize:fit:720/format:webp/1*KTl3-WbilK8qvMt8EnUEwA.jpeg",
-  }
+      "https://cdn.dribbble.com/userupload/19362526/file/original-6b36daa41c8f895211ff3d364d43b247.png?crop=30x23-773x579",
+  },
 ];

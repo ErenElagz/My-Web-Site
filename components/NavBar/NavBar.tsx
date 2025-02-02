@@ -8,14 +8,15 @@ function NavBar() {
     <div>
       <div className="w-full flex items-center justify-center md:justify-between">
         {/* Left Image */}
-        <Image
-          src="/logo.png"
-          alt="ErenElagz"
-          width={36}
-          height={36}
-          className="hidden md:block"
-        />
-
+        <Link href="/">
+          <Image
+            src="/logo.png"
+            alt="ErenElagz"
+            width={36}
+            height={36}
+            className="hidden md:block"
+          />
+        </Link>
         {/* Navigation Bar */}
         <nav className="navbar">
           <Link href="/" className="navbarText">

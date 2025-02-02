@@ -35,11 +35,11 @@ export default function Projects() {
               <p className="text-base opacity-50 tracking-tight my-1 font-lexend">
                 IoT Based Bicycle Renting App and Ride Assistant.
               </p>
-              <Link href="/company-os">
+              <a href="https://github.com/ErenElagz/HitBis">
                 <p className="opacity-0 text-base font-semibold font-lexend mt-2 underline translate-y-5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
                   Visit
                 </p>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -65,11 +65,11 @@ export default function Projects() {
               <p className="text-base opacity-50 tracking-tight my-1 font-lexend">
                 AR and VR Supported Tourism App with AI Based Assistant.
               </p>
-              <Link href="/company-os">
+              <a href="https://www.linkedin.com/posts/erenelagz_teknofest2024-activity-7239628875142443008-1V5Q?utm_source=share&utm_medium=member_desktop">
                 <p className="opacity-0 text-base font-semibold font-lexend mt-2 underline translate-y-5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
-                  Visit
+                  See Post on LinkedIn
                 </p>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

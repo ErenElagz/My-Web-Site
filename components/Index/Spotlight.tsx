@@ -1,6 +1,5 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import Link from "next/link";
 export default function Spotlight() {
   return (
     <div className="w-full mt-20 flex flex-col gap-6">
@@ -26,11 +25,11 @@ export default function Spotlight() {
                 Managment Tool for Companies
               </p>
             </div>
-            <Link href="/company-os">
+            <a href="https://github.com/ErenElagz/company-os">
               <p className="opacity-0 text-base font-semibold font-lexend mt-2 underline translate-y-5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
                 Visit
               </p>
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -47,11 +46,11 @@ export default function Spotlight() {
                 3200 Sources for Developers
               </p>
             </div>
-            <Link href="/company-os">
+            <a href="https://github.com/ErenElagz/all-in-dev">
               <p className="opacity-0 text-base font-semibold font-lexend mt-2 underline translate-y-5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
                 Visit
               </p>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

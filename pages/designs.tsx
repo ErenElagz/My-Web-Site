@@ -22,7 +22,7 @@ export default function Designes() {
           Design Portfolio
         </h1>
         <p className="text-base text-gray-500 mt-3">
-          I am also designing. You can check my designs in Dribbble and Behance.
+          I am also designing. You can check my other designs in Dribbble and Behance.
         </p>
       </div>
 
