@@ -34,6 +34,11 @@ export default function Projects() {
           url="https://github.com/ErenElagz"
           icon="akar-icons:github-fill"
         />
+        <SocialButtons
+          title="Hire Me!"
+          url="https://github.com/ErenElagz"
+          icon="simple-icons:upwork"
+        />
       </div>
 
       {/* Projects */}

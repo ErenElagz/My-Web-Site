@@ -37,6 +37,11 @@ export default function Blogs() {
           url="https://dev.to/ErenElagz"
           icon="skill-icons:devto-dark"
         />
+        <SocialButtons
+          title="Add me on RSS"
+          url="https://dev.to/ErenElagz"
+          icon="foundation:rss"
+        />
       </div>
 
       {/* Blogs */}

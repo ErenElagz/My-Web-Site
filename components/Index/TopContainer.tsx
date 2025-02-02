@@ -11,7 +11,7 @@ export default function TopContainer() {
         <h1 className="text-5xl font-medium tracking-tight font-lexend mt-10">
           ErenElagz
         </h1>
-        <p className="text-4xl text-gray-300 font-thin mt-2  tracking-tight font-lexend">
+        <p className="text-4xl opacity-50 font-thin mt-2  tracking-tight font-lexend">
           Mobile App Developer & Designer
         </p>
         <p className="text-base text-gray-500  mt-6">

@@ -5,10 +5,10 @@ export default function Projects() {
   return (
     <div className="w-full mt-20 flex flex-col gap-6">
       <div>
-        <h2 className="text-3xl font-lexend font-medium  tracking-tight">
+        <h2 className="text-3xl font-lexend font-medium tracking-tight">
           Projects
         </h2>
-        <p className="text-[18px] text-gray-600 mt-2">
+        <p className="text-[18px] opacity-50 mt-2">
           Latest Projects builded by Me and My Team
         </p>
       </div>
@@ -38,10 +38,10 @@ export default function Projects() {
             </div>
           </div>
           <div>
-            <p className="text-xl font-semiBold tracking-tight font-geist">
+            <p className="text-[18px] font-semibold tracking-tight font-geist">
               HitBis: Bicycle Sharing App
             </p>
-            <p className="text-base text-gray-500 font-lexend">
+            <p className="text-base opacity-50 tracking-tight mt-1 font-lexend">
               IoT Based Bicycle Renting App and AI Based Ride Assistant.
             </p>
           </div>
@@ -73,10 +73,10 @@ export default function Projects() {
             </div>
           </div>
           <div>
-            <p className="text-xl font-semiBold tracking-tight font-geist">
+            <p className="text-[18px] font-semibold tracking-tight font-geist">
               Belen: AI Based Tourism Assistant
             </p>
-            <p className="text-base text-gray-500 font-lexend">
+            <p className="text-base opacity-50 tracking-tight mt-1 font-lexend">
               AR/VR Supported Tourism Assistant App for the Travelers.
             </p>
           </div>
