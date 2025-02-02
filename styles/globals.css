@@ -10,7 +10,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --navBarBackground: #aaaaaa10;
+  --navBarBackground: #ffffff50;
   --navBarBorder: #17171720;
   --buttonBackground: #f9f9f940;
   --buttonBorder: #17171750;
@@ -76,7 +76,7 @@ body::-webkit-scrollbar {
   align-items: center;
   gap: 1.75rem;
   padding: 0.5rem;
-  margin: 3rem 0;
+  margin: 4rem 0;
   z-index: 999;
 }
 

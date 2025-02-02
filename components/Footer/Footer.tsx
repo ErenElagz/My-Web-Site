@@ -31,24 +31,24 @@ export default function Footer() {
           <Icon
             className="footerText"
             icon="akar-icons:github-fill"
-            width="24"
-            height="24"
+            width="20"
+            height="20"
           />
         </Link>
         <Link href="http://linkedin.com/in/ErenElagz" target="_blank">
           <Icon
             className="footerText"
             icon="akar-icons:linkedin-fill"
-            width="24"
-            height="24"
+            width="20"
+            height="20"
           />
         </Link>
         <Link href="http://x.com/ErenElagz" target="_blank">
           <Icon
             className="footerText"
             icon="akar-icons:x-fill"
-            width="24"
-            height="24"
+            width="20"
+            height="20"
           />
         </Link>
       </div>

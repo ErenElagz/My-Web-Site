@@ -19,7 +19,7 @@ export default function DesignCard(props: DesignCardProps) {
     <div key={props.id}>
       <div className="w-full border border-[--navBarBorder] bg-[#ffffff10] rounded-3xl flex flex-row justify-between">
         <div className="flex flex-col gap-2 w-full p-5 py-8">
-          <p className="text-base font-semiBold tracking-tight font-geist">
+          <p className="text-base font-semibold tracking-tight font-geist">
             {props.title}
           </p>
           <p className="text-sm text-gray-400 font-lexend">
