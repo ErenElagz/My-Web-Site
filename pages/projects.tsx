@@ -9,7 +9,7 @@ import ProjectCard from "@/components/Card/ProjectCard";
 
 export default function Projects() {
   return (
-    <div className="lg:w-4/12 md:container flex flex-col mx-auto mt-6">
+    <div className="px-4 lg:w-4/12 flex flex-col mx-auto  m-3 md:mt-6">
       {/* Gradient Overlay */}
       <GradientOverlayTop />
 
@@ -18,7 +18,7 @@ export default function Projects() {
 
       {/* Header */}
       <div>
-        <h1 className="text-4xl font-semibold tracking-tight mt-16 font-lexend">
+        <h1 className="text-4xl font-semibold tracking-tight mt-5 md:mt-16 font-lexend">
           Recent Projects
         </h1>
         <p className="text-base text-gray-500 mt-3">
@@ -28,7 +28,7 @@ export default function Projects() {
       </div>
 
       {/* Social Buttons */}
-      <div className="flex flex-row gap-3 mt-6">
+      <div className="flex flex-row gap-3 mt-6 flex-wrap">
         <SocialButtons
           title="My GitHub Profile"
           url="https://github.com/ErenElagz"
@@ -52,7 +52,7 @@ export default function Projects() {
             githubUrl={project.githubUrl}
             stars={project.stars}
             forks={project.forks}
-            image={project.image}
+            icon={project.icon}
           />
         ))}
       </div>

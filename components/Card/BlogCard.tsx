@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 
@@ -17,15 +16,15 @@ interface BlogCardProps {
 export default function BlogCard(props: BlogCardProps) {
   return (
     <div key={props.id}>
-      <div className="w-full border border-[--navBarBorder] bg-[#ffffff10] rounded-3xl flex flex-row  justify-between">
-        <div className="flex flex-col gap-2 w-full p-5 py-8">
-          <p className="text-sm font-semibold tracking-tight font-geist">
+      <div className="hover:underline w-full border border-[--navBarBorder] bg-[#ffffff10] rounded-3xl flex flex-row  justify-between">
+        <div className="flex flex-col gap-2 w-full p-4 md:p-5  md:py-8  ">
+          <p className="text-sm font-semibold tracking-tight opacity-50">
             {props.date}
           </p>
-          <p className="text-base font-semibold tracking-tight font-geist">
+          <p className="text-xl font-semibold tracking-tight font-geist">
             {props.title}
           </p>
-          <p className="text-sm text-gray-400 font-lexend">
+          <p className="text-sm  text-gray-400 font-lexend break-normal">
             {props.description}
           </p>
           <div className="flex flex-row gap-4 mt-4 items-center ">
@@ -52,9 +51,6 @@ export default function BlogCard(props: BlogCardProps) {
               />
             </Link>
           </div>
-        </div>
-        <div className="flex flex-col w-full border-l border-[--navBarBorder] overflow-hidden rounded-r-3xl">
-          <Image src={props.image} alt="Blog Image" width={750} height={450} />
         </div>
       </div>
     </div>

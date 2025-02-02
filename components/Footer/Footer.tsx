@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <div className="footer flex-wrap">
       {/* Left Side */}
       <div className="flex gap-5 items-center">
         <Link href="/">

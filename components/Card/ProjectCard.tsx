@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 
@@ -11,7 +10,7 @@ interface ProjectCardProps {
   stars: number;
   forks: number;
   className?: string;
-  image: string;
+  icon: string;
 }
 
 export default function ProjectCard(props: ProjectCardProps) {
@@ -23,8 +22,9 @@ export default function ProjectCard(props: ProjectCardProps) {
       className="hover:underline"
     >
       <div className="w-full border border-[--navBarBorder] bg-[#ffffff10] rounded-3xl flex flex-row  justify-between">
-        <div className="flex flex-col gap-2 w-full p-5 py-8">
-          <p className="text-base font-semibold tracking-tight font-geist">
+        <div className="flex flex-col gap-2 w-full p-4 md:p-5  md:py-8  ">
+          <Icon icon={props.icon} width="32" height="32" />
+          <p className="text-base font-semibold mt-2 tracking-tight font-geist">
             {props.title}
           </p>
           <p className="text-sm text-gray-400 font-lexend">
@@ -38,7 +38,9 @@ export default function ProjectCard(props: ProjectCardProps) {
                 icon="material-symbols:star-rounded"
                 className="text-yellow-500"
               />
-              <p className="text-sm font-medium">{props.stars} Stars</p>
+              <p className="text-[12px] whitespace-nowrap md:text-sm font-medium">
+                {props.stars} Stars
+              </p>
             </div>
             <div className="flex flex-row gap-1 items-center border-l border-[--navBarBorder]  pl-2">
               <Icon
@@ -47,12 +49,11 @@ export default function ProjectCard(props: ProjectCardProps) {
                 icon="pajamas:fork"
                 className="text-green-500"
               />
-              <p className="text-sm font-medium">{props.stars} Forks</p>
+              <p className="text-[12px] whitespace-nowrap md:text-sm  font-medium">
+                {props.forks} Forks
+              </p>
             </div>
           </div>
-        </div>
-        <div className="flex flex-col w-full border-l border-[--navBarBorder]  overflow-hidden rounded-r-3xl">
-          <Image src={props.image} alt="Blog Image" width={750} height={450} />
         </div>
       </div>
     </Link>

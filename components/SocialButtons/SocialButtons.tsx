@@ -13,7 +13,7 @@ function SocialButtons(props: SocialButtonsProps) {
     <Link href={props.url} target="_blank">
       <div className="flex bg-[--buttonBackground] opacity-50 hover:opacity-100 transition:opacity duration-300 border-1 rounded-lg p-2 border border-[--buttonBorder] gap-2 items-center justify-center">
         <Icon icon={props.icon} width="16" height="16" />
-        <p className="text-base">{props.title}</p>
+        <p className="text-base whitespace-nowrap">{props.title}</p>
       </div>
     </Link>
   );

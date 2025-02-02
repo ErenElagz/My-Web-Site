@@ -8,7 +8,7 @@ import GradientOverlayTop from "@/components/GradientOverlay/GradientOverlayTop"
 import GradientOverlayBottom from "@/components/GradientOverlay/GradientOverlayBottom";
 export default function Blogs() {
   return (
-    <div className="lg:w-4/12 md:container flex flex-col mx-auto mt-6">
+    <div className="px-4 lg:w-4/12 flex flex-col mx-auto  m-3 md:mt-6">
       {/* Gradient Overlay */}
       <GradientOverlayTop />
 
@@ -17,7 +17,7 @@ export default function Blogs() {
 
       {/* Header */}
       <div>
-        <h1 className="text-4xl font-semibold tracking-tight mt-16 font-lexend">
+        <h1 className="text-4xl font-semibold tracking-tight mt-5 md:mt-16 font-lexend">
           Latest Blogs
         </h1>
         <p className="text-base text-gray-500 mt-3">
@@ -26,7 +26,7 @@ export default function Blogs() {
       </div>
 
       {/* Social Buttons */}
-      <div className="flex flex-row gap-3 mt-6">
+      <div className="flex flex-row gap-3 mt-6 flex-wrap">
         <SocialButtons
           title="My Medium Profile"
           url="https://medium.com/@ErenElagz"

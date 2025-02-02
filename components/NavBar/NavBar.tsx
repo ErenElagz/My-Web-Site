@@ -6,9 +6,15 @@ import Button from "../Button/Button";
 function NavBar() {
   return (
     <div>
-      <div className="w-full flex  items-center justify-between">
+      <div className="w-full flex items-center justify-center md:justify-between">
         {/* Left Image */}
-        <Image src="/logo.png" alt="ErenElagz" width={36} height={36} />
+        <Image
+          src="/logo.png"
+          alt="ErenElagz"
+          width={36}
+          height={36}
+          className="hidden md:block"
+        />
 
         {/* Navigation Bar */}
         <nav className="navbar">
@@ -27,7 +33,11 @@ function NavBar() {
         </nav>
 
         {/* Right Button */}
-        <Button title=" Say Hi!👋" url={"mailto:erenelagz@gmail.com"} />
+        <Button
+          title="Say Hi!👋"
+          url={"mailto:erenelagz@gmail.com"}
+          className="hidden md:block"
+        />
       </div>
     </div>
   );

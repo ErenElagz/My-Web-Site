@@ -1,6 +1,4 @@
 import React from "react";
-import LinkButton from "../LinkButton/LinkButton";
-import Image from "next/image";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 export default function Spotlight() {
@@ -15,7 +13,7 @@ export default function Spotlight() {
         </p>
       </div>
 
-      <div className="flex flex-row gap-4 box-border">
+      <div className="flex md:flex-row gap-4 box-border flex-col">
         {/* Company Os */}
         <div className="group w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 pt-7 ustify-between">
           <div>

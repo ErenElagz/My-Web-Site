@@ -1,29 +1,50 @@
 export const projects = [
   {
     id: 1,
-    title: "Company OS",
-    description: "A complete management tool for companies.",
-    githubUrl: "https://github.com/ErenElagz/company-os",
-    stars: 120, // 🌟 GitHub Star Sayısı
-    forks: 30, // 🍴 GitHub Fork Sayısı
-    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*KTl3-WbilK8qvMt8EnUEwA.jpeg",
+    title: "Hospital Appointment System",
+    description: "An Appointment Sftware for Hospitals.",
+    githubUrl: "https://github.com/ErenElagz/Hospital-Appointment-System",
+    stars: 2,
+    forks: 1,
+    icon: "solar:hospital-bold",
   },
   {
     id: 2,
-    title: "HitBis: Bicycle Sharing App",
-    description: "IoT-based smart bicycle sharing and AI assistant.",
-    githubUrl: "https://github.com/ErenElagz/Hitbis",
-    stars: 95,
-    forks: 18,
-    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*KTl3-WbilK8qvMt8EnUEwA.jpeg",
+    title: "Chat-Bot-in-React-Native-Gemini",
+    description: "Beginner Level ChatBot in React Native using Gemini API",
+    githubUrl:
+      "https://github.com/ErenElagz/Beginner-Chat-Bot-in-React-Native-Gemini",
+    stars: 5,
+    forks: 1,
+    icon: "tabler:message-chatbot-filled",
   },
   {
     id: 3,
-    title: "All in Dev",
-    description: "3200+ developer & designer tools in one place.",
-    githubUrl: "https://github.com/ErenElagz/all-in-dev",
-    stars: 205,
-    forks: 55,
-    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*KTl3-WbilK8qvMt8EnUEwA.jpeg",
+    title: "AI-Based-Route-Planner-Optimizer ",
+    description: "AI Chatbot Based Route Creator and Optimizer",
+    githubUrl: "https://github.com/ErenElagz/AI-Based-Route-Planner-Optimizer",
+    stars: 3,
+    forks: 1,
+    icon: "fa6-solid:route",
   },
+  {
+    id: 5,
+    title: "Farm-Simulator-Game",
+    description:
+      "a Web Based Farming Simulator Game, Weekly prices, Marketplaces and more...",
+    githubUrl: "https://github.com/ErenElagz/Farm-Simulator-Game",
+    stars: 3,
+    forks: 3,
+    icon: "fa6-solid:route",
+  },
+  {
+    id: 6,
+    title: "Internship-Managment-Desktop-App",
+    description:
+      "the Internship Managment Software Using Electron-React-TailwindCSS",
+    githubUrl: "https://github.com/ErenElagz/Internship-Managment-Desktop-App",
+    stars: 1,
+    forks: 1,
+    icon: "fa6-solid:route",
+  }
 ];

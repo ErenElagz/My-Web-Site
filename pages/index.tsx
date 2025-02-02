@@ -8,7 +8,7 @@ import GradientOverlayBottom from "@/components/GradientOverlay/GradientOverlayB
 import GradientOverlayTop from "@/components/GradientOverlay/GradientOverlayTop";
 export default function Home() {
   return (
-    <div className="lg:w-4/12 md:container flex flex-col mx-auto mt-6">
+    <div className="px-4 lg:w-4/12 flex flex-col mx-auto  m-3 md:mt-6">
       {/* Gradient Overlay */}
       <GradientOverlayTop />
 
