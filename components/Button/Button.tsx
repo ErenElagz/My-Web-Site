@@ -6,7 +6,7 @@ interface ButtonProps {
   className?: string;
 }
 
-function Button(props: ButtonProps) {
+export default function Button(props: ButtonProps) {
   return (
     <a href={props.url}>
       <div
@@ -17,5 +17,3 @@ function Button(props: ButtonProps) {
     </a>
   );
 }
-
-export default Button;

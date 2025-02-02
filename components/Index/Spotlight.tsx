@@ -1,5 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
+
 export default function Spotlight() {
   return (
     <div className="w-full mt-20 flex flex-col gap-6">
@@ -14,7 +15,10 @@ export default function Spotlight() {
 
       <div className="flex md:flex-row gap-4 box-border flex-col">
         {/* Company Os */}
-        <div className="group w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 pt-7 ustify-between">
+        <a
+          href="https://github.com/ErenElagz/company-os"
+          className="group w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 pt-7 ustify-between"
+        >
           <div>
             <Icon width="48" height="48" icon="mingcute:building-4-fill" />
             <div>
@@ -25,16 +29,17 @@ export default function Spotlight() {
                 Managment Tool for Companies
               </p>
             </div>
-            <a href="https://github.com/ErenElagz/company-os">
-              <p className="opacity-0 text-base font-semibold font-lexend mt-2 underline translate-y-5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
-                Visit
-              </p>
-            </a>
+            <p className="opacity-0 text-base font-semibold font-lexend mt-2 underline translate-y-5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+              Visit
+            </p>
           </div>
-        </div>
+        </a>
 
         {/* All in Dev */}
-        <div className="group w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 pt-7 justify-between">
+        <a
+          href="https://github.com/ErenElagz/all-in-dev"
+          className="group w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 pt-7 justify-between"
+        >
           <div>
             <Icon width="48" height="48" icon="mingcute:github-fill" />
 
@@ -46,13 +51,11 @@ export default function Spotlight() {
                 3200 Sources for Developers
               </p>
             </div>
-            <a href="https://github.com/ErenElagz/all-in-dev">
-              <p className="opacity-0 text-base font-semibold font-lexend mt-2 underline translate-y-5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
-                Visit
-              </p>
-            </a>
+            <p className="opacity-0 text-base font-semibold font-lexend mt-2 underline translate-y-5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+              Visit
+            </p>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );

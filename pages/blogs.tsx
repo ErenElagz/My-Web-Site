@@ -6,6 +6,7 @@ import { blogs } from "@/data/blogs";
 import BlogCard from "@/components/Card/BlogCard";
 import GradientOverlayTop from "@/components/GradientOverlay/GradientOverlayTop";
 import GradientOverlayBottom from "@/components/GradientOverlay/GradientOverlayBottom";
+
 export default function Blogs() {
   return (
     <div className="max-w-[660px] px-4 lg:w-4/12 flex flex-col mx-auto  m-3 md:mt-6">

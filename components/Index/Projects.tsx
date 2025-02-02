@@ -1,6 +1,5 @@
 import React from "react";
-import { Icon } from "@iconify/react";
-import Link from "next/link";
+import { Icon } from "@iconify/react"  
 
 export default function Projects() {
   return (
@@ -15,7 +14,10 @@ export default function Projects() {
       </div>
       <div className="flex flex-col gap-4 ">
         {/* HitBis */}
-        <div className="group w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 justify-between">
+        <a
+          className="group w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 justify-between"
+          href="https://github.com/ErenElagz/HitBis"
+        >
           <div>
             <div className="flex justify-between mb-4 items-start">
               <Icon width="48" height="48" icon="mingcute:charging-pile-fill" />
@@ -35,17 +37,18 @@ export default function Projects() {
               <p className="text-base opacity-50 tracking-tight my-1 font-lexend">
                 IoT Based Bicycle Renting App and Ride Assistant.
               </p>
-              <a href="https://github.com/ErenElagz/HitBis">
-                <p className="opacity-0 text-base font-semibold font-lexend mt-2 underline translate-y-5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
-                  Visit
-                </p>
-              </a>
+              <p className="opacity-0 text-base font-semibold font-lexend mt-2 underline translate-y-5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                Visit
+              </p>
             </div>
           </div>
-        </div>
+        </a>
 
         {/* Belen */}
-        <div className="group w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 justify-between">
+        <a
+          className="group w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 justify-between"
+          href="https://www.linkedin.com/posts/erenelagz_ar-and-vr-supported-tourism-app-with-ai-based-activity-7013940198650008576-4Q8_"
+        >
           <div>
             <div className="flex justify-between mb-4 items-start">
               <Icon width="48" height="48" icon="mingcute:celebrate-fill" />
@@ -65,14 +68,12 @@ export default function Projects() {
               <p className="text-base opacity-50 tracking-tight my-1 font-lexend">
                 AR and VR Supported Tourism App with AI Based Assistant.
               </p>
-              <a href="https://www.linkedin.com/posts/erenelagz_teknofest2024-activity-7239628875142443008-1V5Q?utm_source=share&utm_medium=member_desktop">
-                <p className="opacity-0 text-base font-semibold font-lexend mt-2 underline translate-y-5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
-                  See Post on LinkedIn
-                </p>
-              </a>
+              <p className="opacity-0 text-base font-semibold font-lexend mt-2 underline translate-y-5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                See Post on LinkedIn
+              </p>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );

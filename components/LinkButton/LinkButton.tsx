@@ -8,7 +8,7 @@ interface LinkButtonProps {
   icon: string;
 }
 
-function LinkButton(props: LinkButtonProps) {
+export default function LinkButton(props: LinkButtonProps) {
   return (
     <Link
       href={props.url}
@@ -19,4 +19,3 @@ function LinkButton(props: LinkButtonProps) {
   );
 }
 
-export default LinkButton;

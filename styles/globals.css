@@ -56,12 +56,6 @@ body::-webkit-scrollbar {
   border: 1px solid var(--navBarBorder);
 }
 
-.navbarText {
-  color: var(--foreground);
-  font-weight: 400;
-  opacity: 0.4;
-}
-
 .navbarText:hover {
   opacity: 1;
   transition: all 0.25s ease;

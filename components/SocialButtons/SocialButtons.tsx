@@ -8,7 +8,7 @@ interface SocialButtonsProps {
   icon: string;
 }
 
-function SocialButtons(props: SocialButtonsProps) {
+export default function SocialButtons(props: SocialButtonsProps) {
   return (
     <Link href={props.url} target="_blank">
       <div className="flex bg-[--buttonBackground] opacity-50 hover:opacity-100 transition:opacity duration-300 border-1 rounded-lg p-2 border border-[--buttonBorder] gap-2 items-center justify-center">
@@ -18,5 +18,3 @@ function SocialButtons(props: SocialButtonsProps) {
     </Link>
   );
 }
-
-export default SocialButtons;

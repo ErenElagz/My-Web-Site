@@ -28,6 +28,15 @@ export default function TopContainer() {
           </Link>
           : Bicycle Sharing App and Ride Assistant Service. See you soon.
         </p>
+        <p className="text-base text-gray-500  mt-4">
+          You can contact me via email:
+          <Link
+            href="mailto:erenelagoz@gmail.com"
+            className="font-medium text-blue-200 hover:underline"
+          >
+            &nbsp;erenelagoz@gmail.com
+          </Link>
+        </p>
       </div>
 
       <div className="flex flex-row gap-3 mt-6 flex-wrap">
