@@ -1,5 +1,5 @@
 import React from "react";
-import SocialButtons from "../components/SocialButtons/SocialButtons";
+import SocialButtons from "../../components/SocialButtons/SocialButtons";
 import { blogs } from "@/data/blogs";
 import BlogCard from "@/components/Card/BlogCard";
 

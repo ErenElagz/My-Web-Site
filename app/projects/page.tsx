@@ -1,5 +1,5 @@
 import React from "react";
-import SocialButtons from "../components/SocialButtons/SocialButtons";
+import SocialButtons from "../../components/SocialButtons/SocialButtons";
 import { projects } from "@/data/projects";
 import ProjectCard from "@/components/Card/ProjectCard";
 import { aiProjects } from "@/data/ai-projects";
