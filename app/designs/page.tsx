@@ -2,6 +2,12 @@ import React from "react";
 import SocialButtons from "../../components/SocialButtons/SocialButtons";
 import { designs } from "@/data/designs";
 import DesignCard from "@/components/Card/DesignCard";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ErenElagz | Design Portfolio",
+  description: "ErenElagz Personal Web Site.",
+};
 
 export default function Designes() {
   return (

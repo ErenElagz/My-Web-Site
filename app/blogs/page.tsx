@@ -2,6 +2,12 @@ import React from "react";
 import SocialButtons from "../../components/SocialButtons/SocialButtons";
 import { blogs } from "@/data/blogs";
 import BlogCard from "@/components/Card/BlogCard";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ErenElagz | Blogs",
+  description: "ErenElagz Personal Web Site.",
+};
 
 export default function Blogs() {
   return (

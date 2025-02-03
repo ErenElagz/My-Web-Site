@@ -6,6 +6,12 @@ import { aiProjects } from "@/data/ai-projects";
 import { iotProjects } from "@/data/iot-projects";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ErenElagz | Projects",
+  description: "ErenElagz Personal Web Site.",
+};
 
 export default function Projects() {
   return (
