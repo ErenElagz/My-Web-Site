@@ -1,10 +1,6 @@
 import React from "react";
-import NavBar from "../components/NavBar/NavBar";
 import SocialButtons from "../components/SocialButtons/SocialButtons";
-import Footer from "@/components/Footer/Footer";
 import { projects } from "@/data/projects";
-import GradientOverlayTop from "@/components/GradientOverlay/GradientOverlayTop";
-import GradientOverlayBottom from "@/components/GradientOverlay/GradientOverlayBottom";
 import ProjectCard from "@/components/Card/ProjectCard";
 import { aiProjects } from "@/data/ai-projects";
 import { iotProjects } from "@/data/iot-projects";
@@ -13,13 +9,7 @@ import { Icon } from "@iconify/react";
 
 export default function Projects() {
   return (
-    <div className="max-w-[660px]  px-4 lg:w-4/12 flex flex-col mx-auto  m-3 md:mt-6">
-      {/* Gradient Overlay */}
-      <GradientOverlayTop />
-
-      {/* Navigation */}
-      <NavBar />
-
+    <>
       {/* Header */}
       <div>
         <h1 className="text-4xl font-semibold tracking-tight mt-5 md:mt-16 font-lexend">
@@ -116,12 +106,6 @@ export default function Projects() {
           ))}
         </div>
       </div>
-
-      {/* Footer */}
-      <Footer />
-
-      {/* Gradient Overlay */}
-      <GradientOverlayBottom />
-    </div>
+    </>
   );
 }

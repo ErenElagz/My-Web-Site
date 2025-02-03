@@ -1,20 +1,11 @@
 import React from "react";
-import NavBar from "../components/NavBar/NavBar";
 import SocialButtons from "../components/SocialButtons/SocialButtons";
-import Footer from "@/components/Footer/Footer";
 import { designs } from "@/data/designs";
-import GradientOverlayTop from "@/components/GradientOverlay/GradientOverlayTop";
-import GradientOverlayBottom from "@/components/GradientOverlay/GradientOverlayBottom";
 import DesignCard from "@/components/Card/DesignCard";
 
 export default function Designes() {
   return (
-    <div className="max-w-[660px] px-4 lg:w-4/12 flex flex-col mx-auto m-3 md:mt-6">
-      {/* Gradient Overlay */}
-      <GradientOverlayTop />
-
-      {/* Navigation */}
-      <NavBar />
+    <>
 
       {/* Header */}
       <div>
@@ -61,12 +52,6 @@ export default function Designes() {
           />
         ))}
       </div>
-
-      {/* Footer */}
-      <Footer />
-
-      {/* Gradient Overlay */}
-      <GradientOverlayBottom />
-    </div>
+    </>
   );
 }
