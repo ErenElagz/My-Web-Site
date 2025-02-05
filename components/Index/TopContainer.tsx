@@ -32,7 +32,7 @@ export default function TopContainer() {
           You can contact me via email:
           <Link
             href="mailto:erenelagoz@gmail.com"
-            className="font-medium text-blue-200 hover:underline"
+            className="font-medium text-blue-400 hover:underline"
           >
             &nbsp;erenelagoz@gmail.com
           </Link>
