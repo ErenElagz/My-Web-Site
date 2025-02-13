@@ -1,5 +1,18 @@
 export const blogs = [
   {
+    id: 4,
+    title: "The Future of Cross-Platform Mobile Development: Trends and Technologies to Watch",
+    date: "2025-02-13",
+    mediumUrl:
+      "https://erenelagz.medium.com/the-future-of-cross-platform-mobile-development-trends-and-technologies-to-watch-389d4caf203f",
+    devtoUrl:
+      "https://dev.to/erenelagz/the-future-of-cross-platform-mobile-development-trends-and-technologies-to-watch-feg",
+    image:
+      "https://miro.medium.com/v2/resize:fit:720/format:webp/1*0M4NTjXngkYRHEwhpQdUUQ.png",
+    description:
+      "Here are the top trends and technologies that will shape the future of cross-platform mobile development.",
+  },
+  {
     id: 1,
     title: "10 Essential Tips for Optimizing Performance in React Native Apps",
     date: "2025-02-09",
