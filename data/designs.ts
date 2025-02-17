@@ -29,9 +29,9 @@ export const designs = [
     description: "A mobile app design for reviewing and exploring cities.",
     figmaUrl: "https://www.figma.com/",
     behanceUrl:
-      "https://www.behance.net/gallery/217840785/City-Infomation-and-Reviewing-Mobile-App-Design",
+      "https://www.behance.net/gallery/217840785/City-Infomation-and-Reviewing-Mobile-App-Design/",
     dribbbleUrl:
-      "https://dribbble.com/shots/25537268-City-Information-anf-Reviewing-Mobile-App-UI-Screen-Design",
+      "https://dribbble.com/shots/25537268-City-Information-anf-Reviewing-Mobile-App-UI-Screen-Design/",
     image:
       "https://cdn.dribbble.com/userupload/19362526/file/original-6b36daa41c8f895211ff3d364d43b247.png?crop=30x23-773x579",
   },
@@ -41,9 +41,9 @@ export const designs = [
     description: "A mobile app design for sharing and donating food.",
     figmaUrl: "https://www.figma.com/",
     behanceUrl:
-      "https://www.behance.net/gallery/217841445/EcoEats-Sharing-and-Donating-Mobile-App-Concept-Design",
+      "https://www.behance.net/gallery/217841445/EcoEats-Sharing-and-Donating-Mobile-App-Concept-Design/",
     dribbbleUrl:
-      "https://dribbble.com/shots/25539054-EcoEats-Food-Sharing-and-Donation-Mobile-App-Concept-Design",
+      "https://dribbble.com/shots/25539054-EcoEats-Food-Sharing-and-Donation-Mobile-App-Concept-Design/",
     image:
       "https://cdn.dribbble.com/userupload/19399784/file/original-7b033689abd0c636993dcd79bc20c60c.png?resize=1024x722&vertical=center",
   },
@@ -53,10 +53,10 @@ export const designs = [
     description: "A mobile app design for AI-based tourism assistant.",
     figmaUrl: "https://www.figma.com/",
     behanceUrl:
-      "https://www.behance.net/gallery/218547521/Tourism-Asisstant-ChatBot-Voice-and-Visual-Assistant",
+      "https://www.behance.net/gallery/218547521/Tourism-Asisstant-ChatBot-Voice-and-Visual-Assistant/",
     dribbbleUrl:
-      "https://dribbble.com/shots/25583837-Tourism-Asisstant-ChatBot-Voice-and-Visual-Assistant",
+      "https://dribbble.com/shots/25583837-Tourism-Asisstant-ChatBot-Voice-and-Visual-Assistant/",
     image:
-      "https://cdn.dribbble.com/userupload/21031321/file/original-3e3031e8bab4ec16b4ea13d8e23f93af.png?crop=0x0-843x632",
+      "https://cdn.dribbble.com/userupload/21031321/file/original-3e3031e8bab4ec16b4ea13d8e23f93af.png?crop=0x0-843x632/",
   }
 ];

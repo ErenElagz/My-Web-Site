@@ -1,7 +1,8 @@
 export const blogs = [
   {
     id: 4,
-    title: "The Future of Cross-Platform Mobile Development: Trends and Technologies to Watch",
+    title:
+      "The Future of Cross-Platform Mobile Development: Trends and Technologies to Watch",
     date: "2025-02-13",
     mediumUrl:
       "https://erenelagz.medium.com/the-future-of-cross-platform-mobile-development-trends-and-technologies-to-watch-389d4caf203f",
@@ -11,6 +12,20 @@ export const blogs = [
       "https://miro.medium.com/v2/resize:fit:720/format:webp/1*0M4NTjXngkYRHEwhpQdUUQ.png",
     description:
       "Here are the top trends and technologies that will shape the future of cross-platform mobile development.",
+  },
+  {
+    id: 5,
+    title:
+      "Must-Know React Native Libraries for Faster Mobile App Development in 2025 🚀",
+    date: "2025-02-17",
+    mediumUrl:
+      "https://erenelagz.medium.com/must-know-react-native-libraries-for-faster-mobile-app-development-in-2025-5b21a2e28a25",
+    devtoUrl:
+      "https://dev.to/erenelagz/must-know-react-native-libraries-for-faster-mobile-app-development-in-2025-1h70",
+    image:
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fqnhhfj5jyacikafuz2e2.jpeg",
+    description:
+      "Here are the top React Native libraries that will help you build mobile apps faster in 2025.",
   },
   {
     id: 1,
