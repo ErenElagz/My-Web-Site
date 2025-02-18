@@ -59,8 +59,8 @@ export default function Projects() {
       </div>
 
       {/* IoT Projects */}
-      <div className="w-full border-4 rounded-3xl border-[--navBarBorder] px-6 py-8 mt-8 flex flex-col gap-6">
-        <h1 className="text-2xl font-semibold tracking-tight font-lexend">
+      <div className="w-full border-2 rounded-3xl border-[--navBarBorder] px-6 py-8 mt-8 flex flex-col gap-6">
+        <h1 className="text-xl font-semibold tracking-tight font-lexend">
           Internet of Things Projects & Embedded Systems
         </h1>
         {iotProjects.map((project) => (
@@ -78,24 +78,22 @@ export default function Projects() {
       </div>
 
       {/* AI Projects */}
-      <div className="w-full flex flex-col gap-4">
-        <div className="w-full border-4 rounded-3xl border-[--navBarBorder] px-6 py-8 mt-8 flex flex-col gap-6">
-          <h1 className="text-2xl font-semibold tracking-tight  font-lexend">
-            Machine Learning and Deep Learning Projects
-          </h1>
-          {aiProjects.map((project) => (
-            <ProjectCard2
-              key={project.id}
-              id={project.id}
-              title={project.title}
-              description={project.description}
-              githubUrl={project.githubUrl}
-              stars={project.stars}
-              forks={project.forks}
-              icon={project.icon}
-            />
-          ))}
-        </div>
+      <div className="w-full border-2 rounded-3xl border-[--navBarBorder] px-6 py-8 mt-8 flex flex-col gap-6">
+        <h1 className="text-xl font-semibold tracking-tight font-lexend">
+          Machine Learning & AI Projects
+        </h1>
+        {aiProjects.map((project) => (
+          <ProjectCard2
+            key={project.id}
+            id={project.id}
+            title={project.title}
+            description={project.description}
+            githubUrl={project.githubUrl}
+            stars={project.stars}
+            forks={project.forks}
+            icon={project.icon}
+          />
+        ))}
       </div>
     </>
   );
