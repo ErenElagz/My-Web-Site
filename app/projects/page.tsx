@@ -2,6 +2,7 @@ import React from "react";
 import SocialButtons from "../../components/SocialButtons/SocialButtons";
 import { projects } from "@/data/projects";
 import ProjectCard from "@/components/Card/ProjectCard";
+import ProjectCard2 from "@/components/Card/ProjectCard2";
 import { aiProjects } from "@/data/ai-projects";
 import { iotProjects } from "@/data/iot-projects";
 import Link from "next/link";
@@ -63,24 +64,16 @@ export default function Projects() {
           Internet of Things Projects & Embedded Systems
         </h1>
         {iotProjects.map((project) => (
-          <Link
-            href={project.githubUrl || "#"}
-            passHref
+          <ProjectCard2
             key={project.id}
-            className="hover:underline"
-          >
-            <div className="w-full rounded-xl border-l-4 border-[--navBarBorder] bg-[#ffffff10] flex flex-row  justify-between">
-              <div className="flex flex-col gap-2 w-full p-4 md:p-5 md:py-4  ">
-                <Icon icon={project.icon} width="24" height="24" />
-                <p className="text-base font-semibold mt-2 tracking-tight font-geist">
-                  {project.title}
-                </p>
-                <p className="text-sm text-gray-400 font-lexend">
-                  {project.description}
-                </p>
-              </div>
-            </div>
-          </Link>
+            id={project.id}
+            title={project.title}
+            description={project.description}
+            githubUrl={project.githubUrl}
+            stars={project.stars}
+            forks={project.forks}
+            icon={project.icon}
+          />
         ))}
       </div>
 
@@ -91,24 +84,16 @@ export default function Projects() {
             Machine Learning and Deep Learning Projects
           </h1>
           {aiProjects.map((project) => (
-            <Link
-              href={project.githubUrl || "#"}
-              passHref
+            <ProjectCard2
               key={project.id}
-              className="hover:underline"
-            >
-              <div className="w-full rounded-2xl border-l-4 border-[--navBarBorder] bg-[#ffffff10] flex flex-row  justify-between">
-                <div className="flex flex-col gap-2 w-full p-4 md:p-5 md:py-4  ">
-                  <Icon icon={project.icon} width="24" height="24" />
-                  <p className="text-base font-semibold mt-2 tracking-tight font-geist">
-                    {project.title}
-                  </p>
-                  <p className="text-sm text-gray-400 font-lexend">
-                    {project.description}
-                  </p>
-                </div>
-              </div>
-            </Link>
+              id={project.id}
+              title={project.title}
+              description={project.description}
+              githubUrl={project.githubUrl}
+              stars={project.stars}
+              forks={project.forks}
+              icon={project.icon}
+            />
           ))}
         </div>
       </div>
