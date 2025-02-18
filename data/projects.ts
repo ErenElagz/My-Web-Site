@@ -5,7 +5,7 @@ export const projects = [
     description: "Beginner Level ChatBot in React Native using Gemini API",
     githubUrl:
       "https://github.com/ErenElagz/Beginner-Chat-Bot-in-React-Native-Gemini",
-    stars: 5,
+    stars: 6,
     forks: 1,
     icon: "tabler:message-chatbot-filled",
   },

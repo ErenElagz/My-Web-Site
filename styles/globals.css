@@ -62,7 +62,6 @@ body::-webkit-scrollbar {
 }
 
 /* Footer Style */
-
 .footer {
   color: var(--foreground);
   display: flex;
