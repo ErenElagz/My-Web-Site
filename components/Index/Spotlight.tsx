@@ -16,7 +16,7 @@ export default function Spotlight() {
       <div className="flex md:flex-row gap-4 box-border flex-col">
         {/* Company Os */}
         <a
-          href="https://erenelagoz.gumroad.com/l/company-os"
+          href="https://www.notion.com/templates/company-os-managment-tool"
           className="group w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 pt-7 ustify-between"
         >
           <div>

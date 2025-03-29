@@ -58,5 +58,17 @@ export const designs = [
       "https://dribbble.com/shots/25583837-Tourism-Asisstant-ChatBot-Voice-and-Visual-Assistant/",
     image:
       "https://cdn.dribbble.com/userupload/21031321/file/original-3e3031e8bab4ec16b4ea13d8e23f93af.png?crop=0x0-843x632/",
-  }
+  },
+  {
+    id: 6,
+    title: "Podcast Section for the Minimalist Web Sites",
+    description: "A podcast section design for minimalist websites.",
+    figmaUrl: "https://www.figma.com/",
+    behanceUrl:
+      "https://www.behance.net/gallery/220205119/Podcast-Section-for-the-Minimalist-New-Web-Sites",
+    dribbbleUrl:
+      "https://cdn.dribbble.com/userupload/36957740/file/original-33c060fbfd227d7866b06769ee0ea3db.png",
+    image:
+      "https://cdn.dribbble.com/userupload/36957740/file/original-33c060fbfd227d7866b06769ee0ea3db.png",
+  },
 ];
