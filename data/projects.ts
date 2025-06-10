@@ -24,7 +24,7 @@ export const projects = [
     description: "AI Chatbot Based Route Creator and Optimizer",
     githubUrl: "https://github.com/ErenElagz/AI-Based-Route-Planner-Optimizer",
     stars: 3,
-    forks: 3,
+    forks: 1,
     icon: "fa6-solid:route",
   },
   {

@@ -33,9 +33,9 @@ export default function Privacy() {
       </div>
 
       {/* Privacy Policy Content */}
-      <div className="w-full mt-8 flex flex-col gap-6">
+      <div className="w-full mt-2 flex flex-col gap-6">
         <div className="prose prose-invert max-w-none">
-          <h2 className="text-2xl font-semibold mt-2">Introduction</h2>
+          <h2 className="text-2xl font-semibold mt-6">Introduction</h2>
           <p className="text-base text-gray-500 mt-3">
             Thank you for choosing Leckham, an offline book reading application.
             This Privacy Policy is designed to help you understand how Leckham
@@ -46,10 +46,10 @@ export default function Privacy() {
             Information Collection
           </h2>
           <p className="text-base text-gray-500 mt-3">
-            <strong>Leckham does not collect any personal information.</strong>{" "}
+            <strong>Leckham does not collect any personal information.</strong>
             Our application operates completely offline and does not:
           </p>
-          <ul className="list-disc ml-6 text-base text-gray-500 mt-3">
+          <ul className="list-disc ml-6 mt-2">
             <li>Collect or store personal data</li>
             <li>Track your reading habits or preferences</li>
             <li>Access your contacts, location, or device information</li>
@@ -66,9 +66,9 @@ export default function Privacy() {
 
           <h2 className="text-2xl font-semibold mt-6">Device Permissions</h2>
           <p className="text-base text-gray-500 mt-3">
-            Leckham may request access to your device's storage only for the
-            purpose of accessing and storing books and application data locally.
-            No other permissions are required or requested.
+            Leckham may request access to your device&apos;s storage only for
+            the purpose of accessing and storing books and application data
+            locally. No other permissions are required or requested.
           </p>
 
           <h2 className="text-2xl font-semibold mt-6">Third-Party Services</h2>
@@ -77,7 +77,9 @@ export default function Privacy() {
             tools, or advertising networks that could collect your data.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6">Children's Privacy</h2>
+          <h2 className="text-2xl font-semibold mt-6">
+            Children&apos;s Privacy
+          </h2>
           <p className="text-base text-gray-500 mt-3">
             Our application does not collect information from anyone, including
             children under the age of 13.
@@ -89,7 +91,7 @@ export default function Privacy() {
           <p className="text-base text-gray-500 mt-3">
             We may update our Privacy Policy from time to time. We will notify
             you of any changes by posting the new Privacy Policy on this page
-            and updating the "Last Updated" date.
+            and updating the &quot;Last Updated&quot; date.
           </p>
 
           <h2 className="text-2xl font-semibold mt-6">Contact Us</h2>
@@ -97,8 +99,8 @@ export default function Privacy() {
             If you have any questions about this Privacy Policy, please contact
             us at:
           </p>
-          <p className="mt-6 text-xl font-semibold tracking-tight font-lexend">
-            Email: elagozeren@gmail.com
+          <p className="text-2xl font-semibold mt-6">
+            Email: elagzeren@gmail.com
             <br />
             Developer: ErenElagz
           </p>
@@ -111,19 +113,19 @@ export default function Privacy() {
 
       {/* Terms & Conditions */}
       <div className="w-full border-2 rounded-3xl border-[--navBarBorder] px-6 py-8 mt-10 flex flex-col gap-6">
-        <h1 className="text-xl font-semibold tracking-tight font-lexend">
+        <h1 className="text-2xl font-semibold tracking-tight font-lexend">
           Terms and Conditions
         </h1>
 
-        <div className="prose prose-invert max-w-none">
-          <p>
-            By downloading or using the app, these terms will automatically
-            apply to you – you should make sure therefore that you read them
-            carefully before using the app.
-          </p>
+        <p className="text-base text-gray-500 mt-0">
+          By downloading or using the app, these terms will automatically apply
+          to you – you should make sure therefore that you read them carefully
+          before using the app.
+        </p>
 
+        <div className="prose prose-invert max-w-none">
           <h3 className="text-xl font-semibold mt-4">Application Usage</h3>
-          <p>
+          <p className="text-base text-gray-500 mt-3">
             Leckham is designed to be used as an offline book reading
             application. You are responsible for ensuring that any content you
             read through our application does not infringe on copyright laws in
@@ -131,7 +133,7 @@ export default function Privacy() {
           </p>
 
           <h3 className="text-xl font-semibold mt-4">Intellectual Property</h3>
-          <p>
+          <p className="text-base text-gray-500 mt-3">
             Leckham and its original content, features, and functionality are
             owned by Eren Elagz and are protected by international copyright,
             trademark, patent, trade secret, and other intellectual property or
@@ -139,14 +141,14 @@ export default function Privacy() {
           </p>
 
           <h3 className="text-xl font-semibold mt-4">Liability</h3>
-          <p>
-            Leckham is provided "as is" without any warranties, expressed or
-            implied. We do not guarantee that the app will always function
-            without disruptions, delays, or imperfections.
+          <p className="text-base text-gray-500 mt-3">
+            Leckham is provided &quot;as is&quot; without any warranties,
+            expressed or implied. We do not guarantee that the app will always
+            function without disruptions, delays, or imperfections.
           </p>
 
           <h3 className="text-xl font-semibold mt-4">Changes to These Terms</h3>
-          <p>
+          <p className="text-base text-gray-500 mt-3">
             We may update our Terms and Conditions from time to time. We will
             notify you of any changes by posting the new Terms and Conditions on
             this page.
