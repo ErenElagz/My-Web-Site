@@ -1,5 +1,28 @@
 export const designs = [
   {
+    id: 0,
+    title: "Manga Reading Mobile App Design",
+    description: "A sleek and modern mobile app design for manga reading.",
+    figmaUrl: "https://www.figma.com",
+    behanceUrl:
+      "https://www.behance.net/gallery/224304239/Anime-Manga-Tracking-App",
+    dribbbleUrl: "https://dribbble.com/shots/25937387-Anime-Manga-Tracker-App",
+    image:
+      "https://cdn.dribbble.com/userupload/43035774/file/original-a29146f044cbdbff7bde6dd9ae3bcfe1.png?crop=0x0-1685x1264",
+  },
+  {
+    id: 7,
+    title: "Bike Sharing and Renting Mobile App Design",
+    description: "A modern mobile app design for bike sharing and renting.",
+    figmaUrl: "https://www.figma.com",
+    behanceUrl:
+      "https://www.behance.net/gallery/222557443/Bike-Sharing-and-Renting-App-Mobile-App-Design",
+    dribbbleUrl:
+      "https://dribbble.com/shots/25839647-Bike-Sharing-and-Renting-App-Screens",
+    image:
+      "https://cdn.dribbble.com/userupload/42714031/file/original-63b47bf031f02b5b6f435170cc75c840.png?crop=0x0-843x632",
+  },
+  {
     id: 1,
     title: "Tourism App Preferences Screens Design",
     description: "A clean and minimal dashboard UI for SaaS platforms.",

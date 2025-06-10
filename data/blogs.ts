@@ -1,5 +1,18 @@
 export const blogs = [
   {
+    id: 6,
+    title:
+      "React Native Reanimated 3: The Ultimate Guide to High-Performance Animations in 2025 🚀",
+    date: "2025-06-07",
+    mediumUrl: "https://medium.com/p/d2d2579e5bf5",
+    devtoUrl:
+      "https://dev.to/erenelagz/react-native-reanimated-3-the-ultimate-guide-to-high-performance-animations-in-2025-4ae4",
+    image:
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ft79b6o18fa9rxwqwh0sf.png",
+    description:
+      "Explore the new features and improvements in React Native Reanimated 3, the go-to library for high-performance animations in React Native apps.",
+  },
+  {
     id: 4,
     title:
       "The Future of Cross-Platform Mobile Development: Trends and Technologies to Watch",
