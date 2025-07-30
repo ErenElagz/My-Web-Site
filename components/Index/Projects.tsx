@@ -3,13 +3,13 @@ import { Icon } from "@iconify/react"
 
 export default function Projects() {
   return (
-    <div className="w-full mt-20 flex flex-col gap-6">
+    <div className="w-full mt-12 flex flex-col gap-6">
       <div>
         <h2 className="text-3xl font-lexend font-medium tracking-tight">
           Projects
         </h2>
         <p className="text-[18px] opacity-50 mt-2">
-          Latest Projects builded by Me and My Team
+          Latest Projects built by Me and My Team
         </p>
       </div>
       <div className="flex flex-col gap-4 ">

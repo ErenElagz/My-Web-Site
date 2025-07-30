@@ -19,7 +19,7 @@ export default function Privacy() {
         <div className="flex flex-row gap-3 mt-6 flex-wrap">
           <SocialButtons
             title="See on Google Play Store"
-            url="https://github.com/ErenElagz"
+            url="https://play.google.com/store/apps/details?id=com.leckham&hl=en"
             icon="akar-icons:google-fill"
           />
         </div>

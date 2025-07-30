@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 
 export default function Spotlight() {
   return (
-    <div className="w-full mt-20 flex flex-col gap-6">
+    <div className="w-full mt-12 flex flex-col gap-6">
       <div>
         <h2 className="text-3xl font-lexend font-medium tracking-tight">
           Spotlight
