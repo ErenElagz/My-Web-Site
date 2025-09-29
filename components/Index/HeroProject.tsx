@@ -13,7 +13,7 @@ export default function HeroProject() {
       <div className="flex md:flex-row gap-4 box-border flex-col">
         {/* CoreFounders */}
         <a
-          href="https://erenelagz.com/Corefound"
+          href="/corefound/"
           className="group w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 pt-7 ustify-between"
         >
           <div>
