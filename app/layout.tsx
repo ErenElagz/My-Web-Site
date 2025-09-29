@@ -39,7 +39,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="max-w-[660px] px-4 lg:w-4/12 flex flex-col mx-auto  m-3 md:mt-6">
+      <body className="max-w-[1200px] px-4 lg:w-5/12 flex flex-col mx-auto  m-3 md:mt-6">
         <GradientOverlayTop />
         <NavBar />
         <main className="flex-grow">{children}</main>

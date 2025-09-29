@@ -21,10 +21,10 @@ export default function TopContainer() {
         <p className="text-base text-gray-500 mt-4">
           In these days I am working on
           <Link
-            href="https://github.com/ErenElagz/HitBis"
+            href="/corefound/"
             className="font-semibold text-blue-400 hover:underline"
           >
-            &nbsp;@HitBis
+            &nbsp;@CoreFounders
           </Link>
           : Bicycle Sharing App and Ride Assistant Service. See you soon.
         </p>

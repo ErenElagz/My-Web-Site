@@ -55,7 +55,9 @@ export default function NavBar() {
         {/* Right Button */}
         <Button
           title="Say Hi!👋"
-          url={"mailto:erenelagoz@gmail.com"}
+          url={
+            "https://mail.google.com/mail/?view=cm&to=erenelagoz@gmail.com&su=SUBJECT&body=BODY"
+          }
           className="hidden md:block"
         />
       </div>
