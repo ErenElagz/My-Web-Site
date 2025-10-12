@@ -26,7 +26,9 @@ export default function CorefoundersSection() {
         <h1 className="text-4xl font-semibold tracking-tight mt-5 md:mt-12 font-lexend">
           Privacy Policy
         </h1>
-        <p className="text-base text-gray-500 mt-3">Last Updated: 21-12-2025</p>
+        <p className="text-base text-gray-500 mt-3">
+          Last Updated: October 12, 2025
+        </p>
       </div>
 
       {/* Privacy Policy Content */}
@@ -36,15 +38,30 @@ export default function CorefoundersSection() {
             1. Information We Collect
           </h2>
           <p className="text-base text-gray-500 mt-3">
-            We collect the following information from users:
+            To provide and improve our service, we collect the following
+            information:
           </p>
-          <ul className="list-disc ml-6 mt-2">
+          <ul className="list-disc ml-6 mt-2 text-gray-400">
             <li>
-              <strong>Name:</strong> used to personalize your account.
+              <strong>Personal Information:</strong> Your Name and E-mail
+              Address, used for account creation, management, and login.
             </li>
             <li>
-              <strong>E-mail Address:</strong> used to create and manage your
-              account, and for login purposes.
+              <strong>User Profile Information:</strong> Optional information
+              you choose to provide, such as a profile picture, bio, location,
+              and skill tags. This data is used to help other users connect with
+              you.
+            </li>
+            <li>
+              <strong>User-Generated Content:</strong> The projects you post
+              (including titles, descriptions, and tags), applications you send,
+              and any other content you create within the app. This is essential
+              for the app&apos;s core functionality.
+            </li>
+            <li>
+              <strong>Usage Data:</strong> Anonymous data about your
+              interactions with the app, collected via services like Google
+              Analytics, to help us identify issues and improve user experience.
             </li>
           </ul>
 
@@ -54,7 +71,7 @@ export default function CorefoundersSection() {
           <p className="text-base text-gray-500 mt-3">
             Your information is used for the following purposes:
           </p>
-          <ul className="list-disc ml-6 mt-2">
+          <ul className="list-disc ml-6 mt-2 text-gray-400">
             <li>To create and manage user accounts.</li>
             <li>To provide login and authentication services.</li>
             <li>
@@ -69,7 +86,7 @@ export default function CorefoundersSection() {
           <p className="text-base text-gray-500 mt-3">
             CoreFound uses trusted third-party services to operate effectively:
           </p>
-          <ul className="list-disc ml-6 mt-2">
+          <ul className="list-disc ml-6 mt-2 text-gray-400">
             <li>Firebase (Authentication, Database, Push Notifications)</li>
             <li>
               Google Analytics & Crashlytics (Analytics and App Performance
@@ -89,7 +106,7 @@ export default function CorefoundersSection() {
             and the European General Data Protection Regulation (GDPR), users
             have the right to:
           </p>
-          <ul className="list-disc ml-6 mt-2">
+          <ul className="list-disc ml-6 mt-2 text-gray-400">
             <li>Request access to their stored personal data.</li>
             <li>Request correction or deletion of their personal data.</li>
             <li>Withdraw consent for data processing at any time.</li>
@@ -98,29 +115,31 @@ export default function CorefoundersSection() {
             </li>
           </ul>
           <p className="text-base text-gray-500 mt-3">
-            All collected data (name, email, and shared information) is stored
-            securely and is not used beyond the purposes stated in this Privacy
-            Policy. Your data is not sold or transferred to third parties.
+            All collected data is stored securely and is not used beyond the
+            purposes stated in this Privacy Policy. Your data is not sold or
+            transferred to third parties for marketing purposes.
           </p>
 
           <h2 className="text-2xl font-semibold mt-6">5. Data Sharing</h2>
           <p className="text-base text-gray-500 mt-3">
             We do not share your personal information with anyone except the
-            third-party services listed above.
+            third-party services listed above required for app functionality.
           </p>
           <p className="text-base text-gray-500 mt-3">
             <strong>
-              When a user applies for a job and their application is accepted,
-              the contact information from their profile is shown to the job
-              poster. This information is shared solely for collaboration
-              purposes and is prohibited from being shared with third parties.
+              When a user applies for a project and their application is
+              accepted, the necessary profile information is shown to the
+              project owner for the sole purpose of enabling collaboration.
             </strong>
           </p>
 
           <h2 className="text-2xl font-semibold mt-6">6. Data Retention</h2>
           <p className="text-base text-gray-500 mt-3">
-            We retain your data <strong>(name and email address)</strong> until
-            you delete your account.
+            We retain your personal data for as long as your account remains
+            active. This includes all data listed in Section 1, such as your
+            profile information and user-generated content. Once you delete your
+            account, this data will be removed according to our data deletion
+            process.
           </p>
 
           <h2 className="text-2xl font-semibold mt-6">7. Data Deletion</h2>
@@ -128,7 +147,7 @@ export default function CorefoundersSection() {
             You may request deletion of your account and associated data at any
             time by:
           </p>
-          <ul className="list-disc ml-6 mt-2">
+          <ul className="list-disc ml-6 mt-2 text-gray-400">
             <li>
               Sending an email to <strong>elagzeren@gmail.com</strong>
             </li>
@@ -139,8 +158,12 @@ export default function CorefoundersSection() {
             8. Children&apos;s Privacy
           </h2>
           <p className="text-base text-gray-500 mt-3">
-            CoreFound is available for all ages. We do not knowingly collect
-            personal information from children without parental consent.
+            Our service is not intended for use by anyone under the age of 13
+            (&quot;Children&quot;). We do not knowingly collect personally identifiable
+            information from children under 13. If you are a parent or guardian
+            and you become aware that your child has provided us with Personal
+            Data, please contact us so we can take steps to remove that
+            information from our servers.
           </p>
 
           <h2 className="text-2xl font-semibold mt-6">9. Consent</h2>
@@ -152,11 +175,13 @@ export default function CorefoundersSection() {
 
           <h2 className="text-2xl font-semibold mt-6">10. Contact Us</h2>
           <p className="text-base text-gray-500 mt-3">
-            For questions about these Privacy Policy, please contact us at:
+            For questions about this Privacy Policy, please contact us at:
           </p>
-          <p className="text-2xl font-semibold mt-6">📧 elagzeren@gmail.com</p>
+          <p className="text-2xl font-semibold mt-3">📧 elagzeren@gmail.com</p>
 
-          <p className="mt-6 text-sm text-gray-500">Last Updated: 21-12-2025</p>
+          <p className="mt-6 text-sm text-gray-500">
+            Last Updated: October 12, 2025
+          </p>
         </div>
       </div>
 
@@ -166,7 +191,9 @@ export default function CorefoundersSection() {
           Terms of Services
         </h1>
 
-        <p className="text-base text-gray-500 mt-0">Last Updated: 21-12-2025</p>
+        <p className="text-base text-gray-500 mt-0">
+          Last Updated: October 12, 2025
+        </p>
 
         <div className="prose prose-invert max-w-none">
           <h3 className="text-xl font-semibold mt-4">1. Acceptance of Terms</h3>
@@ -178,27 +205,27 @@ export default function CorefoundersSection() {
 
           <h3 className="text-xl font-semibold mt-4">2. Eligibility</h3>
           <p className="text-base text-gray-500 mt-3">
-            CoreFound is available for all users regardless of age. However, by
-            creating an account, you represent that you have the legal capacity
-            to enter into these Terms.
+            You must be at least 13 years old to use CoreFound. By creating an
+            account, you represent and warrant that you are at least 13 years of
+            age and have the legal capacity to enter into these Terms.
           </p>
 
           <h3 className="text-xl font-semibold mt-4">3. User Accounts</h3>
           <p className="text-base text-gray-500 mt-3">
-            You must provide accurate and complete information (name and email
-            address) when creating an account.
+            You must provide accurate and complete information when creating an
+            account.
           </p>
           <p className="text-base text-gray-500 mt-3">
             You are responsible for maintaining the confidentiality of your
-            login information. You are responsible for all activity that occurs
-            under your account.
+            login information and for all activity that occurs under your
+            account.
           </p>
 
           <h3 className="text-xl font-semibold mt-4">4. Acceptable Use</h3>
           <p className="text-base text-gray-500 mt-3">
             You agree not to use CoreFound for:
           </p>
-          <ul className="list-disc ml-6 mt-2">
+          <ul className="list-disc ml-6 mt-2 text-gray-400">
             <li>Illegal or unauthorized activities.</li>
             <li>
               Attempting to hack, disrupt, or gain unauthorized access to the
@@ -246,7 +273,9 @@ export default function CorefoundersSection() {
           </p>
           <p className="text-2xl font-semibold mt-3">📧 elagzeren@gmail.com</p>
 
-          <p className="mt-6 text-sm text-gray-500">Last Updated: 21-12-2025</p>
+          <p className="mt-6 text-sm text-gray-500">
+            Last Updated: October 12, 2025
+          </p>
         </div>
       </div>
 
