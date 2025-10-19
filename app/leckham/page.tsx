@@ -46,22 +46,29 @@ export default function Privacy() {
             Information Collection
           </h2>
           <p className="text-base text-gray-500 mt-3">
-            <strong>Leckham does not collect any personal information.</strong>
-            Our application operates completely offline and does not:
+            <strong>
+              Leckham does not collect personal information such as your name,
+              email, or reading content.
+            </strong>
+            However, the app does use <strong>Firebase Analytics</strong> to
+            collect **anonymous usage data** such as:
           </p>
           <ul className="list-disc ml-6 mt-2">
-            <li>Collect or store personal data</li>
-            <li>Track your reading habits or preferences</li>
-            <li>Access your contacts, location, or device information</li>
-            <li>Transmit any data to external servers</li>
-            <li>Use analytics or tracking tools</li>
+            <li>Button clicks (e.g., Add Book, Share App)</li>
+            <li>App open events and session duration</li>
+            <li>Device information like model and OS version</li>
           </ul>
+          <p className="text-base text-gray-500 mt-3">
+            This data is used solely for **improving the app** and understanding
+            how users interact with it. It is **not linked to any personal
+            identity**.
+          </p>
 
           <h2 className="text-2xl font-semibold mt-6">Data Storage</h2>
           <p className="text-base text-gray-500 mt-3">
             All books and reading progress are stored locally on your device.
-            This data remains on your device and is never transmitted to our
-            servers or any third parties.
+            Analytics data is stored by Google on their secure servers in
+            accordance with Firebase policies.
           </p>
 
           <h2 className="text-2xl font-semibold mt-6">Device Permissions</h2>
@@ -73,8 +80,9 @@ export default function Privacy() {
 
           <h2 className="text-2xl font-semibold mt-6">Third-Party Services</h2>
           <p className="text-base text-gray-500 mt-3">
-            Leckham does not integrate with any third-party services, analytics
-            tools, or advertising networks that could collect your data.
+            Leckham integrates only with <strong>Firebase Analytics</strong> for
+            anonymous usage tracking. No advertising networks or other
+            third-party analytics tools are used.
           </p>
 
           <h2 className="text-2xl font-semibold mt-6">
@@ -106,7 +114,7 @@ export default function Privacy() {
           </p>
 
           <p className="mt-6 text-sm text-gray-500">
-            Last Updated: June 10, 2025
+            Last Updated: October 19, 2025
           </p>
         </div>
       </div>
@@ -155,7 +163,7 @@ export default function Privacy() {
           </p>
 
           <p className="mt-6 text-sm text-gray-500">
-            Last Updated: June 10, 2025
+            Last Updated: October 19, 2025
           </p>
         </div>
       </div>

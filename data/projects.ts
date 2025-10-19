@@ -5,7 +5,7 @@ export const projects = [
     description: "Beginner Level ChatBot in React Native using Gemini API",
     githubUrl:
       "https://github.com/ErenElagz/Beginner-Chat-Bot-in-React-Native-Gemini",
-    stars: 8,
+    stars: 9,
     forks: 3,
     icon: "tabler:message-chatbot-filled",
   },
@@ -14,7 +14,7 @@ export const projects = [
     title: "Hospital Appointment System",
     description: "An Appointment Sftware for Hospitals.",
     githubUrl: "https://github.com/ErenElagz/Hospital-Appointment-System",
-    stars: 4,
+    stars: 5,
     forks: 3,
     icon: "solar:hospital-bold",
   },
