@@ -29,11 +29,22 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Farm-Simulator-Game ",
-    description: "a Web Based Farming Simulator Game, Weekly prices, Marketplaces and more...",
+    title: "Farm-Simulator-Game",
+    description:
+      "a Web Based Farming Simulator Game, Weekly prices, Marketplaces and more...",
     githubUrl: "https://github.com/ErenElagz/Farm-Simulator-Game",
     stars: 3,
     forks: 3,
     icon: "fa6-solid:tractor",
+  },
+  {
+    id: 5,
+    title: "Football Manager Game",
+    description:
+      "a Text Based Football Manager Game, Weekly matches, Strategies and more...",
+    githubUrl: "https://github.com/ErenElagz/Football-Manager-Game",
+    stars: 8,
+    forks: 0,
+    icon: "fa6-solid:football",
   },
 ];

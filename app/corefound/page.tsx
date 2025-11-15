@@ -3,23 +3,23 @@ import SocialButtons from "../../components/SocialButtons/SocialButtons";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "CoreFounders | Privacy Policy",
-  description: "Privacy Policy for CoreFounders - Build Together",
+  title: "CoreFound | Privacy Policy",
+  description: "Privacy Policy for CoreFound - Build Together",
 };
 
-export default function CorefoundersSection() {
+export default function CoreFoundSection() {
   return (
     <>
       {/* Header */}
       <div>
         <h1 className="text-4xl font-semibold tracking-tight mt-5 md:mt-16 font-lexend">
-          CoreFounders: Build Together
+          CoreFound: Build Together
         </h1>
         {/* Social Buttons */}
         <div className="flex flex-row gap-3 mt-6 flex-wrap">
           <SocialButtons
             title="See on Google Play Store"
-            url="https://play.google.com/store/apps/details?id=com.corefounders&hl=en"
+            url="https://play.google.com/store/apps/details?id=com.corefound"
             icon="akar-icons:google-fill"
           />
         </div>

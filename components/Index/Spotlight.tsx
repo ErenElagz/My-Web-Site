@@ -17,7 +17,7 @@ export default function Spotlight() {
         {/* Company Os */}
         <a
           href="https://www.notion.com/templates/company-os-managment-tool"
-          className="group w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 pt-7 ustify-between"
+          className="group w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 pt-7 justify-between"
         >
           <div>
             <Icon width="48" height="48" icon="mingcute:building-4-fill" />

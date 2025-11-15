@@ -38,9 +38,9 @@ The **Projects** page lists Eren’s major projects with the following details:
 Users can reach out to Eren using the following channels:
 
 - **Email**: [erenelagoz@gmail.com](mailto:erenelagoz@gmail.com)
-- **GitHub**: [github.com/erenelagoz](https://github.com/erenelagoz)
-- **LinkedIn**: [linkedin.com/in/erenelagoz](https://www.linkedin.com/in/erenelagoz)
-- **Twitter**: [twitter.com/erenelagoz](https://twitter.com/erenelagoz)
+- **GitHub**: [github.com/erenelagz](https://github.com/erenelagz)
+- **LinkedIn**: [linkedin.com/in/erenelagz](https://www.linkedin.com/in/erenelagz)
+- **Twitter**: [twitter.com/erenelagz](https://twitter.com/erenelagz)
 
 ## Technical Details
 The website is built with **Next.js (App Router)** and styled using **Tailwind CSS**. It follows modern web development standards and ensures a responsive design for optimal viewing on different devices.

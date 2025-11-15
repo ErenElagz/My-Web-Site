@@ -28,8 +28,7 @@ export default function HeroProject() {
                 CoreFounder: Build Together
               </p>
               <p className="text-base opacity-50 tracking-tight my-1 font-lexend">
-                Mobile App for Startup Founders and Entrepreneurs to Connect,
-                Collaborate, and Grow Their Ventures Together.
+                Mobile App for Startup Founders to Build Products Together.
               </p>
             </div>
             <p className="opacity-0 text-base font-semibold font-lexend mt-2 underline translate-y-5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
