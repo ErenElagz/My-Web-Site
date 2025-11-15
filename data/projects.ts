@@ -33,7 +33,7 @@ export const projects = [
     description:
       "a Web Based Farming Simulator Game, Weekly prices, Marketplaces and more...",
     githubUrl: "https://github.com/ErenElagz/Farm-Simulator-Game",
-    stars: 3,
+    stars: 4,
     forks: 3,
     icon: "fa6-solid:tractor",
   },
@@ -46,5 +46,16 @@ export const projects = [
     stars: 8,
     forks: 0,
     icon: "fa6-solid:football",
+  },
+  {
+    id: 6,
+    title: "electron-react-tailwind-template",
+    description:
+      "A template project combining Electron, React, and Tailwind CSS for building desktop applications.",
+    githubUrl:
+      "https://github.com/barbarbar338/electron-react-tailwind-template",
+    stars: 2,
+    forks: 0,
+    icon: "fa6-solid:desktop",
   },
 ];
