@@ -24,9 +24,9 @@ export default function TopContainer() {
             href="/corefound/"
             className="font-semibold text-blue-400 hover:underline"
           >
-            &nbsp;@CoreFounders
+            &nbsp;@CoreFound
           </Link>
-          : Bicycle Sharing App and Ride Assistant Service. See you soon.
+          : a mobile app that helps startup founders to build products together.
         </p>
         <p className="text-base text-gray-500  mt-4">
           You can contact me via email:
