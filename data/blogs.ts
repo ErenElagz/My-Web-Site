@@ -1,5 +1,30 @@
 export const blogs = [
   {
+    id: 7,
+    title: "Best Feeling as a Entrepreneur. It is First Sale 🚀",
+    date: "2025-09-04",
+    mediumUrl: "https://medium.com/p/eed618f1590e",
+    devtoUrl:
+      "https://dev.to/erenelagz/best-feeling-as-a-entrepreneur-it-is-first-sale-4me3",
+    image:
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ft79b6o18fa9rxwqwh0sf.png",
+    description:
+      "Explore the new features and improvements in React Native Reanimated 3, the go-to library for high-performance animations in React Native apps.",
+  },
+  {
+    id: 8,
+    title:
+      "My 8 Year Android Development Story as a student. And Finally I made it!",
+    date: "2025-08-24",
+    mediumUrl: "https://medium.com/p/2ce6e7a16a29",
+    devtoUrl:
+      "https://dev.to/erenelagz/my-8-year-android-development-story-as-a-student-and-finally-i-made-it-3g9c",
+    image:
+      "https://bairesdev.mo.cloudinary.net/blog/2024/04/how-to-become-an-android-developer.jpg?tx=w_1920,q_auto",
+    description:
+      "Sharing my journey of 8 years in Android development, the challenges I faced, and how I finally achieved my goals as a student developer.",
+  },
+  {
     id: 6,
     title:
       "React Native Reanimated 3: The Ultimate Guide to High-Performance Animations in 2025 🚀",
