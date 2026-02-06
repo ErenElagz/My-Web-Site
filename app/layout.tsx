@@ -24,6 +24,10 @@ export default function RootLayout({
           src="https://www.googletagmanager.com/gtag/js?id=G-1YEZP484CP"
           strategy="afterInteractive"
         />
+        <meta
+          name="p:domain_verify"
+          content="e699b8751b27154d0a53fcd968b10e79"
+        />
         <Script
           id="google-analytics"
           strategy="afterInteractive"
