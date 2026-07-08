@@ -23,6 +23,9 @@ export default function Footer() {
         <Link href="/designs" className="footerText">
           Designs
         </Link>
+        <Link href="/bugget" className="footerText">
+          Bugget
+        </Link>
       </div>
 
       {/* Right Side */}
