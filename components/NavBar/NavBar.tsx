@@ -50,12 +50,6 @@ export default function NavBar() {
           >
             Designs
           </Link>
-          <Link
-            href="/bugget"
-            className={`navbarText ${getLinkClass("/bugget/")}`}
-          >
-            Bugget
-          </Link>
         </nav>
 
         {/* Right Button */}
