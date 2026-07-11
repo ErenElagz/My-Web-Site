@@ -62,21 +62,21 @@ export default function HeroProject() {
             </p>
           </div>
         </a>
-        {/* Bugget */}
+        {/* Yofi */}
         <a
-          href="/bugget/"
+          href="/yofi/"
           className="group w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-col p-5 pt-7 ustify-between"
         >
           <div>
             <Image
               width="48"
               height="48"
-              src="/bugget.svg"
-              alt="Bugget Logo"
+              src="/yofi.svg"
+              alt="Yofi Logo"
             />
             <div>
               <p className="text-[18px] font-semibold tracking-tight mt-4 font-geist">
-                Bugget: Expense Tracker
+                Yofi: Expense Tracker
               </p>
               <p className="text-base opacity-50 tracking-tight my-1 font-lexend">
                 A Privacy-First Expense Tracking Mobile App.

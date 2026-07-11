@@ -3,27 +3,27 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Bugget | Privacy Policy & Terms of Service",
-  description: "Privacy Policy and Terms of Service for Bugget - Expense Tracker App",
+  title: "Yofi | Privacy Policy & Terms of Service",
+  description: "Privacy Policy and Terms of Service for Yofi - Expense Tracker App",
 };
 
-export default function BuggetPage() {
+export default function YofiPage() {
   return (
     <>
       {/* Header */}
       <div>
         <Image
-          src="/bugget.svg"
-          alt="Bugget Logo"
+          src="/yofi.svg"
+          alt="Yofi Logo"
           width={72}
           height={72}
           className="mt-5 md:mt-16"
         />
         <h1 className="text-4xl font-semibold tracking-tight mt-5 font-lexend">
-          Bugget
+          Yofi
         </h1>
         <p className="text-base text-gray-500 mt-3">
-          Bugget is a privacy-first expense tracking mobile app. Your financial
+          Yofi is a privacy-first expense tracking mobile app. Your financial
           data is stored locally on your device — we never see it.
         </p>
       </div>
@@ -39,15 +39,15 @@ export default function BuggetPage() {
         </p>
 
         <p className="text-base text-gray-500 mt-0">
-          Welcome to Bugget (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or
+          Welcome to Yofi (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or
           &ldquo;us&rdquo;). We are committed to protecting your privacy. This
           Privacy Policy explains how your information is collected, used, and
-          disclosed by Bugget when you use our mobile application (the
+          disclosed by Yofi when you use our mobile application (the
           &ldquo;App&rdquo;).
         </p>
 
         <p className="text-base text-gray-500 mt-0">
-          By using Bugget, you agree to the data practices described in this
+          By using Yofi, you agree to the data practices described in this
           policy. If you do not agree with these terms, please do not use the
           App.
         </p>
@@ -61,7 +61,7 @@ export default function BuggetPage() {
             A. Information Stored Locally on Your Device
           </h3>
           <p className="text-base text-gray-500 mt-3">
-            Bugget is designed with a privacy-first approach. Your primary
+            Yofi is designed with a privacy-first approach. Your primary
             financial data&mdash;including accounts, transactions, budgets,
             subscriptions, and categories&mdash;is stored{" "}
             <strong>locally on your device</strong> using an internal database.
@@ -81,7 +81,7 @@ export default function BuggetPage() {
             <li>
               <strong>Google Analytics for Firebase:</strong> We collect
               anonymous usage data (such as page views, button clicks, and app
-              stability metrics) to understand how users interact with Bugget.
+              stability metrics) to understand how users interact with Yofi.
               This helps us identify bugs and improve user experience.
             </li>
             <li>
@@ -177,7 +177,7 @@ export default function BuggetPage() {
             <li>
               <strong>Data Deletion:</strong> Because your financial data is
               stored locally, you can permanently delete it simply by
-              uninstalling the Bugget app from your device.
+              uninstalling the Yofi app from your device.
             </li>
           </ul>
 
@@ -185,7 +185,7 @@ export default function BuggetPage() {
             6. Children&apos;s Privacy
           </h2>
           <p className="text-base text-gray-500 mt-3">
-            Bugget is not intended for children under the age of 13. We do not
+            Yofi is not intended for children under the age of 13. We do not
             knowingly collect personal information from children under 13. If we
             become aware that we have inadvertently received personal
             information from a child under 13, we will delete such information
@@ -230,14 +230,14 @@ export default function BuggetPage() {
             1. Acceptance of Terms
           </h3>
           <p className="text-base text-gray-500 mt-3">
-            By downloading, installing, or using Bugget, you agree to be bound
+            By downloading, installing, or using Yofi, you agree to be bound
             by these Terms of Service (&ldquo;Terms&rdquo;). If you do not agree
             to these Terms, <strong>please do not use the App.</strong>
           </p>
 
           <h3 className="text-xl font-semibold mt-4">2. License</h3>
           <p className="text-base text-gray-500 mt-3">
-            Bugget grants you a limited, non-exclusive, non-transferable,
+            Yofi grants you a limited, non-exclusive, non-transferable,
             revocable license to use the App for personal, non-commercial
             purposes, subject to these Terms.
           </p>
@@ -246,14 +246,14 @@ export default function BuggetPage() {
             3. Privacy-First Design
           </h3>
           <p className="text-base text-gray-500 mt-3">
-            Bugget stores all your financial data locally on your device. We do
+            Yofi stores all your financial data locally on your device. We do
             not have access to your financial information. You are solely
             responsible for maintaining backups of your data.
           </p>
 
           <h3 className="text-xl font-semibold mt-4">4. Acceptable Use</h3>
           <p className="text-base text-gray-500 mt-3">
-            You agree not to use Bugget for:
+            You agree not to use Yofi for:
           </p>
           <ul className="list-disc ml-6 mt-2 text-gray-400">
             <li>Any illegal or unauthorized purpose.</li>
@@ -271,8 +271,8 @@ export default function BuggetPage() {
             5. Third-Party Services
           </h3>
           <p className="text-base text-gray-500 mt-3">
-            Bugget uses third-party services such as Google Analytics and
-            Firebase Cloud Messaging. By using Bugget, you also agree to comply
+            Yofi uses third-party services such as Google Analytics and
+            Firebase Cloud Messaging. By using Yofi, you also agree to comply
             with the terms of those services. Their respective privacy policies
             govern how they handle your data.
           </p>
@@ -281,7 +281,7 @@ export default function BuggetPage() {
             6. Disclaimer of Warranties
           </h3>
           <p className="text-base text-gray-500 mt-3">
-            Bugget is provided &ldquo;as is&rdquo; and &ldquo;as
+            Yofi is provided &ldquo;as is&rdquo; and &ldquo;as
             available&rdquo; without any warranties, express or implied. We do
             not guarantee that the App will be error-free, secure, or
             uninterrupted.
@@ -291,7 +291,7 @@ export default function BuggetPage() {
             7. Limitation of Liability
           </h3>
           <p className="text-base text-gray-500 mt-3">
-            To the fullest extent permitted by law, Bugget and its developers
+            To the fullest extent permitted by law, Yofi and its developers
             shall not be liable for any damages, losses, or claims arising from
             your use of the App, including but not limited to data loss or
             financial discrepancies.
@@ -304,7 +304,7 @@ export default function BuggetPage() {
             We reserve the right to update or modify these Terms at any time. If
             we make material changes, we will notify you by updating the
             &ldquo;Effective Date&rdquo; at the top of this document or through
-            in-app notifications. Continued use of Bugget after changes
+            in-app notifications. Continued use of Yofi after changes
             constitute acceptance of the updated Terms.
           </p>
 
