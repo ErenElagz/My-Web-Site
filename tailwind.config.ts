@@ -10,12 +10,24 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        bg: "var(--page)",
+        surface: "var(--surface)",
+        "surface-soft": "var(--surface-soft)",
+        "surface-subtle": "var(--surface-raised)",
+        "surface-hover": "var(--surface-card)",
+        border: "var(--line)",
+        "border-hover": "var(--line-tag)",
+        "text-primary": "var(--text-strong)",
+        "text-secondary": "var(--text)",
+        "text-muted": "var(--muted)",
+        accent: "var(--blue)",
+        "accent-fg": "var(--text-on-blue)",
+        "chip-bg": "var(--chip-bg)",
+        "chip-text": "var(--chip-text)",
       },
       fontFamily: {
-        geist: "var(--font-geist), sans-serif",
-        lexend: "var(--font-lexend), sans-serif",
+        sans: ["var(--font-figtree)", "system-ui", "sans-serif"],
+        mono: ["var(--font-geist-mono)", "ui-monospace", "monospace"],
       },
     },
   },

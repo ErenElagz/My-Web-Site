@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { Icon } from "@iconify/react";
 
 interface BlogCardProps {
@@ -10,49 +9,54 @@ interface BlogCardProps {
   mediumUrl?: string;
   devtoUrl?: string;
   className?: string;
-  image: string;
+  image?: string;
 }
 
 export default function BlogCard(props: BlogCardProps) {
   return (
-    <a key={props.id} href={props.mediumUrl || props.devtoUrl || "#"}>
-      <div className="hover:underline w-full border border-[--navBarBorder] bg-[#ffffff05] rounded-3xl flex flex-row  justify-between">
-        <div className="flex flex-col gap-2 w-full p-4 md:p-5  md:py-8  ">
-          <p className="text-sm font-semibold tracking-tight opacity-50">
-            {props.date}
-          </p>
-          <p className="text-xl font-semibold tracking-tight font-geist">
-            {props.title}
-          </p>
-          <p className="text-sm  text-gray-400 font-lexend break-normal">
-            {props.description}
-          </p>
-          <div className="flex flex-row gap-4 mt-4 items-center ">
-            <Link
-              href={props.mediumUrl || "#"}
-              className="flex flex-row gap-1 items-center "
-            >
-              <Icon
-                width="20"
-                height="20"
-                icon="jam:medium"
-                className="opacity-50 hover:opacity-100 transition-opacity duration-150"
-              />
-            </Link>
-            <Link
-              href={props.devtoUrl || "#"}
-              className="flex flex-row gap-1 items-center border-l border-[--navBarBorder]  pl-4"
-            >
-              <Icon
-                width="20"
-                height="20"
-                icon="fa6-brands:dev"
-                className="text-blue-600 opacity-50 hover:opacity-100 transition-opacity duration-150 "
-              />
-            </Link>
-          </div>
-        </div>
+    <article className="group py-5">
+      <div className="flex flex-col gap-1.5 sm:flex-row sm:items-baseline sm:justify-between">
+        <a
+          href={props.devtoUrl || props.mediumUrl || "#"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[15px] font-medium tracking-tight text-text-primary transition-colors group-hover:underline"
+        >
+          {props.title}
+        </a>
+        <time className="shrink-0 font-mono text-xs tabular-nums text-text-muted">
+          {props.date}
+        </time>
       </div>
-    </a>
+
+      <p className="mt-1.5 text-sm leading-relaxed text-text-secondary">
+        {props.description}
+      </p>
+
+      <div className="mt-3 flex items-center gap-3 font-mono text-[11px] text-text-muted">
+        {props.mediumUrl && (
+          <a
+            href={props.mediumUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 transition-colors hover:text-text-primary"
+          >
+            <Icon icon="jam:medium" className="h-3.5 w-3.5" />
+            <span>Medium</span>
+          </a>
+        )}
+        {props.devtoUrl && (
+          <a
+            href={props.devtoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 transition-colors hover:text-text-primary"
+          >
+            <Icon icon="fa6-brands:dev" className="h-3.5 w-3.5" />
+            <span>Dev.to</span>
+          </a>
+        )}
+      </div>
+    </article>
   );
 }

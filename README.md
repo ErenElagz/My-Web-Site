@@ -29,9 +29,9 @@ The **Projects** page lists Eren’s major projects with the following details:
 - **Description**
 
 ### Example Projects:
-- **HitBis: Bicycle Sharing App** (10.2024 - Present, Çorum, Turkey)
+- **HitBis: Bicycle Sharing App** (10.2024 - Present, Çorum, Turkiye)
   - IoT-based bicycle rental application with AI-driven ride assistance.
-- **Belen: AI-Based Tourism Assistant App** (02.2024 - 10.2024, Antalya, Turkey)
+- **Belen: AI-Based Tourism Assistant App** (02.2024 - 10.2024, Antalya, Turkiye)
   - AR/VR-supported AI-powered tourism assistant application.
 
 ## Contact Information

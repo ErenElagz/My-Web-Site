@@ -1,85 +1,84 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.cdnfonts.com/css/geist");
-
-/* Tailwind Config */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Light Mode */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --navBarBackground: #ffffff50;
-  --navBarBorder: #17171720;
-  --buttonBackground: #f9f9f940;
-  --buttonBorder: #17171750;
-  --backgroundColor: #fafafa;
+  --page: #ffffff;
+  --surface: #f0f0f0;
+  --surface-soft: #fbfbfb;
+  --surface-raised: #f2f5f9;
+  --surface-card: #f4f6fa;
+  --contact-panel: #f2f5f9;
+  --text: #292929;
+  --text-strong: #171717;
+  --text-on-blue: #ffffff;
+  --muted: #727c8c;
+  --line: #d8e2f1;
+  --line-tag: #bdcce3;
+  --chip-bg: #eef3fb;
+  --chip-text: #5b6778;
+  --blue: #0066ff;
+  --status-outer: #e2ffdf;
+  --status-inner: #22c55e;
+  --shadow-blue: 0 12px 32px rgba(0, 102, 255, 0.22);
 }
 
-/* Dark Mode */
+.dark {
+  --page: #111111;
+  --surface: #1c1c1e;
+  --surface-soft: #1a1a1c;
+  --surface-raised: #1e1e22;
+  --surface-card: #232326;
+  --contact-panel: #1b1b1e;
+  --text: #e5e5e7;
+  --text-strong: #ffffff;
+  --text-on-blue: #ffffff;
+  --muted: #8b92a1;
+  --line: #2a2d34;
+  --line-tag: #485466;
+  --chip-bg: rgba(238, 243, 251, 0.08);
+  --chip-text: #d4dce8;
+  --blue: #3b82f6;
+  --status-outer: #1d3524;
+  --status-inner: #4ade80;
+  --shadow-blue: 0 12px 32px rgba(59, 130, 246, 0.25);
+}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --navBarBackground: #ffffff10;
-    --navBarBorder: #ffffff20;
-    --buttonBackground: #ffffff10;
-    --buttonBorder: #ededed50;
-    --backgroundColor: #171717;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--page);
+    color: var(--text);
+    font-family: var(--font-figtree), system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.015em;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  ::selection {
+    background-color: var(--blue);
+    color: #ffffff;
   }
 }
 
-/* Global Styles */
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: "Geist", sans-serif;
-}
-body::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
 }
 
-.font-lexend {
-  font-family: "Lexend", sans-serif;
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-/* NavBar Style */
-.navbar {
-  background: var(--navBarBackground);
-  color: var(--foreground);
-  display: flex;
-  gap: 1.75rem;
-  padding: 0.5rem 1.25rem;
-  border-radius: 32px;
-  border: 1px solid var(--navBarBorder);
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 9999px;
 }
 
-.navbarText:hover {
-  opacity: 1;
-  transition: all 0.25s ease;
-}
-
-/* Footer Style */
-.footer {
-  color: var(--foreground);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.75rem;
-  padding: 0.5rem;
-  margin: 4rem 0;
-  z-index: 999;
-}
-
-.footerText {
-  color: var(--foreground);
-  font-weight: 400;
-  opacity: 0.5;
-}
-
-.footerText:hover {
-  opacity: 1;
-  transition: all 0.25s ease;
+::-webkit-scrollbar-thumb:hover {
+  background: var(--line-tag);
 }

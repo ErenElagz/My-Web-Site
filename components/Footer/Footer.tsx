@@ -1,57 +1,45 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import Image from "next/image";
-import Link from "next/link";
+import { profile } from "@/data/profile";
+import LocalTime from "@/components/LocalTime";
 
 export default function Footer() {
   return (
-    <div className="footer flex-wrap">
-      {/* Left Side */}
-      <div className="flex gap-5 items-center">
-        <Link href="/">
-          <Image src="/logo.png" width="32" height="32" alt="Logo Image" />
-        </Link>
-        <Link href="/" className="footerText">
-          ReadMe
-        </Link>
-        <Link href="/blogs" className="footerText">
-          Blogs
-        </Link>
-        <Link href="/projects" className="footerText">
-          Projects
-        </Link>
-        <Link href="/designs" className="footerText">
-          Designs
-        </Link>
-      </div>
+    <footer className="border-t border-border py-8">
+      <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-text-muted">
+          <span className="font-medium text-text-primary">{profile.name}</span>
+          <span aria-hidden="true">·</span>
+          <LocalTime />
+          <span aria-hidden="true">·</span>
+          <span className="font-mono">erenelagz.com</span>
+        </div>
 
-      {/* Right Side */}
-      <div className="flex gap-5 items-center">
-        <Link href="http://github.com/ErenElagz" target="_blank">
-          <Icon
-            className="footerText"
-            icon="akar-icons:github-fill"
-            width="20"
-            height="20"
-          />
-        </Link>
-        <Link href="http://linkedin.com/in/ErenElagz" target="_blank">
-          <Icon
-            className="footerText"
-            icon="akar-icons:linkedin-fill"
-            width="20"
-            height="20"
-          />
-        </Link>
-        <Link href="http://x.com/ErenElagz" target="_blank">
-          <Icon
-            className="footerText"
-            icon="akar-icons:x-fill"
-            width="20"
-            height="20"
-          />
-        </Link>
+        <div className="flex flex-wrap items-center gap-3">
+          <a
+            href={`mailto:${profile.email}`}
+            className="font-mono text-xs text-text-muted transition-colors hover:text-text-primary"
+          >
+            Email ↗
+          </a>
+          <span className="h-3 w-px bg-border" aria-hidden="true" />
+          <div className="flex items-center gap-2">
+            {profile.socials.map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.label}
+                title={social.label}
+                className="flex h-7 w-7 items-center justify-center rounded-full border border-border bg-surface-soft text-text-muted transition-colors hover:border-border-hover hover:text-text-primary"
+              >
+                <Icon icon={social.icon} className="h-3.5 w-3.5" />
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 }

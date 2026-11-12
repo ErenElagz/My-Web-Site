@@ -1,98 +1,39 @@
 import React from "react";
-import SocialButtons from "../../components/SocialButtons/SocialButtons";
-import { projects } from "@/data/projects";
-import ProjectCard from "@/components/Card/ProjectCard";
-import ProjectCard2 from "@/components/Card/ProjectCard2";
-import { aiProjects } from "@/data/ai-projects";
-import { iotProjects } from "@/data/iot-projects";
 import { Metadata } from "next";
+import SocialButtons from "@/components/SocialButtons/SocialButtons";
+import ProjectsFilter from "@/components/ProjectsFilter";
 
 export const metadata: Metadata = {
-  title: "ErenElagz | Projects",
-  description: "ErenElagz Personal Web Site.",
+  title: "Projects — Eren Elagoz",
+  description:
+    "Production mobile apps, full-stack systems, IoT platforms, and open-source repositories by Eren Elagoz.",
 };
 
-export default function Projects() {
+export default function ProjectsPage() {
   return (
-    <>
-      {/* Header */}
-      <div>
-        <h1 className="text-4xl font-semibold tracking-tight mt-5 md:mt-16 font-lexend">
-          Recent Projects
-        </h1>
-        <p className="text-base text-gray-500 mt-3">
-          Recent projects that I have developed. You can check the source codes
-          on GitHub.
+    <div className="space-y-10">
+      <header className="pt-4 sm:pt-8">
+        <p className="font-mono text-[11px] uppercase tracking-[0.12em] text-text-muted">
+          Projects
         </p>
-      </div>
-
-      {/* Social Buttons */}
-      <div className="flex flex-row gap-3 mt-6 flex-wrap">
-        <SocialButtons
-          title="See more on GitHub"
-          url="https://github.com/ErenElagz"
-          icon="akar-icons:github-fill"
-        />
-        <SocialButtons
-          title="Hire Me!"
-          url="https://www.upwork.com/freelancers/~0158364bdc8fde08ff?viewMode=1"
-          icon="simple-icons:upwork"
-        />
-      </div>
-
-      {/* Projects */}
-      <div className="w-full mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-        {projects.map((project) => (
-          <ProjectCard
-            key={project.id}
-            id={project.id}
-            title={project.title}
-            description={project.description}
-            githubUrl={project.githubUrl}
-            stars={project.stars}
-            forks={project.forks}
-            icon={project.icon}
-          />
-        ))}
-      </div>
-
-      {/* IoT Projects */}
-      <div className="w-full border-2 rounded-3xl border-[--navBarBorder] px-6 py-8 mt-8 flex flex-col gap-6">
-        <h1 className="text-xl font-semibold tracking-tight font-lexend">
-          Internet of Things Projects & Embedded Systems
+        <h1 className="mt-2 text-2xl font-medium tracking-[-0.025em] text-text-primary sm:text-3xl">
+          Selected Builds & Open Source
         </h1>
-        {iotProjects.map((project) => (
-          <ProjectCard2
-            key={project.id}
-            id={project.id}
-            title={project.title}
-            description={project.description}
-            githubUrl={project.githubUrl}
-            stars={project.stars}
-            forks={project.forks}
-            icon={project.icon}
-          />
-        ))}
-      </div>
+        <p className="mt-2.5 text-[15px] leading-relaxed text-text-secondary">
+          Production mobile applications, full-stack architectures, and open
+          source experiments across React Native, IoT, and AI.
+        </p>
 
-      {/* AI Projects */}
-      <div className="w-full border-2 rounded-3xl border-[--navBarBorder] px-6 py-8 mt-8 flex flex-col gap-6">
-        <h1 className="text-xl font-semibold tracking-tight font-lexend">
-          Machine Learning & AI Projects
-        </h1>
-        {aiProjects.map((project) => (
-          <ProjectCard2
-            key={project.id}
-            id={project.id}
-            title={project.title}
-            description={project.description}
-            githubUrl={project.githubUrl}
-            stars={project.stars}
-            forks={project.forks}
-            icon={project.icon}
+        <div className="mt-5 flex flex-wrap gap-2">
+          <SocialButtons
+            title="GitHub"
+            url="https://github.com/ErenElagz"
+            icon="akar-icons:github-fill"
           />
-        ))}
-      </div>
-    </>
+        </div>
+      </header>
+
+      <ProjectsFilter />
+    </div>
   );
 }

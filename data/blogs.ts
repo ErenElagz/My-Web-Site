@@ -1,20 +1,40 @@
-export const blogs = [
+export interface BlogItem {
+  id: number;
+  title: string;
+  date: string;
+  mediumUrl?: string;
+  devtoUrl?: string;
+  image?: string;
+  description: string;
+}
+
+export const blogs: BlogItem[] = [
   {
-    id: 7,
-    title: "Best Feeling as a Entrepreneur. It is First Sale 🚀",
+    id: 4637793,
+    title:
+      "I Built a Financial Dashboard for Indie Devs and Digital Creators and It is Free",
+    date: "2026-09-12",
+    devtoUrl:
+      "https://dev.to/erenelagz/how-i-unified-stripe-revenuecat-and-gumroad-revenue-into-one-dashboard-3clk",
+    image:
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Feaq9mswom2vzby0izr7i.jpg",
+    description:
+      "How I unified scattered revenue streams from Stripe, RevenueCat, and Gumroad into a single privacy-first dashboard for indie makers.",
+  },
+  {
+    id: 2820462,
+    title: "Best Feeling as an Entrepreneur: It is First Sale 🚀",
     date: "2025-09-04",
     mediumUrl: "https://medium.com/p/eed618f1590e",
     devtoUrl:
       "https://dev.to/erenelagz/best-feeling-as-a-entrepreneur-it-is-first-sale-4me3",
-    image:
-      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ft79b6o18fa9rxwqwh0sf.png",
     description:
-      "Explore the new features and improvements in React Native Reanimated 3, the go-to library for high-performance animations in React Native apps.",
+      "Reflecting on shipping CompanyOs, making my first sale on Gumroad, and the validation loop that turns side projects into real products.",
   },
   {
-    id: 8,
+    id: 2795626,
     title:
-      "My 8 Year Android Development Story as a student. And Finally I made it!",
+      "My 8 Year Android Development Story as a Student, And Finally I Made It!",
     date: "2025-08-24",
     mediumUrl: "https://medium.com/p/2ce6e7a16a29",
     devtoUrl:
@@ -22,39 +42,49 @@ export const blogs = [
     image:
       "https://bairesdev.mo.cloudinary.net/blog/2024/04/how-to-become-an-android-developer.jpg?tx=w_1920,q_auto",
     description:
-      "Sharing my journey of 8 years in Android development, the challenges I faced, and how I finally achieved my goals as a student developer.",
+      "From high school curiosity to releasing production apps on Google Play: lessons learned across 8 years of building Android apps.",
   },
   {
-    id: 6,
+    id: 2365105,
     title:
       "React Native Reanimated 3: The Ultimate Guide to High-Performance Animations in 2025 🚀",
-    date: "2025-06-07",
+    date: "2025-03-29",
     mediumUrl: "https://medium.com/p/d2d2579e5bf5",
     devtoUrl:
       "https://dev.to/erenelagz/react-native-reanimated-3-the-ultimate-guide-to-high-performance-animations-in-2025-4ae4",
     image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ft79b6o18fa9rxwqwh0sf.png",
     description:
-      "Explore the new features and improvements in React Native Reanimated 3, the go-to library for high-performance animations in React Native apps.",
+      "Deep dive into shared element transitions, worklets, gesture handlers, and 60 FPS mobile animations using Reanimated 3.",
   },
   {
-    id: 4,
+    id: 2340156,
     title:
-      "The Future of Cross-Platform Mobile Development: Trends and Technologies to Watch",
-    date: "2025-02-13",
-    mediumUrl:
-      "https://erenelagz.medium.com/the-future-of-cross-platform-mobile-development-trends-and-technologies-to-watch-389d4caf203f",
+      "The Rise of Remote Work: How Technology is Shaping the Future of Work in 2025 🏠💻",
+    date: "2025-03-18",
     devtoUrl:
-      "https://dev.to/erenelagz/the-future-of-cross-platform-mobile-development-trends-and-technologies-to-watch-feg",
+      "https://dev.to/erenelagz/the-rise-of-remote-work-how-technology-is-shaping-the-future-of-work-in-2025-484e",
     image:
-      "https://miro.medium.com/v2/resize:fit:720/format:webp/1*0M4NTjXngkYRHEwhpQdUUQ.png",
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fnew7qc24df0bbly3iprp.jpg",
     description:
-      "Here are the top trends and technologies that will shape the future of cross-platform mobile development.",
+      "Analyzing asynchronous communication, remote engineering tooling, and sustainable habits for distributed software teams.",
   },
   {
-    id: 5,
+    id: 2298906,
     title:
-      "Must-Know React Native Libraries for Faster Mobile App Development in 2025 🚀",
+      "The Future of Web Development in 2025: Trends, Tools, and Technologies 🌐💻",
+    date: "2025-02-26",
+    devtoUrl:
+      "https://dev.to/erenelagz/the-future-of-web-development-in-2025-trends-tools-and-technologies-to-watch-4fgo",
+    image:
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F4i4ss6b30psz7x1cedgb.jpg",
+    description:
+      "An overview of compiler advancements, edge rendering, modern CSS architectures, and evolving frontend toolchains.",
+  },
+  {
+    id: 2283890,
+    title:
+      "Must-Know React Native Libraries for Faster Mobile App Development in 2025 🚀",
     date: "2025-02-17",
     mediumUrl:
       "https://erenelagz.medium.com/must-know-react-native-libraries-for-faster-mobile-app-development-in-2025-5b21a2e28a25",
@@ -63,10 +93,33 @@ export const blogs = [
     image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fqnhhfj5jyacikafuz2e2.jpeg",
     description:
-      "Here are the top React Native libraries that will help you build mobile apps faster in 2025.",
+      "Essential libraries for routing, state, networking, caching, and monetization that boost mobile shipping velocity.",
   },
   {
-    id: 1,
+    id: 2278443,
+    title: "3200 Developer and Designer Tools Free E-Book",
+    date: "2025-02-14",
+    devtoUrl:
+      "https://dev.to/erenelagz/3200-developer-and-designer-tools-free-e-book-2hfm",
+    image:
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F72p0vn10wchyu7ft3xig.png",
+    description:
+      "Announcing All in Dev: a free and open-source directory cataloging 3,200+ developer libraries, icons, tools, and UI inspiration hubs.",
+  },
+  {
+    id: 2275631,
+    title:
+      "The Future of Cross-Platform Mobile Development: Trends and Technologies",
+    date: "2025-02-13",
+    mediumUrl:
+      "https://erenelagz.medium.com/the-future-of-cross-platform-mobile-development-trends-and-technologies-to-watch-389d4caf203f",
+    devtoUrl:
+      "https://dev.to/erenelagz/the-future-of-cross-platform-mobile-development-trends-and-technologies-to-watch-feg",
+    description:
+      "Evaluating New Architecture (Fabric & TurboModules), Kotlin Multiplatform, and hybrid performance optimizations.",
+  },
+  {
+    id: 2267462,
     title: "10 Essential Tips for Optimizing Performance in React Native Apps",
     date: "2025-02-09",
     mediumUrl:
@@ -74,34 +127,33 @@ export const blogs = [
     devtoUrl:
       "https://dev.to/erenelagz/10-essential-tips-for-optimizing-performance-in-react-native-apps-4j93",
     image:
-      "https://miro.medium.com/v2/resize:fit:720/format:webp/1*0M4NTjXngkYRHEwhpQdUUQ.png",
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fzmi0zc3v31sskel1valk.png",
     description:
-      "Here are ten essential tips to optimize your React Native app and ensure a smooth user experience.",
+      "Practical advice for reducing bundle size, avoiding wasteful re-renders, profiling memory leaks, and smoothing list scrolling.",
   },
   {
-    id: 2,
-    title: "🚀 Top 10 React Native UI Libraries for Stunning Mobile Apps ",
+    id: 2260340,
+    title: "Top 10 React Native UI Libraries for Stunning Mobile Apps 🚀",
     date: "2025-02-05",
     mediumUrl:
       "https://medium.com/@erenelagz/top-10-react-native-ui-libraries-for-stunning-mobile-apps-19f551353b35",
     devtoUrl:
       "https://dev.to/erenelagz/top-10-react-native-ui-libraries-for-mobile-development-538j",
-    image:
-      "https://miro.medium.com/v2/resize:fit:720/format:webp/1*Ur_DrdjcdI_aGWBSGB7cCw.jpeg",
     description:
-      " Top 10 React Native UI libraries based on features, ease of use, customization, and community support.",
+      "A comparison of leading UI libraries for mobile, reviewing feature sets, developer experience, and design consistency.",
   },
   {
-    id: 3,
-    title: "Best React Native Map Libraries, Comparison of the 7 Map Module ",
-    date: "2025-02-02",
+    id: 2253804,
+    title:
+      "Best React Native Map Modules: Comparison of the Most Popular 8 Libraries",
+    date: "2025-02-01",
     mediumUrl:
       "https://erenelagz.medium.com/best-react-native-map-libraries-comparison-of-the-7-map-module-2879e2974d9e",
     devtoUrl:
       "https://dev.to/erenelagz/best-react-native-map-modules-comparison-of-the-most-popular-8-libraries-201b",
     image:
-      "https://miro.medium.com/v2/resize:fit:720/format:webp/1*KTl3-WbilK8qvMt8EnUEwA.jpeg",
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F4nsl0akqo5iu2u7mqwfz.jpg",
     description:
-      "Top React Native Map Libraries based on performance and features.",
+      "Benchmarking map rendering, marker performance, clustering, and routing across 8 mobile mapping packages.",
   },
 ];

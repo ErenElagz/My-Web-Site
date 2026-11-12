@@ -1,63 +1,49 @@
 import React from "react";
-import SocialButtons from "../../components/SocialButtons/SocialButtons";
-import { designs } from "@/data/designs";
-import DesignCard from "@/components/Card/DesignCard";
 import { Metadata } from "next";
+import SocialButtons from "@/components/SocialButtons/SocialButtons";
+import DesignsFilter from "@/components/DesignsFilter";
 
 export const metadata: Metadata = {
-  title: "ErenElagz | Design Portfolio",
-  description: "ErenElagz Personal Web Site.",
+  title: "Designs — Eren Elagoz",
+  description:
+    "Mobile UI/UX explorations, app screenshots, design systems, and web landing concepts by Eren Elagoz.",
 };
 
-export default function Designes() {
+export default function DesignsPage() {
   return (
-    <>
-
-      {/* Header */}
-      <div>
-        <h1 className="text-4xl font-semibold tracking-tight mt-5 md:mt-16 font-lexend">
+    <div className="space-y-10">
+      <header className="pt-4 sm:pt-8">
+        <p className="font-mono text-[11px] uppercase tracking-[0.12em] text-text-muted">
           Design Portfolio
-        </h1>
-        <p className="text-base text-gray-500 mt-3">
-          I am also designing. You can check my other designs in Dribbble and
-          Behance.
         </p>
-      </div>
+        <h1 className="mt-2 text-2xl font-medium tracking-[-0.025em] text-text-primary sm:text-3xl">
+          UI / UX & Product Design
+        </h1>
+        <p className="mt-2.5 text-[15px] leading-relaxed text-text-secondary">
+          Mobile app screens, design systems, store graphics, and landing pages
+          crafted in Figma, with live shots on Dribbble, Behance, and Pinterest.
+        </p>
 
-      {/* Social Buttons */}
-      <div className="flex flex-row gap-3 mt-6 flex-wrap">
-        <SocialButtons
-          title="Dribbble"
-          url="https://dribbble.com/ErenElagz"
-          icon="akar-icons:dribbble-fill"
-        />
-        <SocialButtons
-          title="Behance"
-          url="https://behance.com/ErenElagz"
-          icon="akar-icons:behance-fill"
-        />
-        <SocialButtons
-          title="Pinterest"
-          url="https://pinterest.com/ErenElagz"
-          icon="akar-icons:pinterest-fill"
-        />
-      </div>
-
-      {/* Designs */}
-      <div className="w-full mt-8 flex flex-col gap-4">
-        {designs.map((design) => (
-          <DesignCard
-            key={design.id}
-            id={design.id}
-            title={design.title}
-            description={design.description}
-            figmaUrl={design.figmaUrl}
-            dribbbleUrl={design.dribbbleUrl}
-            behanceUrl={design.behanceUrl}
-            image={design.image}
+        <div className="mt-5 flex flex-wrap gap-2">
+          <SocialButtons
+            title="Dribbble"
+            url="https://dribbble.com/ErenElagz"
+            icon="akar-icons:dribbble-fill"
           />
-        ))}
-      </div>
-    </>
+          <SocialButtons
+            title="Behance"
+            url="https://behance.net/ErenElagz"
+            icon="akar-icons:behance-fill"
+          />
+          <SocialButtons
+            title="Pinterest"
+            url="https://www.pinterest.com/erenelagz/"
+            icon="akar-icons:pinterest-fill"
+          />
+        </div>
+      </header>
+
+      <DesignsFilter />
+    </div>
   );
 }

@@ -3,64 +3,78 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Button from "../Button/Button";
-import { usePathname } from "next/navigation"; // ✅ Import usePathname
+import { usePathname } from "next/navigation";
+import ThemeToggle from "@/components/ThemeToggle";
+
+const navLinks = [
+  { href: "/", label: "Work" },
+  { href: "/projects", label: "Projects" },
+  { href: "/designs", label: "Designs" },
+  { href: "/blogs", label: "Writing" },
+];
 
 export default function NavBar() {
-  const pathname = usePathname(); // ✅ Get current route
-
-  // Helper function to apply active styles
-  const getLinkClass = (route: string) =>
-    pathname === route ? "opacity-100" : "opacity-50 hover:opacity-100";
+  const pathname = usePathname();
+  const normalized = pathname?.replace(/\/$/, "") || "/";
 
   return (
-    <div>
-      <div className="w-full flex items-center justify-center md:justify-between">
-        {/* Left Logo */}
-        <Link href="/">
-          <Image
-            src="/logo.png"
-            alt="ErenElagz"
-            width={36}
-            height={36}
-            className="hidden md:block"
-          />
-        </Link>
+    <header className="sticky top-0 z-40 -mx-5 bg-bg/85 backdrop-blur-md sm:-mx-8 lg:-mx-12">
+      <div className="mx-auto flex h-[72px] max-w-[1240px] items-center justify-between gap-4 px-5 sm:px-8 lg:px-12">
+        {/* Left: Avatar + Name + Availability Pill */}
+        <div className="flex items-center gap-3">
+          <Link
+            href="/"
+            className="flex items-center gap-2 text-[16px] font-medium tracking-tight text-text-primary"
+          >
+            <span className="h-8 w-8 overflow-hidden rounded-full border border-border bg-surface">
+              <Image
+                src="/logo.png"
+                alt="Eren Elagoz"
+                width={32}
+                height={32}
+                className="h-full w-full object-cover"
+              />
+            </span>
+            <span className="hidden text-text-muted sm:inline">Hello! I am</span>
+            <span className="font-semibold text-text-primary">Eren E.</span>
+          </Link>
+        </div>
 
-        {/* Navigation Links */}
-        <nav className="navbar flex gap-6">
-          <Link href="/" className={`navbarText ${getLinkClass("/")}`}>
-            ReadMe
-          </Link>
-          <Link
-            href="/blogs"
-            className={`navbarText ${getLinkClass("/blogs/")}`}
-          >
-            Blogs
-          </Link>
-          <Link
-            href="/projects"
-            className={`navbarText ${getLinkClass("/projects/")}`}
-          >
-            Projects
-          </Link>
-          <Link
-            href="/designs"
-            className={`navbarText ${getLinkClass("/designs/")}`}
-          >
-            Designs
-          </Link>
-        </nav>
+        {/* Right: Theme Toggle + Links + Signature Blue CTA */}
+        <div className="flex items-center gap-2 sm:gap-4">
+          <nav className="flex items-center gap-1" aria-label="Primary">
+            {navLinks.map((item) => {
+              const isActive =
+                item.href === "/"
+                  ? normalized === "/"
+                  : normalized.startsWith(item.href);
 
-        {/* Right Button */}
-        <Button
-          title="Say Hi!👋"
-          url={
-            "https://mail.google.com/mail/?view=cm&to=erenelagoz@gmail.com&su=SUBJECT&body=BODY"
-          }
-          className="hidden md:block"
-        />
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`rounded-full px-3 py-1.5 text-[13px] font-medium transition-colors ${
+                    isActive
+                      ? "bg-chip-bg text-text-primary"
+                      : "text-text-muted hover:text-text-primary"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
+          </nav>
+
+          <ThemeToggle />
+
+          <a
+            href="mailto:erenelagoz@gmail.com"
+            className="hidden items-center rounded-full bg-accent px-4 py-2 text-[13px] font-medium text-accent-fg shadow-[var(--shadow-blue)] transition-transform hover:-translate-y-0.5 sm:inline-flex"
+          >
+            Let&apos;s work together
+          </a>
+        </div>
       </div>
-    </div>
+    </header>
   );
 }

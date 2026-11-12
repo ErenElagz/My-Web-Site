@@ -1,48 +1,50 @@
 import React from "react";
-import SocialButtons from "../../components/SocialButtons/SocialButtons";
+import { Metadata } from "next";
+import SocialButtons from "@/components/SocialButtons/SocialButtons";
 import { blogs } from "@/data/blogs";
 import BlogCard from "@/components/Card/BlogCard";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ErenElagz | Blogs",
-  description: "ErenElagz Personal Web Site.",
+  title: "Writing — Eren Elagoz",
+  description:
+    "Articles on React Native, mobile architecture, UI libraries, and indie product shipping.",
 };
 
-export default function Blogs() {
+export default function BlogsPage() {
   return (
-    <>
-      {/* Header */}
-      <div>
-        <h1 className="text-4xl font-semibold tracking-tight mt-5 md:mt-16 font-lexend">
-          Latest Blogs
-        </h1>
-        <p className="text-base text-gray-500 mt-3">
-          I am also blogging. You can check my articles in Medium and Dev.to.
+    <div className="space-y-10">
+      <header className="pt-4 sm:pt-8">
+        <p className="font-mono text-[11px] uppercase tracking-[0.12em] text-text-muted">
+          Writing
         </p>
-      </div>
+        <h1 className="mt-2 text-2xl font-medium tracking-[-0.025em] text-text-primary sm:text-3xl">
+          Notes & Articles
+        </h1>
+        <p className="mt-2.5 text-[15px] leading-relaxed text-text-secondary">
+          Essays and technical guides on React Native performance, mobile UI,
+          and building indie products, published on Medium and Dev.to.
+        </p>
 
-      {/* Social Buttons */}
-      <div className="flex flex-row gap-3 mt-6 flex-wrap">
-        <SocialButtons
-          title="Medium"
-          url="https://medium.com/@ErenElagz"
-          icon="akar-icons:medium-fill"
-        />
-        <SocialButtons
-          title="Dev.to"
-          url="https://dev.to/ErenElagz"
-          icon="skill-icons:devto-dark"
-        />
-        <SocialButtons
-          title="Add me on RSS"
-          url="https://morss.it/https://medium.com/feed/@erenelagz"
-          icon="foundation:rss"
-        />
-      </div>
+        <div className="mt-5 flex flex-wrap gap-2">
+          <SocialButtons
+            title="Medium"
+            url="https://medium.com/@ErenElagz"
+            icon="akar-icons:medium-fill"
+          />
+          <SocialButtons
+            title="Dev.to"
+            url="https://dev.to/ErenElagz"
+            icon="fa6-brands:dev"
+          />
+          <SocialButtons
+            title="RSS Feed"
+            url="https://morss.it/https://medium.com/feed/@erenelagz"
+            icon="foundation:rss"
+          />
+        </div>
+      </header>
 
-      {/* Blogs */}
-      <div className="w-full mt-8 flex flex-col gap-4">
+      <div className="divide-y divide-border border-y border-border">
         {blogs.map((blog) => (
           <BlogCard
             key={blog.id}
@@ -56,6 +58,6 @@ export default function Blogs() {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 }
