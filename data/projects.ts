@@ -165,9 +165,9 @@ export const projects: ProjectItem[] = [
   {
     id: "hitbis-iot",
     category: "iot",
-    title: "HitBis: Bicycle Renting System",
+    title: "HitBis: Bicycle Renting & AI Assistant",
     description:
-      "IoT-powered bike sharing & AI route planner combining QR station hardware unlocking, Dijkstra routing, and community features.",
+      "IoT bike-sharing platform built with React Native 0.76 and Gemini API, featuring station QR camera unlocking, GPS route clustering, and biker community networking.",
     githubUrl: "https://github.com/ErenElagz/HitBis",
     stars: 1,
     forks: 0,

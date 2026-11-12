@@ -29,10 +29,10 @@ export default function Home() {
                 />
               </div>
               <div>
-                <p className="text-sm font-medium text-text-primary">
-                  {profile.name}
+                <p className="text-2xl font-medium text-text-primary">
+                  {profile.handle}
                 </p>
-                <p className="text-xs text-text-muted">{profile.location}</p>
+                <p className="text-sm text-text-muted">{profile.location}</p>
               </div>
             </div>
 
@@ -189,17 +189,11 @@ export default function Home() {
       <section className="space-y-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-accent" />
             <h2 className="text-xl font-medium tracking-tight text-text-primary">
               Experience &amp; Milestones
             </h2>
+            <span className="h-2 w-2 rounded-full bg-accent" />
           </div>
-          <Link
-            href="/projects"
-            className="text-xs font-medium text-text-muted hover:text-text-primary"
-          >
-            Explore all repos &amp; apps →
-          </Link>
         </div>
 
         <div className="space-y-3">

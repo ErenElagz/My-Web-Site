@@ -1,7 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import { profile } from "@/data/profile";
-import LocalTime from "@/components/LocalTime";
 
 export default function Footer() {
   return (
@@ -9,8 +8,6 @@ export default function Footer() {
       <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
         <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-text-muted">
           <span className="font-medium text-text-primary">{profile.name}</span>
-          <span aria-hidden="true">·</span>
-          <LocalTime />
           <span aria-hidden="true">·</span>
           <span className="font-mono">erenelagz.com</span>
         </div>

@@ -137,7 +137,7 @@ export default function ProjectsFilter() {
           <h2 className="mb-4 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-text-muted">
             Open Source &amp; Software
           </h2>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
             {repoProjects.map((project) => (
               <ProjectCard
                 key={project.id}

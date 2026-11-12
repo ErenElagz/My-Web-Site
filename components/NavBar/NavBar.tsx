@@ -18,53 +18,59 @@ export default function NavBar() {
   const normalized = pathname?.replace(/\/$/, "") || "/";
 
   return (
-    <header className="sticky top-0 z-40 -mx-5 bg-bg/85 backdrop-blur-md sm:-mx-8 lg:-mx-12">
-      <div className="mx-auto flex h-[72px] max-w-[1240px] items-center justify-between gap-4 px-5 sm:px-8 lg:px-12">
-        {/* Left: Avatar + Name + Availability Pill */}
-        <div className="flex items-center gap-3">
+    <header className="sticky top-0 z-40 -mx-5 bg-bg/80 backdrop-blur-lg sm:-mx-8 lg:-mx-12">
+      <div className="relative mx-auto flex h-[72px] max-w-[1240px] items-center justify-between px-5 sm:px-8 lg:px-12">
+        {/* Left: Logo & Handle */}
+        <div className="flex items-center">
           <Link
             href="/"
-            className="flex items-center gap-2 text-[16px] font-medium tracking-tight text-text-primary"
+            aria-label="Eren Elagoz Home"
+            className="flex items-center gap-2.5 transition-opacity hover:opacity-85"
           >
-            <span className="h-8 w-8 overflow-hidden rounded-full border border-border bg-surface">
+            <span className="h-9 w-9 shrink-0 overflow-hidden rounded-full border border-border bg-surface">
               <Image
                 src="/logo.png"
                 alt="Eren Elagoz"
-                width={32}
-                height={32}
+                width={36}
+                height={36}
                 className="h-full w-full object-cover"
               />
             </span>
-            <span className="hidden text-text-muted sm:inline">Hello! I am</span>
-            <span className="font-semibold text-text-primary">Eren E.</span>
+            <span className="font-mono text-sm font-medium tracking-tight text-text-primary">
+              ErenElagz<span className="text-text-muted">/</span>
+            </span>
           </Link>
         </div>
 
-        {/* Right: Theme Toggle + Links + Signature Blue CTA */}
-        <div className="flex items-center gap-2 sm:gap-4">
-          <nav className="flex items-center gap-1" aria-label="Primary">
-            {navLinks.map((item) => {
-              const isActive =
-                item.href === "/"
-                  ? normalized === "/"
-                  : normalized.startsWith(item.href);
+        {/* Center: Navigation Links */}
+        <nav
+          className="absolute left-1/2 flex -translate-x-1/2 items-center gap-1"
+          aria-label="Primary"
+        >
+          {navLinks.map((item) => {
+            const isActive =
+              item.href === "/"
+                ? normalized === "/"
+                : normalized.startsWith(item.href);
 
-              return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`rounded-full px-3 py-1.5 text-[13px] font-medium transition-colors ${
-                    isActive
-                      ? "bg-chip-bg text-text-primary"
-                      : "text-text-muted hover:text-text-primary"
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              );
-            })}
-          </nav>
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`rounded-full px-3 py-1.5 text-[13px] font-medium transition-colors ${
+                  isActive
+                    ? "bg-chip-bg text-text-primary"
+                    : "text-text-muted hover:text-text-primary"
+                }`}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
+        </nav>
 
+        {/* Right: Theme Toggle + Signature Blue CTA */}
+        <div className="flex items-center gap-2 sm:gap-3">
           <ThemeToggle />
 
           <a
