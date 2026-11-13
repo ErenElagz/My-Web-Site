@@ -17,6 +17,7 @@ export default function ThemeToggle({ className = "" }: { className?: string }) 
       <div
         className={`h-7 w-7 rounded-full border border-border bg-surface sm:h-8 sm:w-8 ${className}`}
         aria-hidden="true"
+        data-state="unmounted"
       />
     );
   }
@@ -29,6 +30,8 @@ export default function ThemeToggle({ className = "" }: { className?: string }) 
       onClick={() => setTheme(isDark ? "light" : "dark")}
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
       title={isDark ? "Light mode" : "Dark mode"}
+      data-state={isDark ? "dark" : "light"}
+      data-theme={resolvedTheme || "system"}
       className={`inline-flex h-7 w-7 items-center justify-center rounded-full border border-border bg-surface text-text-secondary transition-colors hover:border-border-hover hover:text-text-primary sm:h-8 sm:w-8 ${className}`}
     >
       <Icon

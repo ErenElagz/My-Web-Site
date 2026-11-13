@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useReducer } from "react";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 
@@ -49,59 +49,135 @@ const slides = [
   },
 ];
 
+type CarouselStatus = "playing" | "paused" | "hovered";
+
+interface CarouselState {
+  index: number;
+  progress: number;
+  status: CarouselStatus;
+}
+
+type CarouselAction =
+  | { type: "TICK"; step: number; total: number }
+  | { type: "NEXT"; total: number }
+  | { type: "PREV"; total: number }
+  | { type: "GO_TO"; index: number }
+  | { type: "TOGGLE_PLAY_PAUSE" }
+  | { type: "MOUSE_ENTER" }
+  | { type: "MOUSE_LEAVE" };
+
+function carouselReducer(state: CarouselState, action: CarouselAction): CarouselState {
+  switch (action.type) {
+    case "TICK": {
+      if (state.status !== "playing") return state;
+      const nextProgress = state.progress + action.step;
+      if (nextProgress >= 100) {
+        return {
+          ...state,
+          index: (state.index + 1) % action.total,
+          progress: 0,
+        };
+      }
+      return {
+        ...state,
+        progress: nextProgress,
+      };
+    }
+    case "NEXT": {
+      return {
+        ...state,
+        index: (state.index + 1) % action.total,
+        progress: 0,
+      };
+    }
+    case "PREV": {
+      return {
+        ...state,
+        index: (state.index - 1 + action.total) % action.total,
+        progress: 0,
+      };
+    }
+    case "GO_TO": {
+      return {
+        ...state,
+        index: action.index,
+        progress: 0,
+      };
+    }
+    case "TOGGLE_PLAY_PAUSE": {
+      return {
+        ...state,
+        status: state.status === "paused" ? "playing" : "paused",
+      };
+    }
+    case "MOUSE_ENTER": {
+      if (state.status === "playing") {
+        return { ...state, status: "hovered" };
+      }
+      return state;
+    }
+    case "MOUSE_LEAVE": {
+      if (state.status === "hovered") {
+        return { ...state, status: "playing" };
+      }
+      return state;
+    }
+    default:
+      return state;
+  }
+}
+
 export default function HeroPreview() {
-  const [index, setIndex] = useState(0);
-  const [progress, setProgress] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
+  const [state, dispatch] = useReducer(carouselReducer, {
+    index: 0,
+    progress: 0,
+    status: "playing",
+  });
 
-  const paused = isPaused || isHovered;
+  const isPaused = state.status === "paused";
 
-  const handleNext = useCallback(() => {
-    setIndex((prev) => (prev + 1) % slides.length);
-    setProgress(0);
-  }, []);
-
-  const handlePrev = useCallback(() => {
-    setIndex((prev) => (prev - 1 + slides.length) % slides.length);
-    setProgress(0);
-  }, []);
-
-  const goToSlide = useCallback((i: number) => {
-    setIndex(i);
-    setProgress(0);
-  }, []);
-
+  // Single ticker effect - only active when playing
   useEffect(() => {
-    if (paused) return;
+    if (state.status !== "playing") return;
 
+    const step = (TICK_INTERVAL / SLIDE_DURATION) * 100;
     const timer = setInterval(() => {
-      setProgress((prev) => {
-        const next = prev + (TICK_INTERVAL / SLIDE_DURATION) * 100;
-        return next >= 100 ? 100 : next;
-      });
+      dispatch({ type: "TICK", step, total: slides.length });
     }, TICK_INTERVAL);
 
     return () => clearInterval(timer);
-  }, [paused]);
+  }, [state.status]);
 
-  useEffect(() => {
-    if (progress >= 100) {
-      setIndex((prev) => (prev + 1) % slides.length);
-      setProgress(0);
+  // Keyboard navigation for carousel
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "ArrowRight") {
+      e.preventDefault();
+      dispatch({ type: "NEXT", total: slides.length });
+    } else if (e.key === "ArrowLeft") {
+      e.preventDefault();
+      dispatch({ type: "PREV", total: slides.length });
+    } else if (e.key === " " && e.target === e.currentTarget) {
+      e.preventDefault();
+      dispatch({ type: "TOGGLE_PLAY_PAUSE" });
     }
-  }, [progress]);
+  };
 
-  const current = slides[index];
+  const current = slides[state.index];
 
   return (
     <div
       role="region"
       aria-roledescription="carousel"
       aria-label="Highlighted Projects Carousel"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      className="relative overflow-hidden rounded-[28px] border border-border bg-surface-subtle p-3 sm:p-4"
+      tabIndex={0}
+      onKeyDown={handleKeyDown}
+      onMouseEnter={() => dispatch({ type: "MOUSE_ENTER" })}
+      onMouseLeave={() => dispatch({ type: "MOUSE_LEAVE" })}
+      data-state={state.status}
+      data-active-index={state.index}
+      data-total-slides={slides.length}
+      data-progress={Math.round(state.progress)}
+      className="relative overflow-hidden rounded-[28px] border border-border bg-surface-subtle p-3 sm:p-4 focus:outline-none focus-visible:ring-1 focus-visible:ring-accent"
     >
       {/* Live Preview Screen with smooth crossfade */}
       <a
@@ -114,7 +190,7 @@ export default function HeroPreview() {
           <div
             key={s.title}
             className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-              i === index
+              i === state.index
                 ? "z-10 opacity-100"
                 : "pointer-events-none z-0 opacity-0"
             }`}
@@ -153,15 +229,16 @@ export default function HeroPreview() {
         {/* 6 Slim Segmented Progress Bars */}
         <div className="grid flex-1 grid-cols-6 gap-1.5" role="tablist" aria-label="Slides">
           {slides.map((s, i) => {
-            const isActive = i === index;
-            const isPast = i < index;
+            const isActive = i === state.index;
+            const isPast = i < state.index;
             return (
               <button
                 key={s.title}
                 type="button"
                 role="tab"
                 aria-selected={isActive}
-                onClick={() => goToSlide(i)}
+                data-state={isActive ? "active" : "inactive"}
+                onClick={() => dispatch({ type: "GO_TO", index: i })}
                 aria-label={`Jump to slide ${i + 1}: ${s.title}`}
                 className="group relative flex py-2 text-left focus:outline-none"
               >
@@ -170,7 +247,7 @@ export default function HeroPreview() {
                   <div
                     className="absolute inset-y-0 left-0 rounded-full bg-accent"
                     style={{
-                      width: isActive ? `${progress}%` : isPast ? "100%" : "0%",
+                      width: isActive ? `${state.progress}%` : isPast ? "100%" : "0%",
                       transition: isActive ? "width 50ms linear" : "none",
                     }}
                   />
@@ -184,7 +261,8 @@ export default function HeroPreview() {
         <div className="flex shrink-0 items-center gap-1">
           <button
             type="button"
-            onClick={() => setIsPaused((prev) => !prev)}
+            onClick={() => dispatch({ type: "TOGGLE_PLAY_PAUSE" })}
+            data-state={isPaused ? "paused" : "playing"}
             aria-label={isPaused ? "Play autoplay" : "Pause autoplay"}
             className="flex h-6 w-6 items-center justify-center rounded-full border border-border bg-surface text-text-muted transition-colors hover:border-border-hover hover:text-text-primary"
             title={isPaused ? "Resume autoplay" : "Pause autoplay"}
@@ -197,7 +275,7 @@ export default function HeroPreview() {
           </button>
           <button
             type="button"
-            onClick={handlePrev}
+            onClick={() => dispatch({ type: "PREV", total: slides.length })}
             aria-label="Previous slide"
             className="flex h-6 w-6 items-center justify-center rounded-full border border-border bg-surface text-text-muted transition-colors hover:border-border-hover hover:text-text-primary"
             title="Previous slide"
@@ -206,7 +284,7 @@ export default function HeroPreview() {
           </button>
           <button
             type="button"
-            onClick={handleNext}
+            onClick={() => dispatch({ type: "NEXT", total: slides.length })}
             aria-label="Next slide"
             className="flex h-6 w-6 items-center justify-center rounded-full border border-border bg-surface text-text-muted transition-colors hover:border-border-hover hover:text-text-primary"
             title="Next slide"

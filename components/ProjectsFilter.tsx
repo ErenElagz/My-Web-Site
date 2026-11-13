@@ -28,7 +28,7 @@ export default function ProjectsFilter() {
   const aiProjects = projects.filter((p) => p.category === "ai");
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-10" data-active-category={active}>
       {/* Minimal pill tabs */}
       <div
         className="flex flex-wrap items-center gap-1.5"
@@ -43,6 +43,7 @@ export default function ProjectsFilter() {
               type="button"
               role="tab"
               aria-selected={isSelected}
+              data-state={isSelected ? "active" : "inactive"}
               onClick={() => setActive(cat.id)}
               className={`rounded-full border px-3 py-1 font-mono text-xs transition-colors ${
                 isSelected

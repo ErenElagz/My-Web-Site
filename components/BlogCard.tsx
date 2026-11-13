@@ -32,8 +32,10 @@ function formatDate(dateStr: string) {
   }
 }
 
+type ImageLoadStatus = "loading" | "loaded" | "error";
+
 export default function BlogCard(props: BlogCardProps) {
-  const [imgError, setImgError] = useState(false);
+  const [imgStatus, setImgStatus] = useState<ImageLoadStatus>("loading");
   const primaryUrl = props.devtoUrl || props.mediumUrl || "#";
 
   return (
@@ -123,11 +125,12 @@ export default function BlogCard(props: BlogCardProps) {
       </div>
 
       {/* Image Column */}
-      {props.image && !imgError && (
+      {props.image && imgStatus !== "error" && (
         <a
           href={primaryUrl}
           target="_blank"
           rel="noopener noreferrer"
+          data-image-state={imgStatus}
           className="relative aspect-[16/10] w-full shrink-0 overflow-hidden rounded-xl border border-border bg-surface-subtle sm:w-48 sm:aspect-[16/11] md:w-56"
         >
           <Image
@@ -136,7 +139,8 @@ export default function BlogCard(props: BlogCardProps) {
             width={480}
             height={300}
             className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-            onError={() => setImgError(true)}
+            onLoad={() => setImgStatus("loaded")}
+            onError={() => setImgStatus("error")}
           />
         </a>
       )}

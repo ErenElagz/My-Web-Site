@@ -24,7 +24,7 @@ export default function DesignsFilter() {
       : designs.filter((d) => d.category === active);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6" data-active-category={active}>
       {/* Category Tabs */}
       <div
         className="flex flex-wrap items-center gap-1.5"
@@ -44,6 +44,7 @@ export default function DesignsFilter() {
               type="button"
               role="tab"
               aria-selected={isSelected}
+              data-state={isSelected ? "active" : "inactive"}
               onClick={() => setActive(f.id)}
               className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 font-mono text-xs transition-colors ${
                 isSelected
