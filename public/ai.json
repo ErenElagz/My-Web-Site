@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Eren Elagoz",
+  "handle": "ErenElagz",
+  "role": "Mobile & Full-Stack Engineer · UI/UX Designer",
+  "summary": "Software engineer combining cross-platform mobile development, full-stack architecture, and UI/UX design. Track record delivering production-grade apps and 100k+ line platforms.",
+  "location": "Remote",
+  "email": "erenelagoz@gmail.com",
+  "url": "https://erenelagz.com",
+  "links": {
+    "github": "https://github.com/erenelagz",
+    "linkedin": "https://linkedin.com/in/erenelagz",
+    "twitter": "https://x.com/ErenElagz",
+    "dribbble": "https://dribbble.com/ErenElagz",
+    "medium": "https://medium.com/@ErenElagz",
+    "devto": "https://dev.to/erenelagz"
+  },
+  "routes": {
+    "home": "https://erenelagz.com/",
+    "work": "https://erenelagz.com/work/",
+    "design": "https://erenelagz.com/design/",
+    "blog": "https://erenelagz.com/blog/",
+    "sitemap": "https://erenelagz.com/sitemap.xml",
+    "llms": "https://erenelagz.com/llms.txt"
+  },
+  "flagshipProducts": [
+    {
+      "name": "YoFi",
+      "url": "https://yofi.dev",
+      "description": "Offline-first net worth and financial command center."
+    },
+    {
+      "name": "SectorOps",
+      "url": "https://sectorops.com",
+      "description": "Industry-specific business operating systems trusted by 18,000+ professionals worldwide."
+    },
+    {
+      "name": "Belen App",
+      "url": "https://erenelagz.com/work/",
+      "description": "TEKNOFEST 2024 Tourism Technologies finalist AI & AR mobile guide."
+    },
+    {
+      "name": "AgroSphere",
+      "url": "https://agrospheree.vercel.app/",
+      "description": "TÜBİTAK 1812 BİGG Finalist autonomous smart agriculture robotics ecosystem."
+    },
+    {
+      "name": "CoreFound",
+      "url": "https://play.google.com/store/apps/details?id=com.corefound",
+      "description": "Real-time founder matching mobile app on Google Play."
+    },
+    {
+      "name": "Leckham",
+      "url": "https://erenelagz.com/leckham/",
+      "description": "4.8★ rated offline e-book reader across 25+ countries."
+    }
+  ],
+  "skills": {
+    "mobile": [
+      "React Native",
+      "Expo",
+      "Redux Toolkit",
+      "Reanimated",
+      "Android",
+      "Maps API"
+    ],
+    "frontend": [
+      "Next.js",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS",
+      "Figma"
+    ],
+    "backend": [
+      "Node.js",
+      "Express",
+      "Laravel",
+      "PostgreSQL",
+      "Supabase",
+      "Firebase",
+      "Docker"
+    ],
+    "ai_and_iot": [
+      "Google Gemini API",
+      "Edge Deep Learning",
+      "Computer Vision",
+      "LoRaWAN",
+      "IoT"
+    ]
+  }
+}
+

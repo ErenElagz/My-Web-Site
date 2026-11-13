@@ -6,9 +6,9 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 import { featuredProducts } from "@/data/profile";
 import { projects } from "@/data/projects";
-import ProjectCard from "@/components/Card/ProjectCard";
-import ProjectCard2 from "@/components/Card/ProjectCard2";
-import Badge from "@/components/ui/Badge";
+import ProjectCard from "@/components/ProjectCard";
+import ProjectCard2 from "@/components/ProjectCard2";
+import Badge from "@/components/Badge";
 
 type Category = "all" | "products" | "repos" | "iot" | "ai";
 
@@ -58,16 +58,25 @@ export default function ProjectsFilter() {
 
       {/* Flagship Products */}
       {(active === "all" || active === "products") && (
-        <section>
-          <h2 className="mb-4 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-text-muted">
+        <section aria-labelledby="flagship-heading">
+          <h2
+            id="flagship-heading"
+            className="mb-4 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-text-muted"
+          >
             Flagship Products
           </h2>
-          <div className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-surface-soft">
+          <ul
+            className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-surface-soft"
+            role="list"
+          >
             {featuredProducts.map((item) => {
               const inner = (
-                <div className="group flex items-start justify-between gap-4 p-4 transition-colors hover:bg-surface-hover sm:p-5">
+                <article className="group flex items-start justify-between gap-4 p-4 transition-colors hover:bg-surface-hover sm:p-5">
                   <div className="flex items-start gap-3.5">
-                    <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border bg-surface-subtle">
+                    <div
+                      className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border bg-surface-subtle"
+                      aria-hidden="true"
+                    >
                       {item.image && (
                         <Image
                           src={item.image}
@@ -107,96 +116,118 @@ export default function ProjectsFilter() {
                         : "lucide:arrow-right"
                     }
                     className="mt-1 h-4 w-4 shrink-0 text-text-muted transition-colors group-hover:text-text-primary"
+                    aria-hidden="true"
                   />
-                </div>
+                </article>
               );
 
-              return item.external ? (
-                <a
-                  key={item.id}
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block"
-                >
-                  {inner}
-                </a>
-              ) : (
-                <Link key={item.id} href={item.href} className="block">
-                  {inner}
-                </Link>
+              return (
+                <li key={item.id}>
+                  {item.external ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block"
+                    >
+                      {inner}
+                    </a>
+                  ) : (
+                    <Link href={item.href} className="block">
+                      {inner}
+                    </Link>
+                  )}
+                </li>
               );
             })}
-          </div>
+          </ul>
         </section>
       )}
 
       {/* Open Source Repositories */}
       {(active === "all" || active === "repos") && (
-        <section>
-          <h2 className="mb-4 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-text-muted">
+        <section aria-labelledby="repos-heading">
+          <h2
+            id="repos-heading"
+            className="mb-4 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-text-muted"
+          >
             Open Source &amp; Software
           </h2>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+          <ul className="grid grid-cols-1 gap-3 sm:grid-cols-3" role="list">
             {repoProjects.map((project) => (
-              <ProjectCard
-                key={project.id}
-                id={project.id}
-                title={project.title}
-                description={project.description}
-                githubUrl={project.githubUrl}
-                stars={project.stars}
-                forks={project.forks}
-                icon={project.icon}
-              />
+              <li key={project.id}>
+                <ProjectCard
+                  id={project.id}
+                  title={project.title}
+                  description={project.description}
+                  githubUrl={project.githubUrl}
+                  stars={project.stars}
+                  forks={project.forks}
+                  icon={project.icon}
+                />
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
       )}
 
       {/* IoT & Embedded */}
       {(active === "all" || active === "iot") && (
-        <section>
-          <h2 className="mb-4 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-text-muted">
+        <section aria-labelledby="iot-heading">
+          <h2
+            id="iot-heading"
+            className="mb-4 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-text-muted"
+          >
             Internet of Things &amp; Embedded Systems
           </h2>
-          <div className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-surface-soft">
+          <ul
+            className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-surface-soft"
+            role="list"
+          >
             {iotProjects.map((project) => (
-              <ProjectCard2
-                key={project.id}
-                id={project.id}
-                title={project.title}
-                description={project.description}
-                githubUrl={project.githubUrl}
-                stars={project.stars}
-                forks={project.forks}
-                icon={project.icon}
-              />
+              <li key={project.id}>
+                <ProjectCard2
+                  id={project.id}
+                  title={project.title}
+                  description={project.description}
+                  githubUrl={project.githubUrl}
+                  stars={project.stars}
+                  forks={project.forks}
+                  icon={project.icon}
+                />
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
       )}
 
       {/* Machine Learning & AI */}
       {(active === "all" || active === "ai") && (
-        <section>
-          <h2 className="mb-4 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-text-muted">
+        <section aria-labelledby="ai-heading">
+          <h2
+            id="ai-heading"
+            className="mb-4 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-text-muted"
+          >
             Machine Learning &amp; AI
           </h2>
-          <div className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-surface-soft">
+          <ul
+            className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-surface-soft"
+            role="list"
+          >
             {aiProjects.map((project) => (
-              <ProjectCard2
-                key={project.id}
-                id={project.id}
-                title={project.title}
-                description={project.description}
-                githubUrl={project.githubUrl}
-                stars={project.stars}
-                forks={project.forks}
-                icon={project.icon}
-              />
+              <li key={project.id}>
+                <ProjectCard2
+                  id={project.id}
+                  title={project.title}
+                  description={project.description}
+                  githubUrl={project.githubUrl}
+                  stars={project.stars}
+                  forks={project.forks}
+                  icon={project.icon}
+                />
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
       )}
     </div>

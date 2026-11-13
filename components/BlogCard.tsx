@@ -74,7 +74,7 @@ export default function BlogCard(props: BlogCardProps) {
         </div>
 
         {/* Title */}
-        <h2 className="mt-2.5 text-base font-medium tracking-tight text-text-primary sm:text-lg">
+        <h3 className="mt-2.5 text-base font-medium tracking-tight text-text-primary sm:text-lg">
           <a
             href={primaryUrl}
             target="_blank"
@@ -85,9 +85,10 @@ export default function BlogCard(props: BlogCardProps) {
             <Icon
               icon="lucide:arrow-up-right"
               className="mt-1 h-4 w-4 shrink-0 text-text-muted transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent"
+              aria-hidden="true"
             />
           </a>
-        </h2>
+        </h3>
 
         {/* Description */}
         <p className="mt-2 text-[13px] leading-relaxed text-text-secondary sm:text-sm">

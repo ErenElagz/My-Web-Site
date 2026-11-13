@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import SocialButtons from "@/components/SocialButtons/SocialButtons";
+import SocialButtons from "@/components/SocialButtons";
 import BlogsFilter from "@/components/BlogsFilter";
 
 export const metadata: Metadata = {

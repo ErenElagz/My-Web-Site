@@ -65,7 +65,7 @@ export default function DesignsFilter() {
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2" role="list">
         {items.map((design: DesignItem) => {
           const primaryUrl =
             design.dribbbleUrl ||
@@ -75,39 +75,40 @@ export default function DesignsFilter() {
             "#";
 
           return (
-            <div
-              key={design.id}
-              className="group flex flex-col overflow-hidden rounded-xl border border-border bg-surface transition-colors hover:border-border-hover"
-            >
-              <a
-                href={primaryUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="aspect-[16/11] w-full overflow-hidden border-b border-border bg-surface-subtle"
-              >
-                <Image
-                  src={design.image}
-                  alt={design.title}
-                  width={640}
-                  height={440}
-                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
-                />
-              </a>
+            <li key={design.id}>
+              <article className="group flex h-full flex-col overflow-hidden rounded-xl border border-border bg-surface transition-colors hover:border-border-hover">
+                <a
+                  href={primaryUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={design.title}
+                  className="aspect-[16/11] w-full overflow-hidden border-b border-border bg-surface-subtle"
+                >
+                  <Image
+                    src={design.image}
+                    alt={design.title}
+                    width={640}
+                    height={440}
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                  />
+                </a>
 
-              <div className="flex flex-1 flex-col justify-between p-4">
-                <div>
-                  <a
-                    href={primaryUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-start justify-between gap-2 text-sm font-medium tracking-tight text-text-primary hover:underline"
-                  >
-                    <span>{design.title}</span>
-                  </a>
-                  <p className="mt-1 text-xs leading-relaxed text-text-secondary">
-                    {design.description}
-                  </p>
-                </div>
+                <div className="flex flex-1 flex-col justify-between p-4">
+                  <div>
+                    <h3 className="text-sm font-medium tracking-tight text-text-primary">
+                      <a
+                        href={primaryUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline"
+                      >
+                        {design.title}
+                      </a>
+                    </h3>
+                    <p className="mt-1 text-xs leading-relaxed text-text-secondary">
+                      {design.description}
+                    </p>
+                  </div>
 
                 <div className="mt-4 flex flex-wrap items-center gap-3 border-t border-border pt-3 font-mono text-[11px] text-text-muted">
                   {design.dribbbleUrl && (
@@ -164,11 +165,11 @@ export default function DesignsFilter() {
                     </a>
                   )}
                 </div>
-              </div>
-            </div>
+              </article>
+            </li>
           );
         })}
-      </div>
+      </ul>
     </div>
   );
 }

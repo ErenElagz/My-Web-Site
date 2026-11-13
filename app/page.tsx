@@ -250,27 +250,30 @@ export default function Home() {
       </section>
 
       {/* Experience & Milestones */}
-      <section className="space-y-6">
+      <section className="space-y-6" aria-labelledby="experience-heading">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <h2 className="text-xl font-medium tracking-tight text-text-primary">
+            <h2
+              id="experience-heading"
+              className="text-xl font-medium tracking-tight text-text-primary"
+            >
               Experience &amp; Milestones
             </h2>
-            <span className="h-2 w-2 rounded-full bg-accent" />
+            <span className="h-2 w-2 rounded-full bg-accent" aria-hidden="true" />
           </div>
         </div>
 
-        <div className="space-y-3">
+        <ol className="space-y-3" role="list">
           {experience.map((job) => (
-            <div
+            <li
               key={`${job.company}-${job.period}`}
               className="flex flex-col justify-between gap-4 rounded-2xl border border-border bg-surface-soft p-5 transition-colors hover:border-border-hover sm:flex-row sm:items-center"
             >
               <div className="space-y-1">
                 <div className="flex flex-wrap items-baseline gap-2">
-                  <span className="text-base font-medium text-text-primary">
+                  <h3 className="text-base font-medium text-text-primary">
                     {job.role}
-                  </span>
+                  </h3>
                   <span className="text-sm font-medium text-accent">
                     @ {job.company}
                   </span>
@@ -282,26 +285,29 @@ export default function Home() {
 
               <div className="flex shrink-0 flex-col items-start gap-2 sm:items-end">
                 <span className="font-mono text-xs text-text-muted">
-                  {job.period} · {job.location}
+                  <time>{job.period}</time> · <span>{job.location}</span>
                 </span>
-                <div className="flex flex-wrap gap-1.5">
+                <ul className="flex flex-wrap gap-1.5" role="list">
                   {job.stack.slice(0, 3).map((tech) => (
-                    <span
+                    <li
                       key={tech}
                       className="rounded-full bg-chip-bg px-2.5 py-0.5 font-mono text-[11px] text-chip-text"
                     >
                       {tech}
-                    </span>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
-            </div>
+            </li>
           ))}
-        </div>
+        </ol>
       </section>
 
       {/* Capabilities + Writing Split */}
-      <section className="grid grid-cols-1 gap-6 lg:grid-cols-12">
+      <section
+        className="grid grid-cols-1 gap-6 lg:grid-cols-12"
+        aria-label="Articles and Skills"
+      >
         {/* Writing */}
         <div className="space-y-6 lg:col-span-7">
           <div className="flex items-center justify-between">
@@ -317,24 +323,28 @@ export default function Home() {
           </div>
 
           <div className="rounded-[24px] border border-border bg-surface-soft p-6 sm:p-8">
-            <div className="divide-y divide-border">
+            <ul className="divide-y divide-border" role="list">
               {recentBlogs.map((post) => (
-                <a
-                  key={post.id}
-                  href={post.devtoUrl || post.mediumUrl || "#"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-baseline justify-between gap-4 py-3.5 first:pt-0 last:pb-0"
-                >
-                  <span className="text-sm font-medium text-text-primary group-hover:text-accent">
-                    {post.title}
-                  </span>
-                  <span className="shrink-0 font-mono text-xs text-text-muted">
-                    {post.date}
-                  </span>
-                </a>
+                <li key={post.id}>
+                  <a
+                    href={post.devtoUrl || post.mediumUrl || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-baseline justify-between gap-4 py-3.5 first:pt-0 last:pb-0"
+                  >
+                    <span className="text-sm font-medium text-text-primary group-hover:text-accent">
+                      {post.title}
+                    </span>
+                    <time
+                      dateTime={post.date}
+                      className="shrink-0 font-mono text-xs text-text-muted tabular-nums"
+                    >
+                      {post.date}
+                    </time>
+                  </a>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </div>
 
@@ -350,19 +360,19 @@ export default function Home() {
             <div className="space-y-4">
               {skillGroups.map((group) => (
                 <div key={group.label}>
-                  <p className="font-mono text-[11px] uppercase tracking-wider text-text-muted">
+                  <h3 className="font-mono text-[11px] uppercase tracking-wider text-text-muted">
                     {group.label}
-                  </p>
-                  <div className="mt-2 flex flex-wrap gap-1.5">
+                  </h3>
+                  <ul className="mt-2 flex flex-wrap gap-1.5" role="list">
                     {group.items.map((skill) => (
-                      <span
+                      <li
                         key={skill}
                         className="rounded-full border border-border bg-bg px-3 py-1 text-xs text-text-secondary"
                       >
                         {skill}
-                      </span>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
               ))}
             </div>

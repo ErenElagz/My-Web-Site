@@ -1,0 +1,39 @@
+# Eren Elagöz (ErenElagz)
+
+> Mobile & Full-Stack Software Engineer and UI/UX Designer.
+
+## About
+Eren Elagöz is a software engineer combining cross-platform mobile development (React Native), modern web & full-stack architecture (Next.js, TypeScript, Tailwind CSS, PostgreSQL, Supabase, Laravel), and product design (Figma).
+
+- Website: https://erenelagz.com
+- GitHub: https://github.com/erenelagz
+- LinkedIn: https://linkedin.com/in/erenelagz
+- X (Twitter): https://x.com/ErenElagz
+- Email: erenelagoz@gmail.com
+
+## Flagship Products & Work
+
+- [YoFi](https://yofi.dev): Offline-first, privacy-first personal wealth and financial command center unifying Stripe, RevenueCat, Gumroad, crypto, and net worth. Built with React Native & Next.js.
+- [SectorOps](https://sectorops.com): Industry-specific business operating systems and centralized operational infrastructure trusted by 18,000+ professionals and operators around the world across construction, logistics, real estate, and healthcare. Built with Next.js & TypeScript.
+- [Belen App](https://erenelagz.com/work/): TEKNOFEST 2024 Tourism Technologies Finalist. Mobile tourism assistant combining Gemini AI voice assistant, real-time Augmented Reality historical landmark recognition, and personalized GPS route planning across Turkiye. Built with React Native & Laravel.
+- [AgroSphere](https://agrospheree.vercel.app/): TÜBİTAK 1812 BİGG Finalist autonomous smart agriculture robotics venture combining aerial SkySense UAVs and ground Terra UGVs with edge computer vision (<15ms inference latency) and LoRaWAN telemetry.
+- [CoreFound](https://play.google.com/store/apps/details?id=com.corefound): Real-time founder matching community app released on Google Play Store with GDPR-compliant Firestore schema.
+- [Leckham](https://erenelagz.com/leckham/): Minimalist offline e-book reader rated 4.8★ across 25+ countries.
+
+## Technical Stack & Expertise
+
+- Mobile: React Native, Expo, Redux Toolkit, Reanimated, Android, Offline Caching, Google Maps API
+- Web & Full-Stack: Next.js (App Router), React 19, TypeScript, Tailwind CSS, Node.js, Express, Laravel (PHP)
+- Databases & Cloud: PostgreSQL, Supabase, Firebase / Firestore, MongoDB, Redis, Docker, Coolify
+- AI & Embedded: Google Gemini API, Edge Deep Learning, Computer Vision, LoRaWAN, IoT
+- Design: UI/UX Architecture, Design Systems, Interactive Prototyping, Figma, Mobile Store Creatives
+
+## Site Navigation
+
+- Home: https://erenelagz.com/
+- Work: https://erenelagz.com/work/
+- Design Portfolio: https://erenelagz.com/design/
+- Engineering Blog: https://erenelagz.com/blog/
+- Sitemap: https://erenelagz.com/sitemap.xml
+- Robots: https://erenelagz.com/robots.txt
+

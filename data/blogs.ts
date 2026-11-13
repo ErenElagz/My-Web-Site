@@ -31,7 +31,7 @@ export const blogs: BlogItem[] = [
   },
   {
     id: 2820462,
-    title: "Best Feeling as an Entrepreneur: It is First Sale 🚀",
+    title: "Best Feeling as an Entrepreneur: It is First Sale.",
     date: "2025-09-04",
     category: "indie",
     readTime: "2 min read",
@@ -79,7 +79,7 @@ export const blogs: BlogItem[] = [
   {
     id: 2365105,
     title:
-      "React Native Reanimated 3: The Ultimate Guide to High-Performance Animations in 2025 🚀",
+      "React Native Reanimated 3: The Ultimate Guide to High-Performance Animations in 2025.",
     date: "2025-03-29",
     category: "mobile",
     readTime: "3 min read",
@@ -96,7 +96,7 @@ export const blogs: BlogItem[] = [
   {
     id: 2340156,
     title:
-      "The Rise of Remote Work: How Technology is Shaping the Future of Work in 2025 🏠💻",
+      "The Rise of Remote Work: How Technology is Shaping the Future of Work in 202.",
     date: "2025-03-18",
     category: "web",
     readTime: "4 min read",
@@ -113,7 +113,7 @@ export const blogs: BlogItem[] = [
   {
     id: 2298906,
     title:
-      "The Future of Web Development in 2025: Trends, Tools, and Technologies 🌐💻",
+      "The Future of Web Development in 2025: Trends, Tools, and Technologies.",
     date: "2025-02-26",
     category: "web",
     readTime: "3 min read",
@@ -130,7 +130,7 @@ export const blogs: BlogItem[] = [
   {
     id: 2283890,
     title:
-      "Must-Know React Native Libraries for Faster Mobile App Development in 2025 🚀",
+      "Must-Know React Native Libraries for Faster Mobile App Development in 2025.",
     date: "2025-02-17",
     category: "mobile",
     readTime: "4 min read",
@@ -195,7 +195,7 @@ export const blogs: BlogItem[] = [
   },
   {
     id: 2260340,
-    title: "Top 10 React Native UI Libraries for Stunning Mobile Apps 🚀",
+    title: "Top 10 React Native UI Libraries for Stunning Mobile Apps.",
     date: "2025-02-05",
     category: "mobile",
     readTime: "3 min read",

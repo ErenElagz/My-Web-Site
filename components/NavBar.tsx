@@ -45,29 +45,33 @@ export default function NavBar() {
 
         {/* Center: Navigation Links */}
         <nav
-          className="absolute left-1/2 flex -translate-x-1/2 items-center gap-1"
+          className="absolute left-1/2 flex -translate-x-1/2 items-center"
           aria-label="Primary"
         >
-          {navLinks.map((item) => {
-            const isActive =
-              item.href === "/"
-                ? normalized === "/"
-                : normalized.startsWith(item.href);
+          <ul className="flex items-center gap-1" role="list">
+            {navLinks.map((item) => {
+              const isActive =
+                item.href === "/"
+                  ? normalized === "/"
+                  : normalized.startsWith(item.href);
 
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`rounded-full px-3 py-1.5 text-[13px] font-medium transition-colors ${
-                  isActive
-                    ? "bg-chip-bg text-text-primary"
-                    : "text-text-muted hover:text-text-primary"
-                }`}
-              >
-                {item.label}
-              </Link>
-            );
-          })}
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    aria-current={isActive ? "page" : undefined}
+                    className={`rounded-full px-3 py-1.5 text-[13px] font-medium transition-colors ${
+                      isActive
+                        ? "bg-chip-bg text-text-primary"
+                        : "text-text-muted hover:text-text-primary"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </nav>
 
         {/* Right: Theme Toggle + Signature Blue CTA */}

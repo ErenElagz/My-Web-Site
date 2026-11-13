@@ -3,7 +3,7 @@
 import React, { useState, useMemo, useEffect, useRef } from "react";
 import { Icon } from "@iconify/react";
 import { blogs, BlogItem } from "@/data/blogs";
-import BlogCard from "@/components/Card/BlogCard";
+import BlogCard from "@/components/BlogCard";
 
 type Category = "all" | "mobile" | "indie" | "web";
 
@@ -125,22 +125,25 @@ export default function BlogsFilter() {
       </div>
 
       {/* Articles Feed */}
-      <section className="space-y-4">
+      <section className="space-y-4" aria-label="Articles Feed">
         {filtered.length > 0 ? (
-          filtered.map((blog: BlogItem) => (
-            <BlogCard
-              key={blog.id}
-              id={blog.id}
-              date={blog.date}
-              title={blog.title}
-              description={blog.description}
-              readTime={blog.readTime}
-              tags={blog.tags}
-              mediumUrl={blog.mediumUrl}
-              devtoUrl={blog.devtoUrl}
-              image={blog.image}
-            />
-          ))
+          <ul className="space-y-4" role="list">
+            {filtered.map((blog: BlogItem) => (
+              <li key={blog.id}>
+                <BlogCard
+                  id={blog.id}
+                  date={blog.date}
+                  title={blog.title}
+                  description={blog.description}
+                  readTime={blog.readTime}
+                  tags={blog.tags}
+                  mediumUrl={blog.mediumUrl}
+                  devtoUrl={blog.devtoUrl}
+                  image={blog.image}
+                />
+              </li>
+            ))}
+          </ul>
         ) : (
           <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-border bg-surface-soft p-12 text-center">
             <Icon
