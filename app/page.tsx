@@ -10,6 +10,41 @@ import CopyEmailButton from "@/components/CopyEmailButton";
 export default function Home() {
   const recentBlogs = blogs.slice(0, 6);
 
+  const heroSocials = (
+    <div className="flex shrink-0 items-center">
+      <a
+        href="https://linkedin.com/in/erenelagz"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+        title="LinkedIn"
+        className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-surface text-text-secondary transition-all hover:-translate-y-0.5 hover:border-border-hover hover:bg-surface-hover hover:text-text-primary"
+      >
+        <Icon icon="akar-icons:linkedin-fill" className="h-4 w-4" />
+      </a>
+      <a
+        href="https://x.com/ErenElagz"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="X (Twitter)"
+        title="X (Twitter)"
+        className="flex h-10 w-10 ml-[-12px] items-center justify-center rounded-full border border-border bg-surface text-text-secondary transition-all hover:-translate-y-0.5 hover:border-border-hover hover:bg-surface-hover hover:text-text-primary"
+      >
+        <Icon icon="akar-icons:x-fill" className="h-4 w-4" />
+      </a>
+      <a
+        href="https://github.com/erenelagz"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+        title="GitHub"
+        className="flex h-10 w-10 ml-[-12px] items-center justify-center rounded-full border border-border bg-surface text-text-secondary transition-all hover:-translate-y-0.5 hover:border-border-hover hover:bg-surface-hover hover:text-text-primary"
+      >
+        <Icon icon="akar-icons:github-fill" className="h-4 w-4" />
+      </a>
+    </div>
+  );
+
   return (
     <div className="space-y-20 pt-4 sm:space-y-28 sm:pt-8">
       {/* Split Hero Section */}
@@ -37,38 +72,9 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Circled Social Buttons */}
-              <div className="flex shrink-0 items-center">
-                <a
-                  href="https://linkedin.com/in/erenelagz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                  title="LinkedIn"
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-surface text-text-secondary transition-all hover:-translate-y-0.5 hover:border-border-hover hover:bg-surface-hover hover:text-text-primary"
-                >
-                  <Icon icon="akar-icons:linkedin-fill" className="h-4 w-4" />
-                </a>
-                <a
-                  href="https://x.com/ErenElagz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="X (Twitter)"
-                  title="X (Twitter)"
-                  className="flex h-10 w-10 ml-[-12px] items-center justify-center rounded-full border border-border bg-surface text-text-secondary transition-all hover:-translate-y-0.5 hover:border-border-hover hover:bg-surface-hover hover:text-text-primary"
-                >
-                  <Icon icon="akar-icons:x-fill" className="h-4 w-4" />
-                </a>
-                <a
-                  href="https://github.com/erenelagz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub"
-                  title="GitHub"
-                  className="flex h-10 w-10 ml-[-12px] items-center justify-center rounded-full border border-border bg-surface text-text-secondary transition-all hover:-translate-y-0.5 hover:border-border-hover hover:bg-surface-hover hover:text-text-primary"
-                >
-                  <Icon icon="akar-icons:github-fill" className="h-4 w-4" />
-                </a>
+              {/* Circled Social Buttons (Desktop) */}
+              <div className="hidden sm:flex">
+                {heroSocials}
               </div>
             </div>
 
@@ -90,6 +96,11 @@ export default function Home() {
                 <Icon icon="lucide:arrow-up-right" className="h-3.5 w-3.5" />
               </a>
               <CopyEmailButton email={profile.email} />
+
+              {/* Circled Social Buttons (Mobile) */}
+              <div className="flex items-center sm:hidden">
+                {heroSocials}
+              </div>
             </div>
           </div>
 
@@ -131,7 +142,9 @@ export default function Home() {
                 <p className="text-2xl font-medium tracking-tight text-text-primary">
                   {p.headline}
                 </p>
-                <p className="text-sm text-text-muted">{p.description}</p>
+                <p className="text-sm text-text-muted line-clamp-2 sm:line-clamp-none">
+                  {p.description}
+                </p>
                 {p.stats && (
                   <div className="grid grid-cols-2 gap-3 pt-2 font-mono text-xs">
                     {p.stats.map((s) => (

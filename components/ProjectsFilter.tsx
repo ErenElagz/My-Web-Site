@@ -96,7 +96,7 @@ export default function ProjectsFilter() {
                           {item.tagline}
                         </span>
                       </div>
-                      <p className="mt-1 text-sm leading-relaxed text-text-secondary">
+                      <p className="mt-1 text-sm leading-relaxed text-text-secondary line-clamp-2 sm:line-clamp-none">
                         {item.description}
                       </p>
                       <div className="mt-2.5 flex flex-wrap items-center gap-1.5">

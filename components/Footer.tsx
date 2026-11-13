@@ -12,16 +12,16 @@ export default function Footer() {
           <span className="font-mono">erenelagz.com</span>
         </address>
 
-        <div className="flex flex-wrap items-center gap-3">
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
           <a
             href={`mailto:${profile.email}`}
             className="font-mono text-xs text-text-muted transition-colors hover:text-text-primary"
           >
             Email ↗
           </a>
-          <span className="h-3 w-px bg-border" aria-hidden="true" />
+          <span className="hidden h-3 w-px bg-border sm:inline-block" aria-hidden="true" />
           <nav aria-label="Social profiles">
-            <ul className="flex items-center gap-2" role="list">
+            <ul className="flex flex-wrap items-center gap-1.5 sm:gap-2" role="list">
               {profile.socials.map((social) => (
                 <li key={social.label}>
                   <a
