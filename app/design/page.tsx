@@ -4,7 +4,7 @@ import SocialButtons from "@/components/SocialButtons";
 import DesignsFilter from "@/components/DesignsFilter";
 
 export const metadata: Metadata = {
-  title: "Designs — Eren Elagoz",
+  title: "Designs · Eren Elagoz",
   description:
     "Mobile UI/UX explorations, app screenshots, design systems, and web landing concepts by Eren Elagoz.",
 };

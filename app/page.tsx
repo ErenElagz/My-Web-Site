@@ -72,15 +72,13 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Circled Social Buttons (Desktop) */}
-              <div className="hidden sm:flex">
-                {heroSocials}
-              </div>
+              {/* Circled Social Buttons */}
+              {heroSocials}
             </div>
 
             <h1 className="text-[28px] font-medium leading-[1.18] tracking-[-0.03em] text-text-primary sm:text-[36px] lg:text-[40px]">
-              Mobile &amp; Full-Stack Engineer designing apps, products and
-              interfaces for tech startups.
+              Mobile &amp; Full-Stack Engineer architecting production-grade apps,
+              scalable systems, and end-to-end platforms.
             </h1>
 
             <p className="max-w-xl text-[15px] leading-relaxed text-text-muted">
@@ -96,11 +94,6 @@ export default function Home() {
                 <Icon icon="lucide:arrow-up-right" className="h-3.5 w-3.5" />
               </a>
               <CopyEmailButton email={profile.email} />
-
-              {/* Circled Social Buttons (Mobile) */}
-              <div className="flex items-center sm:hidden">
-                {heroSocials}
-              </div>
             </div>
           </div>
 

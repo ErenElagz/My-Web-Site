@@ -4,7 +4,7 @@ import SocialButtons from "@/components/SocialButtons";
 import BlogsFilter from "@/components/BlogsFilter";
 
 export const metadata: Metadata = {
-  title: "Writing — Eren Elagoz",
+  title: "Writing · Eren Elagoz",
   description:
     "Engineering essays and technical guides on React Native performance, mobile architecture, UI systems, and indie product development.",
 };

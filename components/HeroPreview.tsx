@@ -9,39 +9,39 @@ const TICK_INTERVAL = 50; // 50ms tick for fluid progress
 
 const slides = [
   {
-    title: "YoFi — Mobile App Store Showcase",
+    title: "YoFi · Mobile App Store Showcase",
     tag: "yofi.dev",
     href: "https://yofi.dev",
     image:
       "https://cdn.dribbble.com/userupload/49131341/file/76ce95519be53234e05e467b52836cd8.png",
   },
   {
-    title: "SectorOps — Industry-Specific Business OS",
+    title: "SectorOps · Industry-Specific Business OS",
     tag: "sectorops.com",
     href: "https://sectorops.com",
     image: "/sectorops-preview.png",
   },
   {
-    title: "Belen App — AI & AR Tourism Assistant",
+    title: "Belen App · AI & AR Tourism Assistant",
     tag: "TEKNOFEST Finalist",
     href: "#work",
     image: "/belen-preview.jpg",
   },
   {
-    title: "AgroSphere — Autonomous Farming Robotics",
+    title: "AgroSphere · Autonomous Farming Robotics",
     tag: "TÜBİTAK 1812",
     href: "https://agrospheree.vercel.app/",
     image: "/agrosphere-preview.jpg",
   },
   {
-    title: "CoreFound — CoFounder Community App",
+    title: "CoreFound · CoFounder Community App",
     tag: "Play Store",
     href: "https://play.google.com/store/apps/details?id=com.corefound",
     image:
       "https://cdn.dribbble.com/userupload/46564852/file/4b9cc980085e894b9b0c5c7e34fe7c98.png",
   },
   {
-    title: "YoFi.dev — Landing Page UI",
+    title: "YoFi.dev · Landing Page UI",
     tag: "Web Design",
     href: "https://dribbble.com/shots/27750603-Yofi-dev-Mobile-App-Landing-Page-Design",
     image:

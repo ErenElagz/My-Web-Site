@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://erenelagz.com"),
   title: {
-    default: "Eren Elagoz — Mobile, Web & UI/UX Engineer",
-    template: "%s — Eren Elagoz",
+    default: "Eren Elagoz · Mobile, Web & UI/UX Engineer",
+    template: "%s · Eren Elagoz",
   },
   description:
     "Mobile & Full-Stack Engineer and UI/UX Designer building production mobile apps, high-scale web platforms, and thoughtful visual interfaces.",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "./",
     siteName: "Eren Elagoz",
-    title: "Eren Elagoz — Mobile, Web & UI/UX Engineer",
+    title: "Eren Elagoz · Mobile, Web & UI/UX Engineer",
     description:
       "Mobile & Full-Stack Engineer and UI/UX Designer building production mobile apps, high-scale web platforms, and thoughtful visual interfaces.",
     images: [
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Eren Elagoz — Mobile, Web & UI/UX Engineer",
+    title: "Eren Elagoz · Mobile, Web & UI/UX Engineer",
     description:
       "Mobile & Full-Stack Engineer and UI/UX Designer building production mobile apps and web platforms.",
     creator: "@ErenElagz",

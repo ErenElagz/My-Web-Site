@@ -47,7 +47,7 @@ export const profile = {
   website: "https://erenelagz.com",
   gumroadUrl: "https://erenelagz.gumroad.com",
   summary:
-    "Software engineer combining cross-platform mobile development, full-stack architecture, and UI/UX design. Track record delivering production-grade apps—including a mobile product rated 4.8★ across 25+ countries—and 100k+ line full-stack platforms from Figma prototype to store release.",
+    "Software engineer combining cross-platform mobile development, full-stack architecture, and UI/UX design. Building SaaS platforms and mobile apps for businesses.",
   socials: [
     {
       label: "GitHub",
@@ -99,7 +99,7 @@ export const featuredProducts: FeaturedProduct[] = [
     tagline: "Net Worth Tracker & Dashboard",
     headline: "Your Money. One Dashboard.",
     description:
-      "Stripe, RevenueCat, Gumroad, crypto & net worth unified in a privacy-first offline command center.",
+      "Track creator revenue, investments, expenses, and real-time net worth across 160+ currencies in one privacy-first offline dashboard.",
     metric: "yofi.dev",
     period: "2026",
     href: "https://yofi.dev",
@@ -118,7 +118,7 @@ export const featuredProducts: FeaturedProduct[] = [
     description:
       "TÜBİTAK 1812 BİGG Finalist smart agriculture venture combining aerial SkySense UAVs and ground Terra UGVs. Integrates edge deep learning for plant disease detection, autonomous solar-powered irrigation, and LoRaWAN long-range telemetry across 50Ha farmland.",
     metric: "TÜBİTAK 1812 Finalist",
-    period: "2024–2025",
+    period: "2024 - 2025",
     href: "https://agrospheree.vercel.app/",
     external: true,
     image: "/agrosphere.webp",
@@ -134,7 +134,7 @@ export const featuredProducts: FeaturedProduct[] = [
     description:
       "Engineered business architecture and industry operating systems with 18,000+ professional and personal users around the world across construction, real estate, logistics, legal, and healthcare. Centralized operational infrastructure with modular relational databases, automated workflows, and live KPI dashboards.",
     metric: "18K+ Worldwide",
-    period: "2025–Present",
+    period: "2025 - Present",
     href: "https://sectorops.com",
     external: true,
     image: "/sectorops.png",
@@ -198,7 +198,7 @@ export const featuredProducts: FeaturedProduct[] = [
     description:
       "Integrated IoT and mobile bike-sharing platform combining hardware QR station unlocking, Gemini API AI route assistant, real-time map clustering, and community social features.",
     metric: "Bachelors Thesis",
-    period: "2024–2025",
+    period: "2024 - 2025",
     href: "https://github.com/ErenElagz/HitBis",
     external: true,
     image: "/hitbis.png",
@@ -212,7 +212,7 @@ export const experience: ExperienceItem[] = [
   {
     company: "South Tours",
     role: "Full-Stack Engineer",
-    period: "Oct 2025 — Present",
+    period: "Oct 2025 - Present",
     location: "Malaga, Spain",
     highlights: [
       "Architected the multi-sided Online Travel Agency (OTA) ecosystem connecting guests, affiliates, and suppliers with dedicated portals and a 6-role RBAC system, scaling a PostgreSQL/Supabase codebase beyond 100,000 lines.",
@@ -224,7 +224,7 @@ export const experience: ExperienceItem[] = [
   {
     company: "Localbird International",
     role: "Mobile UI/UX Designer & Consultant",
-    period: "May 2025 — Jul 2025",
+    period: "May 2025 - Jul 2025",
     location: "Las Palmas, Spain · Remote",
     highlights: [
       "Created the mobile concept design and Figma design system for their gamified island exploration app for travelers (UNWTO Startup Competition recognized).",
@@ -235,7 +235,7 @@ export const experience: ExperienceItem[] = [
   {
     company: "AgroSphere",
     role: "Co-Founder & CTO (AI & Software)",
-    period: "2024 — 2025",
+    period: "2024 - 2025",
     location: "Ankara, Turkiye",
     highlights: [
       "Co-founded and architected the high-tech autonomous smart farming ecosystem (TÜBİTAK 1812 BİGG Finalist) combining aerial SkySense UAVs and ground Terra UGVs.",
@@ -247,7 +247,7 @@ export const experience: ExperienceItem[] = [
   {
     company: "Belen App",
     role: "Co-Founder & Lead Mobile Engineer",
-    period: "Jan 2024 — Sep 2024",
+    period: "Jan 2024 - Sep 2024",
     location: "Antalya, Turkiye",
     highlights: [
       "Co-founded and engineered the TEKNOFEST 2024 Tourism Technologies finalist mobile app, combining Gemini AI voice assistant with AR landmark exploration and GPS route planning.",
@@ -258,7 +258,7 @@ export const experience: ExperienceItem[] = [
   {
     company: "Hitit University",
     role: "Software Engineer Intern",
-    period: "Jul 2024 — Aug 2024",
+    period: "Jul 2024 - Aug 2024",
     location: "Corum, Turkiye",
     highlights: [
       "Engineered faculty-adopted desktop & web intern management systems (Electron & PHP), open-source desktop templates, AI route planning & Gemini mobile prototypes, and UAV telemetry research.",
@@ -333,7 +333,7 @@ export const education: EducationItem[] = [
   {
     institution: "Hitit University",
     degree: "B.Eng. in Computer Engineering",
-    period: "2021 — 2026",
+    period: "2021 - 2026",
     location: "Corum, Turkiye",
   },
   {

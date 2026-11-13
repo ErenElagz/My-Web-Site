@@ -280,7 +280,7 @@ export const projects: ProjectItem[] = [
     category: "ai",
     title: "Video-Games-Sales-Prediction-Linear-Regression",
     description:
-      "1986–2022 video games sales forecasting workflow using feature engineering and Linear Regression.",
+      "1986-2022 video games sales forecasting workflow using feature engineering and Linear Regression.",
     githubUrl:
       "https://github.com/ErenElagz/Video-Games-Sales-Future-Prediction-Using-Linear-Regression",
     stars: 1,

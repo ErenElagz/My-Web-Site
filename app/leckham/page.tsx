@@ -164,7 +164,7 @@ export default function Privacy() {
           </h2>
           <p className="mt-2">
             By downloading or using the app, these terms will automatically apply
-            to you – you should make sure therefore that you read them carefully
+            to you - you should make sure therefore that you read them carefully
             before using the app.
           </p>
         </div>

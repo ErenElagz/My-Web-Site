@@ -4,7 +4,7 @@ import SocialButtons from "@/components/SocialButtons";
 import ProjectsFilter from "@/components/ProjectsFilter";
 
 export const metadata: Metadata = {
-  title: "Work — Eren Elagoz",
+  title: "Work · Eren Elagoz",
   description:
     "Production mobile apps, full-stack systems, IoT platforms, and open-source repositories by Eren Elagoz.",
 };
