@@ -8,7 +8,7 @@ import HeroPreview from "@/components/HeroPreview";
 import CopyEmailButton from "@/components/CopyEmailButton";
 
 export default function Home() {
-  const recentBlogs = blogs.slice(0, 6);
+  const recentBlogs = blogs.slice(0, 7);
 
   return (
     <div className="space-y-20 pt-4 sm:space-y-28 sm:pt-8">
@@ -309,7 +309,7 @@ export default function Home() {
               Latest Articles
             </h2>
             <Link
-              href="/blogs"
+              href="/blog"
               className="text-xs font-medium text-text-muted hover:text-text-primary"
             >
               All writing →
@@ -392,7 +392,7 @@ export default function Home() {
               <Icon icon="lucide:arrow-up-right" className="h-4 w-4" />
             </a>
             <Link
-              href="/designs"
+              href="/design"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-bg px-5 py-3 text-sm font-medium text-text-primary transition-colors hover:border-border-hover"
             >
               <span>View Designs</span>

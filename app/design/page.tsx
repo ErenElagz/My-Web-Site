@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Mobile UI/UX explorations, app screenshots, design systems, and web landing concepts by Eren Elagoz.",
 };
 
-export default function DesignsPage() {
+export default function DesignPage() {
   return (
     <div className="space-y-10">
       <header className="pt-4 sm:pt-8">

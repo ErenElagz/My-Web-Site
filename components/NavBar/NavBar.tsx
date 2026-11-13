@@ -8,10 +8,10 @@ import ThemeToggle from "@/components/ThemeToggle";
 import { profile } from "@/data/profile";
 
 const navLinks = [
-  { href: "/", label: "Work" },
-  { href: "/projects", label: "Projects" },
-  { href: "/designs", label: "Designs" },
-  { href: "/blogs", label: "Writing" },
+  { href: "/", label: "Home" },
+  { href: "/work", label: "Work" },
+  { href: "/design", label: "Design" },
+  { href: "/blog", label: "Blog" },
 ];
 
 export default function NavBar() {

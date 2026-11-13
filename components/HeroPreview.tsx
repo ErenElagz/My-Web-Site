@@ -16,25 +16,36 @@ const slides = [
       "https://cdn.dribbble.com/userupload/49131341/file/76ce95519be53234e05e467b52836cd8.png",
   },
   {
+    title: "SectorOps — Industry-Specific Business OS",
+    tag: "sectorops.com",
+    href: "https://sectorops.com",
+    image: "/sectorops-preview.png",
+  },
+  {
+    title: "Belen App — AI & AR Tourism Assistant",
+    tag: "TEKNOFEST Finalist",
+    href: "#work",
+    image: "/belen-preview.jpg",
+  },
+  {
+    title: "AgroSphere — Autonomous Farming Robotics",
+    tag: "TÜBİTAK 1812",
+    href: "https://agrospheree.vercel.app/",
+    image: "/agrosphere-preview.jpg",
+  },
+  {
+    title: "CoreFound — CoFounder Community App",
+    tag: "Play Store",
+    href: "https://play.google.com/store/apps/details?id=com.corefound",
+    image:
+      "https://cdn.dribbble.com/userupload/46564852/file/4b9cc980085e894b9b0c5c7e34fe7c98.png",
+  },
+  {
     title: "YoFi.dev — Landing Page UI",
     tag: "Web Design",
     href: "https://dribbble.com/shots/27750603-Yofi-dev-Mobile-App-Landing-Page-Design",
     image:
       "https://cdn.dribbble.com/userupload/49094121/file/e0100f860e4e9fbb71db101550f6e04a.png",
-  },
-  {
-    title: "CoreFound — CoFounder Community App",
-    tag: "Mobile UI",
-    href: "https://dribbble.com/shots/27036140-CoreFound-CoFounder-Community-Mobile-App",
-    image:
-      "https://cdn.dribbble.com/userupload/46564852/file/4b9cc980085e894b9b0c5c7e34fe7c98.png",
-  },
-  {
-    title: "Travel App — City & Nomad Interface",
-    tag: "Dark UI",
-    href: "https://dribbble.com/shots/27403743-Travel-App-UI-Design",
-    image:
-      "https://cdn.dribbble.com/userupload/47826386/file/712ee66fd85ba34700e8e53b9228f3ac.png",
   },
 ];
 
@@ -135,8 +146,8 @@ export default function HeroPreview() {
 
       {/* Segmented Timeline & Controls (Minimalist Slim Bars on Same Row) */}
       <div className="mt-3 flex items-center gap-2.5 px-0.5">
-        {/* 4 Slim Segmented Progress Bars */}
-        <div className="grid flex-1 grid-cols-4 gap-1.5">
+        {/* 6 Slim Segmented Progress Bars */}
+        <div className="grid flex-1 grid-cols-6 gap-1.5">
           {slides.map((s, i) => {
             const isActive = i === index;
             const isPast = i < index;

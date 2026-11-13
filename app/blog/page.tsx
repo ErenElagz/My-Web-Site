@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Engineering essays and technical guides on React Native performance, mobile architecture, UI systems, and indie product development.",
 };
 
-export default function BlogsPage() {
+export default function BlogPage() {
   return (
     <div className="space-y-10">
       <header className="pt-4 sm:pt-8">

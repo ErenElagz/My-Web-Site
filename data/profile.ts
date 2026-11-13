@@ -179,7 +179,7 @@ export const featuredProducts: FeaturedProduct[] = [
       "TEKNOFEST 2024 Tourism Technologies finalist mobile platform combining Gemini AI voice assistant, real-time Augmented Reality historical landmark recognition, and personalized GPS route planning across Turkiye.",
     metric: "TEKNOFEST Finalist",
     period: "2024",
-    href: "/projects",
+    href: "/work",
     image: "/belen.png",
     previewImage: "/belen-preview.jpg",
     previewLayout: "even",
@@ -222,10 +222,10 @@ export const experience: ExperienceItem[] = [
     period: "May 2025 — Jul 2025",
     location: "Las Palmas, Spain · Remote",
     highlights: [
-      "Created the mobile concept design and Figma design system for their island travel & tour booking platform (UNWTO Startup Competition recognized).",
-      "Designed 30+ interactive mobile screens across tour discovery, personalized itineraries, and streamlined booking flows.",
+      "Created the mobile concept design and Figma design system for their gamified island exploration app for travelers (UNWTO Startup Competition recognized).",
+      "Designed 30+ interactive mobile screens spanning gamified destination discovery quests, personalized itineraries, and integrated tour booking flows.",
     ],
-    stack: ["Figma", "UI/UX Design", "Design Systems", "Prototyping"],
+    stack: ["Figma", "UI/UX Design", "Design Systems", "Prototyping", "Mobile UI"],
   },
   {
     company: "AgroSphere",
@@ -256,10 +256,21 @@ export const experience: ExperienceItem[] = [
     period: "Jul 2024 — Aug 2024",
     location: "Corum, Turkiye",
     highlights: [
-      "Built a cross-platform desktop Intern Management System (Electron.js & React) now in active production use by faculty.",
-      "Developed an AI-powered Navigation Optimization tool integrating fine-tuned Gemini APIs for spatial routing.",
+      "Engineered faculty-adopted desktop & web intern management systems (Electron & PHP), open-source desktop templates, AI route planning & Gemini mobile prototypes, and UAV telemetry research.",
+      "Architected the cross-platform desktop Internship Management System (Electron.js & React) and dedicated supervisor client, now in active production use by university faculty.",
+      "Developed the Intern-Automation platform (PHP/MySQL) with role-based access control (RBAC) for student onboarding and faculty task distribution.",
+      "Created the open-source electron-react-tailwind-template desktop boilerplate scaffold.",
+      "Built the AI-Based Route Planner Optimizer and conversational Gemini AI mobile assistant.",
+      "Conducted technical research and architecture presentation on UAV telemetry protocols and Drone Communication Systems.",
     ],
-    stack: ["Electron.js", "React", "Gemini API"],
+    stack: [
+      "Electron.js",
+      "React",
+      "PHP",
+      "Gemini API",
+      "TypeScript",
+      "MySQL",
+    ],
   },
 ];
 

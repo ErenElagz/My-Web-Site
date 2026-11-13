@@ -4,17 +4,17 @@ import SocialButtons from "@/components/SocialButtons/SocialButtons";
 import ProjectsFilter from "@/components/ProjectsFilter";
 
 export const metadata: Metadata = {
-  title: "Projects — Eren Elagoz",
+  title: "Work — Eren Elagoz",
   description:
     "Production mobile apps, full-stack systems, IoT platforms, and open-source repositories by Eren Elagoz.",
 };
 
-export default function ProjectsPage() {
+export default function WorkPage() {
   return (
     <div className="space-y-10">
       <header className="pt-4 sm:pt-8">
         <p className="font-mono text-[11px] uppercase tracking-[0.12em] text-text-muted">
-          Projects
+          Work
         </p>
         <h1 className="mt-2 text-2xl font-medium tracking-[-0.025em] text-text-primary sm:text-3xl">
           Selected Builds & Open Source

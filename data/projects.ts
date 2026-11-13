@@ -133,6 +133,33 @@ export const projects: ProjectItem[] = [
     icon: "lucide:layout-dashboard",
   },
   {
+    id: "internship-desktop-app",
+    category: "repo",
+    title: "Internship-Managment-Desktop-App",
+    description:
+      "Cross-platform desktop application built for faculty supervisors to monitor, evaluate, and manage student internship milestones.",
+    githubUrl:
+      "https://github.com/ErenElagz/Internship-Managment-Desktop-App",
+    stars: 1,
+    forks: 0,
+    language: "JavaScript",
+    updated: "2024-07",
+    icon: "lucide:monitor",
+  },
+  {
+    id: "intern-automation",
+    category: "repo",
+    title: "Intern-Automation",
+    description:
+      "Full-stack internship workflow automation system streamlining student onboarding, document verification, and faculty task assignment.",
+    githubUrl: "https://github.com/ErenElagz/Intern-Automation",
+    stars: 1,
+    forks: 0,
+    language: "PHP / MySQL",
+    updated: "2024-07",
+    icon: "lucide:workflow",
+  },
+  {
     id: "hospital-system",
     category: "repo",
     title: "Hospital-Appointment-System",

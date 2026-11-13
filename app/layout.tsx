@@ -19,6 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://erenelagz.com"),
   title: "Eren Elagoz — Mobile, Web & UI/UX Engineer",
   description:
     "Mobile & Full-Stack Engineer and UI/UX Designer building production apps, booking platforms, and clean visual interfaces.",
