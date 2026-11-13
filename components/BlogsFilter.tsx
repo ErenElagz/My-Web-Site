@@ -60,6 +60,7 @@ export default function BlogsFilter() {
         <Icon
           icon="lucide:search"
           className="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-text-muted"
+          aria-hidden="true"
         />
         <input
           ref={searchInputRef}
@@ -67,6 +68,7 @@ export default function BlogsFilter() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search by topic, keyword, or library..."
+          aria-label="Search articles"
           className="w-full rounded-full border border-border bg-surface py-2 pl-9 pr-12 text-xs text-text-primary placeholder:text-text-muted focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-colors"
         />
         {query ? (
@@ -74,12 +76,12 @@ export default function BlogsFilter() {
             type="button"
             onClick={() => setQuery("")}
             className="absolute right-3.5 top-1/2 -translate-y-1/2 text-text-muted hover:text-text-primary"
-            aria-label="Clear search"
+            aria-label="Clear search query"
           >
-            <Icon icon="lucide:x" className="h-3.5 w-3.5" />
+            <Icon icon="lucide:x" className="h-3.5 w-3.5" aria-hidden="true" />
           </button>
         ) : (
-          <kbd className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 hidden select-none rounded border border-border bg-surface-subtle px-1.5 py-0.5 font-mono text-[10px] text-text-muted sm:inline-block">
+          <kbd className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 hidden select-none rounded border border-border bg-surface-subtle px-1.5 py-0.5 font-mono text-[10px] text-text-muted sm:inline-block" aria-hidden="true">
             /
           </kbd>
         )}
@@ -149,6 +151,7 @@ export default function BlogsFilter() {
             <Icon
               icon="lucide:file-question"
               className="h-8 w-8 text-text-muted"
+              aria-hidden="true"
             />
             <h3 className="mt-3 text-sm font-medium text-text-primary">
               No articles found

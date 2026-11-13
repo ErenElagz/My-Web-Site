@@ -96,6 +96,9 @@ export default function HeroPreview() {
 
   return (
     <div
+      role="region"
+      aria-roledescription="carousel"
+      aria-label="Highlighted Projects Carousel"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className="relative overflow-hidden rounded-[28px] border border-border bg-surface-subtle p-3 sm:p-4"
@@ -137,6 +140,7 @@ export default function HeroPreview() {
                 <Icon
                   icon="lucide:arrow-up-right"
                   className="h-4 w-4 sm:h-5 sm:w-5"
+                  aria-hidden="true"
                 />
               </span>
             </div>
@@ -147,7 +151,7 @@ export default function HeroPreview() {
       {/* Segmented Timeline & Controls (Minimalist Slim Bars on Same Row) */}
       <div className="mt-3 flex items-center gap-2.5 px-0.5">
         {/* 6 Slim Segmented Progress Bars */}
-        <div className="grid flex-1 grid-cols-6 gap-1.5">
+        <div className="grid flex-1 grid-cols-6 gap-1.5" role="tablist" aria-label="Slides">
           {slides.map((s, i) => {
             const isActive = i === index;
             const isPast = i < index;
@@ -155,8 +159,10 @@ export default function HeroPreview() {
               <button
                 key={s.title}
                 type="button"
+                role="tab"
+                aria-selected={isActive}
                 onClick={() => goToSlide(i)}
-                aria-label={`Jump to slide ${i + 1}`}
+                aria-label={`Jump to slide ${i + 1}: ${s.title}`}
                 className="group relative flex py-2 text-left focus:outline-none"
               >
                 {/* Progress Track (slim & clean) */}
@@ -186,6 +192,7 @@ export default function HeroPreview() {
             <Icon
               icon={isPaused ? "lucide:play" : "lucide:pause"}
               className="h-2.5 w-2.5"
+              aria-hidden="true"
             />
           </button>
           <button
@@ -195,7 +202,7 @@ export default function HeroPreview() {
             className="flex h-6 w-6 items-center justify-center rounded-full border border-border bg-surface text-text-muted transition-colors hover:border-border-hover hover:text-text-primary"
             title="Previous slide"
           >
-            <Icon icon="lucide:chevron-left" className="h-3 w-3" />
+            <Icon icon="lucide:chevron-left" className="h-3 w-3" aria-hidden="true" />
           </button>
           <button
             type="button"
@@ -204,7 +211,7 @@ export default function HeroPreview() {
             className="flex h-6 w-6 items-center justify-center rounded-full border border-border bg-surface text-text-muted transition-colors hover:border-border-hover hover:text-text-primary"
             title="Next slide"
           >
-            <Icon icon="lucide:chevron-right" className="h-3 w-3" />
+            <Icon icon="lucide:chevron-right" className="h-3 w-3" aria-hidden="true" />
           </button>
         </div>
       </div>

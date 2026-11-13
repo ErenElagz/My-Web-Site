@@ -40,6 +40,7 @@ export default function CopyEmailButton({ email }: CopyEmailButtonProps) {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 256 193"
           className="h-3.5 w-auto shrink-0"
+          aria-hidden="true"
         >
           <path
             fill="#4285f4"
@@ -73,13 +74,17 @@ export default function CopyEmailButton({ email }: CopyEmailButtonProps) {
         type="button"
         onClick={handleCopy}
         className="flex items-center gap-1.5 px-3 py-2.5 text-text-muted transition-colors hover:bg-surface-hover hover:text-text-primary"
-        title="Copy email to clipboard"
-        aria-label="Copy email address"
+        title={copied ? "Copied!" : "Copy email to clipboard"}
+        aria-label={copied ? "Email address copied" : "Copy email address"}
       >
         <Icon
           icon={copied ? "lucide:check" : "lucide:copy"}
           className={`h-3.5 w-3.5 ${copied ? "text-accent" : ""}`}
+          aria-hidden="true"
         />
+        <span className="sr-only" aria-live="polite">
+          {copied ? "Email copied to clipboard" : ""}
+        </span>
       </button>
     </div>
   );

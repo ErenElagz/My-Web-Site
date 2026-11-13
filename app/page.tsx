@@ -8,7 +8,7 @@ import HeroPreview from "@/components/HeroPreview";
 import CopyEmailButton from "@/components/CopyEmailButton";
 
 export default function Home() {
-  const recentBlogs = blogs.slice(0, 7);
+  const recentBlogs = blogs.slice(0, 6);
 
   return (
     <div className="space-y-20 pt-4 sm:space-y-28 sm:pt-8">
@@ -325,19 +325,19 @@ export default function Home() {
           <div className="rounded-[24px] border border-border bg-surface-soft p-6 sm:p-8">
             <ul className="divide-y divide-border" role="list">
               {recentBlogs.map((post) => (
-                <li key={post.id}>
+                <li key={post.id} className="py-3.5 first:pt-0 last:pb-0">
                   <a
                     href={post.devtoUrl || post.mediumUrl || "#"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-baseline justify-between gap-4 py-3.5 first:pt-0 last:pb-0"
+                    className="group flex items-baseline justify-between gap-4"
                   >
-                    <span className="text-sm font-medium text-text-primary group-hover:text-accent">
+                    <span className="text-sm font-medium text-text-primary transition-colors group-hover:text-accent">
                       {post.title}
                     </span>
                     <time
                       dateTime={post.date}
-                      className="shrink-0 font-mono text-xs text-text-muted tabular-nums"
+                      className="shrink-0 font-mono text-xs text-text-muted"
                     >
                       {post.date}
                     </time>

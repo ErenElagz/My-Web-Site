@@ -48,9 +48,9 @@ export default function BlogCard(props: BlogCardProps) {
 
           {props.readTime && (
             <>
-              <span className="opacity-40">·</span>
+              <span className="opacity-40" aria-hidden="true">·</span>
               <span className="inline-flex items-center gap-1">
-                <Icon icon="lucide:clock" className="h-3 w-3" />
+                <Icon icon="lucide:clock" className="h-3 w-3" aria-hidden="true" />
                 {props.readTime}
               </span>
             </>
@@ -58,17 +58,17 @@ export default function BlogCard(props: BlogCardProps) {
 
           {props.tags && props.tags.length > 0 && (
             <>
-              <span className="opacity-40">·</span>
-              <div className="flex flex-wrap items-center gap-1.5">
+              <span className="opacity-40" aria-hidden="true">·</span>
+              <ul className="flex flex-wrap items-center gap-1.5" role="list">
                 {props.tags.slice(0, 3).map((tag) => (
-                  <span
+                  <li
                     key={tag}
                     className="rounded-md border border-border bg-surface-subtle px-1.5 py-0.5 text-[10px] text-text-secondary transition-colors hover:border-accent/40 hover:text-accent"
                   >
                     #{tag}
-                  </span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </>
           )}
         </div>
@@ -104,7 +104,7 @@ export default function BlogCard(props: BlogCardProps) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface-subtle px-2.5 py-1 text-text-secondary transition-colors hover:border-[#00ab6c]/40 hover:bg-[#00ab6c]/5 hover:text-[#00ab6c]"
             >
-              <Icon icon="akar-icons:medium-fill" className="h-3 w-3" />
+              <Icon icon="akar-icons:medium-fill" className="h-3 w-3" aria-hidden="true" />
               <span>Medium</span>
             </a>
           )}
@@ -115,7 +115,7 @@ export default function BlogCard(props: BlogCardProps) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface-subtle px-2.5 py-1 text-text-secondary transition-colors hover:border-text-primary hover:bg-surface hover:text-text-primary"
             >
-              <Icon icon="fa6-brands:dev" className="h-3 w-3" />
+              <Icon icon="fa6-brands:dev" className="h-3 w-3" aria-hidden="true" />
               <span>Dev.to</span>
             </a>
           )}

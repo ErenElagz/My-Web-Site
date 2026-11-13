@@ -166,7 +166,7 @@ export const featuredProducts: FeaturedProduct[] = [
     href: "https://play.google.com/store/apps/details?id=com.leckham&hl=en",
     external: true,
     image: "/leckham.png",
-    previewImage: "/leckham/showcase.jpg",
+    previewImage: "/leckham-preview.jpg",
     previewLayout: "small-large",
     tags: ["react native", "sqlite", "epub & pdf", "google play"],
   },

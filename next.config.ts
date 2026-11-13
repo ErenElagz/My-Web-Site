@@ -42,6 +42,16 @@ const nextConfig: NextConfig = {
         destination: "/design/:path*",
         permanent: true,
       },
+      {
+        source: "/yofi",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/yofi/:path*",
+        destination: "/",
+        permanent: true,
+      },
     ];
   },
 };

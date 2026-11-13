@@ -121,6 +121,7 @@ export default function DesignsFilter() {
                       <Icon
                         icon="akar-icons:dribbble-fill"
                         className="h-3.5 w-3.5"
+                        aria-hidden="true"
                       />
                       <span>Dribbble</span>
                     </a>
@@ -135,6 +136,7 @@ export default function DesignsFilter() {
                       <Icon
                         icon="akar-icons:behance-fill"
                         className="h-3.5 w-3.5"
+                        aria-hidden="true"
                       />
                       <span>Behance</span>
                     </a>
@@ -149,6 +151,7 @@ export default function DesignsFilter() {
                       <Icon
                         icon="akar-icons:pinterest-fill"
                         className="h-3.5 w-3.5"
+                        aria-hidden="true"
                       />
                       <span>Pinterest</span>
                     </a>
@@ -160,13 +163,14 @@ export default function DesignsFilter() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 transition-colors hover:text-text-primary"
                     >
-                      <Icon icon="lucide:figma" className="h-3.5 w-3.5" />
+                      <Icon icon="lucide:figma" className="h-3.5 w-3.5" aria-hidden="true" />
                       <span>Figma</span>
                     </a>
                   )}
                 </div>
-              </article>
-            </li>
+              </div>
+            </article>
+          </li>
           );
         })}
       </ul>

@@ -32,7 +32,7 @@ export default function Footer() {
                     title={social.label}
                     className="flex h-7 w-7 items-center justify-center rounded-full border border-border bg-surface-soft text-text-muted transition-colors hover:border-border-hover hover:text-text-primary"
                   >
-                    <Icon icon={social.icon} className="h-3.5 w-3.5" />
+                    <Icon icon={social.icon} className="h-3.5 w-3.5" aria-hidden="true" />
                   </a>
                 </li>
               ))}
