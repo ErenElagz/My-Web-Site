@@ -276,32 +276,6 @@ export const projects: ProjectItem[] = [
 
   // Machine Learning & AI
   {
-    id: "belen-ai-tourism",
-    category: "ai",
-    title: "Belen: AI & AR Tourism Assistant",
-    description:
-      "TEKNOFEST 2024 Tourism Technologies finalist platform combining Gemini AI voice assistant, AR historical landmark recognition, and custom route exploration.",
-    stars: 8,
-    forks: 3,
-    icon: "solar:compass-bold",
-    language: "React Native / Laravel",
-    updated: "2024-09",
-  },
-  {
-    id: "ai-route-planner",
-    category: "ai",
-    title: "AI-Based-Route-Planner-Optimizer",
-    description:
-      "Intelligent travel route optimization system calculating multi-factor efficient paths using machine learning and spatial heuristics.",
-    githubUrl:
-      "https://github.com/ErenElagz/AI-Based-Route-Planner-Optimizer",
-    stars: 3,
-    forks: 2,
-    language: "TypeScript",
-    updated: "2024-10",
-    icon: "solar:routing-2-bold",
-  },
-  {
     id: "vg-sales-lr",
     category: "ai",
     title: "Video-Games-Sales-Prediction-Linear-Regression",

@@ -30,6 +30,11 @@ export default function WorkPage() {
             url="https://github.com/ErenElagz"
             icon="akar-icons:github-fill"
           />
+          <SocialButtons
+            title="Google Play"
+            url="https://play.google.com/store/apps/dev?id=6599845434168555948"
+            icon="akar-icons:google-fill"
+          />
         </div>
       </header>
 

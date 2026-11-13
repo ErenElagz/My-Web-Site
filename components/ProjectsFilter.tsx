@@ -61,7 +61,7 @@ export default function ProjectsFilter() {
         <section aria-labelledby="flagship-heading">
           <h2
             id="flagship-heading"
-            className="mb-4 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-text-muted"
+            className="mb-4 text-xl font-medium tracking-tight text-text-primary"
           >
             Flagship Products
           </h2>
@@ -149,7 +149,7 @@ export default function ProjectsFilter() {
         <section aria-labelledby="repos-heading">
           <h2
             id="repos-heading"
-            className="mb-4 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-text-muted"
+            className="mb-4 text-xl font-medium tracking-tight text-text-primary"
           >
             Open Source &amp; Software
           </h2>
@@ -171,64 +171,75 @@ export default function ProjectsFilter() {
         </section>
       )}
 
-      {/* IoT & Embedded */}
-      {(active === "all" || active === "iot") && (
-        <section aria-labelledby="iot-heading">
-          <h2
-            id="iot-heading"
-            className="mb-4 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-text-muted"
-          >
-            Internet of Things &amp; Embedded Systems
-          </h2>
-          <ul
-            className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-surface-soft"
-            role="list"
-          >
-            {iotProjects.map((project) => (
-              <li key={project.id}>
-                <ProjectCard2
-                  id={project.id}
-                  title={project.title}
-                  description={project.description}
-                  githubUrl={project.githubUrl}
-                  stars={project.stars}
-                  forks={project.forks}
-                  icon={project.icon}
-                />
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+      {/* 2-Column Grid for IoT & AI */}
+      {(active === "all" || active === "iot" || active === "ai") && (
+        <div
+          className={
+            active === "all"
+              ? "grid grid-cols-1 items-start gap-6 lg:grid-cols-2"
+              : "space-y-6"
+          }
+        >
+          {/* IoT & Embedded */}
+          {(active === "all" || active === "iot") && (
+            <section aria-labelledby="iot-heading">
+              <h2
+                id="iot-heading"
+                className="mb-4 text-xl font-medium tracking-tight text-text-primary"
+              >
+                Internet of Things &amp; Embedded Systems
+              </h2>
+              <ul
+                className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-surface-soft"
+                role="list"
+              >
+                {iotProjects.map((project) => (
+                  <li key={project.id}>
+                    <ProjectCard2
+                      id={project.id}
+                      title={project.title}
+                      description={project.description}
+                      githubUrl={project.githubUrl}
+                      stars={project.stars}
+                      forks={project.forks}
+                      icon={project.icon}
+                    />
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
 
-      {/* Machine Learning & AI */}
-      {(active === "all" || active === "ai") && (
-        <section aria-labelledby="ai-heading">
-          <h2
-            id="ai-heading"
-            className="mb-4 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-text-muted"
-          >
-            Machine Learning &amp; AI
-          </h2>
-          <ul
-            className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-surface-soft"
-            role="list"
-          >
-            {aiProjects.map((project) => (
-              <li key={project.id}>
-                <ProjectCard2
-                  id={project.id}
-                  title={project.title}
-                  description={project.description}
-                  githubUrl={project.githubUrl}
-                  stars={project.stars}
-                  forks={project.forks}
-                  icon={project.icon}
-                />
-              </li>
-            ))}
-          </ul>
-        </section>
+          {/* Machine Learning & AI */}
+          {(active === "all" || active === "ai") && (
+            <section aria-labelledby="ai-heading">
+              <h2
+                id="ai-heading"
+                className="mb-4 text-xl font-medium tracking-tight text-text-primary"
+              >
+                Machine Learning &amp; AI
+              </h2>
+              <ul
+                className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-surface-soft"
+                role="list"
+              >
+                {aiProjects.map((project) => (
+                  <li key={project.id}>
+                    <ProjectCard2
+                      id={project.id}
+                      title={project.title}
+                      description={project.description}
+                      githubUrl={project.githubUrl}
+                      stars={project.stars}
+                      forks={project.forks}
+                      icon={project.icon}
+                    />
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+        </div>
       )}
     </div>
   );

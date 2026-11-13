@@ -102,7 +102,7 @@ export default function BlogCard(props: BlogCardProps) {
               href={props.mediumUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface-subtle px-2.5 py-1 text-text-secondary transition-colors hover:border-[#00ab6c]/40 hover:bg-[#00ab6c]/5 hover:text-[#00ab6c]"
+              className="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface-subtle px-2.5 py-1 text-text-secondary transition-colors hover:border-text-primary hover:bg-surface hover:text-text-primary"
             >
               <Icon icon="akar-icons:medium-fill" className="h-3 w-3" aria-hidden="true" />
               <span>Medium</span>

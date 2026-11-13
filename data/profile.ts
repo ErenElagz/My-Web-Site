@@ -43,7 +43,7 @@ export const profile = {
   role: "Mobile & Full-Stack Engineer · UI/UX Designer",
   status: "Full-Stack Engineer @ South Tours",
   location: "Remote",
-  email: "erenelagoz@gmail.com",
+  email: "contact@erenelagz.com",
   website: "https://erenelagz.com",
   gumroadUrl: "https://erenelagz.gumroad.com",
   summary:
@@ -53,6 +53,11 @@ export const profile = {
       label: "GitHub",
       href: "https://github.com/erenelagz",
       icon: "akar-icons:github-fill",
+    },
+    {
+      label: "Google Play",
+      href: "https://play.google.com/store/apps/dev?id=6599845434168555948",
+      icon: "akar-icons:google-fill",
     },
     {
       label: "LinkedIn",
