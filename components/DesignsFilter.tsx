@@ -5,13 +5,14 @@ import Image from "next/image";
 import { Icon } from "@iconify/react";
 import { designs, DesignItem } from "@/data/designs";
 
-type Filter = "all" | "mobile" | "web" | "component";
+type Filter = "all" | "mobile" | "web" | "component" | "branding";
 
 const filters: { id: Filter; label: string }[] = [
   { id: "all", label: "All Works" },
   { id: "mobile", label: "Mobile Apps" },
   { id: "web", label: "Web & Landings" },
   { id: "component", label: "Components" },
+  { id: "branding", label: "Branding & Logos" },
 ];
 
 export default function DesignsFilter() {
@@ -32,6 +33,11 @@ export default function DesignsFilter() {
       >
         {filters.map((f) => {
           const isSelected = active === f.id;
+          const count =
+            f.id === "all"
+              ? designs.length
+              : designs.filter((d) => d.category === f.id).length;
+
           return (
             <button
               key={f.id}
@@ -39,13 +45,20 @@ export default function DesignsFilter() {
               role="tab"
               aria-selected={isSelected}
               onClick={() => setActive(f.id)}
-              className={`rounded-full border px-3 py-1 font-mono text-xs transition-colors ${
+              className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 font-mono text-xs transition-colors ${
                 isSelected
                   ? "border-accent bg-accent text-accent-fg"
                   : "border-border bg-surface text-text-secondary hover:border-border-hover hover:text-text-primary"
               }`}
             >
-              {f.label}
+              <span>{f.label}</span>
+              <span
+                className={`text-[10px] ${
+                  isSelected ? "opacity-90" : "text-text-muted"
+                }`}
+              >
+                {count}
+              </span>
             </button>
           );
         })}
@@ -57,6 +70,7 @@ export default function DesignsFilter() {
           const primaryUrl =
             design.dribbbleUrl ||
             design.behanceUrl ||
+            design.pinterestUrl ||
             design.figmaUrl ||
             "#";
 
@@ -95,7 +109,7 @@ export default function DesignsFilter() {
                   </p>
                 </div>
 
-                <div className="mt-4 flex items-center gap-3 border-t border-border pt-3 font-mono text-[11px] text-text-muted">
+                <div className="mt-4 flex flex-wrap items-center gap-3 border-t border-border pt-3 font-mono text-[11px] text-text-muted">
                   {design.dribbbleUrl && (
                     <a
                       href={design.dribbbleUrl}
@@ -124,6 +138,20 @@ export default function DesignsFilter() {
                       <span>Behance</span>
                     </a>
                   )}
+                  {design.pinterestUrl && (
+                    <a
+                      href={design.pinterestUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 transition-colors hover:text-text-primary"
+                    >
+                      <Icon
+                        icon="akar-icons:pinterest-fill"
+                        className="h-3.5 w-3.5"
+                      />
+                      <span>Pinterest</span>
+                    </a>
+                  )}
                   {design.figmaUrl && (
                     <a
                       href={design.figmaUrl}
@@ -144,4 +172,3 @@ export default function DesignsFilter() {
     </div>
   );
 }
-

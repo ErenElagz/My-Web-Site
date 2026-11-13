@@ -122,6 +122,22 @@ export const featuredProducts: FeaturedProduct[] = [
     tags: ["typescript", "deep learning", "robotics", "lorawan"],
   },
   {
+    id: "sectorops",
+    name: "SectorOps",
+    tagline: "Industry-Specific Operating Systems",
+    headline: "18K+ Professional & Personal Usage Around the World",
+    description:
+      "Engineered business architecture and industry operating systems with 18,000+ professional and personal users around the world across construction, real estate, logistics, legal, and healthcare. Centralized operational infrastructure with modular relational databases, automated workflows, and live KPI dashboards.",
+    metric: "18K+ Worldwide",
+    period: "2025–Present",
+    href: "https://sectorops.com",
+    external: true,
+    image: "/sectorops.png",
+    previewImage: "/sectorops-preview.png",
+    previewLayout: "large-small",
+    tags: ["next.js", "typescript", "tailwind css", "business os", "b2b saas"],
+  },
+  {
     id: "corefound",
     name: "CoreFound",
     tagline: "Startup Community Platform",
@@ -130,7 +146,8 @@ export const featuredProducts: FeaturedProduct[] = [
       "Real-time founder & builder matching ecosystem with GDPR-compliant Firestore schema, job-posting workflows, and Play Store release.",
     metric: "Play Store",
     period: "2025",
-    href: "/corefound",
+    href: "https://play.google.com/store/apps/details?id=com.corefound",
+    external: true,
     image: "/corefounders.png",
     previewImage:
       "https://cdn.dribbble.com/userupload/46564852/file/4b9cc980085e894b9b0c5c7e34fe7c98.png",
@@ -154,6 +171,21 @@ export const featuredProducts: FeaturedProduct[] = [
     tags: ["react native", "sqlite", "epub & pdf", "google play"],
   },
   {
+    id: "belen",
+    name: "Belen",
+    tagline: "AI & AR Tourism Assistant",
+    headline: "Autonomous AI & AR-powered Tourism Assistant for TEKNOFEST 2024 Finals",
+    description:
+      "TEKNOFEST 2024 Tourism Technologies finalist mobile platform combining Gemini AI voice assistant, real-time Augmented Reality historical landmark recognition, and personalized GPS route planning across Turkiye.",
+    metric: "TEKNOFEST Finalist",
+    period: "2024",
+    href: "/projects",
+    image: "/belen.png",
+    previewImage: "/belen-preview.jpg",
+    previewLayout: "even",
+    tags: ["react native", "gemini ai", "augmented reality", "google maps"],
+  },
+  {
     id: "hitbis",
     name: "HitBis",
     tagline: "AI-Powered Bike Sharing & IoT System",
@@ -166,7 +198,7 @@ export const featuredProducts: FeaturedProduct[] = [
     external: true,
     image: "/hitbis.png",
     previewImage: "/hitbis-preview.png",
-    previewLayout: "even",
+    previewLayout: "large-small",
     tags: ["react native", "gemini ai", "iot / qr", "maps & gps"],
   },
 ];
@@ -208,6 +240,17 @@ export const experience: ExperienceItem[] = [
     stack: ["Next.js", "Computer Vision", "LoRaWAN", "Deep Learning", "Edge AI", "IoT"],
   },
   {
+    company: "Belen App",
+    role: "Co-Founder & Lead Mobile Engineer",
+    period: "Jan 2024 — Sep 2024",
+    location: "Antalya, Turkiye",
+    highlights: [
+      "Co-founded and engineered the TEKNOFEST 2024 Tourism Technologies finalist mobile app, combining Gemini AI voice assistant with AR landmark exploration and GPS route planning.",
+      "Built the cross-platform mobile client in React Native with Google Maps navigation, offline caching, and Laravel REST API backend integration.",
+    ],
+    stack: ["React Native", "Gemini API", "Augmented Reality", "Google Maps", "Laravel"],
+  },
+  {
     company: "Hitit University",
     role: "Software Engineer Intern",
     period: "Jul 2024 — Aug 2024",
@@ -226,6 +269,8 @@ export const skillGroups: SkillGroup[] = [
     items: [
       "React Native",
       "Expo",
+      "Augmented Reality (AR)",
+      "Google Maps API",
       "Electron.js",
       "SQLite",
       "RevenueCat",
@@ -250,6 +295,7 @@ export const skillGroups: SkillGroup[] = [
       "Node.js",
       "Express",
       "Python",
+      "Laravel",
       "Strapi",
       "RESTful APIs",
       "PostgreSQL",

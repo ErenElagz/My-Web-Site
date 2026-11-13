@@ -149,7 +149,7 @@ export default function Privacy() {
             us at:
           </p>
           <p className="font-mono text-sm font-medium text-text-primary">
-            Email: elagzeren@gmail.com · Developer: ErenElagz
+            Email: contact@erenelagz.com · Developer: ErenElagz
           </p>
           <p className="font-mono text-xs text-text-muted">
             Last Updated: October 19, 2025

@@ -252,7 +252,7 @@ export default function YofiPage() {
             If you have any questions or suggestions about our Privacy Policy,
             do not hesitate to contact us at:{" "}
             <strong className="font-mono font-medium text-text-primary">
-              support@erenelagz.com
+              contact@erenelagz.com
             </strong>
           </p>
           <p className="font-mono text-xs text-text-muted">
@@ -392,7 +392,7 @@ export default function YofiPage() {
           <p>
             For questions about these Terms, please contact us at:{" "}
             <strong className="font-mono font-medium text-text-primary">
-              support@erenelagz.com
+              contact@erenelagz.com
             </strong>
           </p>
           <p className="font-mono text-xs text-text-muted">

@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import ThemeToggle from "@/components/ThemeToggle";
+import { profile } from "@/data/profile";
 
 const navLinks = [
   { href: "/", label: "Work" },
@@ -74,7 +75,7 @@ export default function NavBar() {
           <ThemeToggle />
 
           <a
-            href="mailto:erenelagoz@gmail.com"
+            href={`mailto:${profile.email}`}
             className="hidden items-center rounded-full bg-accent px-4 py-2 text-[13px] font-medium text-accent-fg shadow-[var(--shadow-blue)] transition-transform hover:-translate-y-0.5 sm:inline-flex"
           >
             Let&apos;s work together

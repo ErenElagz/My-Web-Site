@@ -37,7 +37,7 @@ The **Projects** page lists Eren’s major projects with the following details:
 ## Contact Information
 Users can reach out to Eren using the following channels:
 
-- **Email**: [erenelagoz@gmail.com](mailto:erenelagoz@gmail.com)
+- **Email**: [contact@erenelagz.com](mailto:contact@erenelagz.com)
 - **GitHub**: [github.com/erenelagz](https://github.com/erenelagz)
 - **LinkedIn**: [linkedin.com/in/erenelagz](https://www.linkedin.com/in/erenelagz)
 - **Twitter**: [twitter.com/erenelagz](https://twitter.com/erenelagz)

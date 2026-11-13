@@ -179,7 +179,7 @@ export default function CoreFoundSection() {
             <li>
               Sending an email to{" "}
               <strong className="font-medium text-text-primary">
-                elagzeren@gmail.com
+                contact@erenelagz.com
               </strong>
             </li>
             <li>Using the in-app Contact section.</li>
@@ -218,7 +218,7 @@ export default function CoreFoundSection() {
           <p>
             For questions about this Privacy Policy, please contact us at:{" "}
             <strong className="font-mono font-medium text-text-primary">
-              elagzeren@gmail.com
+              contact@erenelagz.com
             </strong>
           </p>
           <p className="font-mono text-xs text-text-muted">
@@ -339,7 +339,7 @@ export default function CoreFoundSection() {
           <p>
             For questions about these Terms, please contact us at:{" "}
             <strong className="font-mono font-medium text-text-primary">
-              elagzeren@gmail.com
+              contact@erenelagz.com
             </strong>
           </p>
         </div>

@@ -17,22 +17,58 @@ export default function Home() {
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">
           {/* Left Copy */}
           <div className="space-y-6 lg:col-span-6">
-            <div className="flex items-center gap-3">
-              <div className="h-16 w-16 overflow-hidden rounded-full border border-border bg-surface p-0.5 shadow-sm">
-                <Image
-                  src="/logo.png"
-                  alt={profile.name}
-                  width={56}
-                  height={56}
-                  className="h-full w-full rounded-[14px] object-cover"
-                  priority
-                />
+            <div className="flex items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <div className="h-16 w-16 overflow-hidden rounded-full border border-border bg-surface p-0.5 shadow-sm">
+                  <Image
+                    src="/logo.png"
+                    alt={profile.name}
+                    width={56}
+                    height={56}
+                    className="h-full w-full rounded-full object-cover"
+                    priority
+                  />
+                </div>
+                <div>
+                  <p className="text-2xl font-medium text-text-primary">
+                    {profile.handle}
+                  </p>
+                  <p className="text-sm text-text-muted">{profile.location}</p>
+                </div>
               </div>
-              <div>
-                <p className="text-2xl font-medium text-text-primary">
-                  {profile.handle}
-                </p>
-                <p className="text-sm text-text-muted">{profile.location}</p>
+
+              {/* Circled Social Buttons */}
+              <div className="flex shrink-0 items-center">
+                <a
+                  href="https://linkedin.com/in/erenelagz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  title="LinkedIn"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-surface text-text-secondary transition-all hover:-translate-y-0.5 hover:border-border-hover hover:bg-surface-hover hover:text-text-primary"
+                >
+                  <Icon icon="akar-icons:linkedin-fill" className="h-4 w-4" />
+                </a>
+                <a
+                  href="https://x.com/ErenElagz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="X (Twitter)"
+                  title="X (Twitter)"
+                  className="flex h-10 w-10 ml-[-12px] items-center justify-center rounded-full border border-border bg-surface text-text-secondary transition-all hover:-translate-y-0.5 hover:border-border-hover hover:bg-surface-hover hover:text-text-primary"
+                >
+                  <Icon icon="akar-icons:x-fill" className="h-4 w-4" />
+                </a>
+                <a
+                  href="https://github.com/erenelagz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                  title="GitHub"
+                  className="flex h-10 w-10 ml-[-12px] items-center justify-center rounded-full border border-border bg-surface text-text-secondary transition-all hover:-translate-y-0.5 hover:border-border-hover hover:bg-surface-hover hover:text-text-primary"
+                >
+                  <Icon icon="akar-icons:github-fill" className="h-4 w-4" />
+                </a>
               </div>
             </div>
 
@@ -152,23 +188,51 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col justify-between gap-3 px-1 md:flex-row md:items-center">
-                <a
-                  href={p.href}
-                  target={p.external ? "_blank" : undefined}
-                  rel={p.external ? "noopener noreferrer" : undefined}
-                  className="flex items-center gap-3 text-base font-medium text-text-primary hover:underline sm:text-lg"
-                >
-                  {p.image && (
-                    <Image
-                      src={p.image}
-                      alt=""
-                      width={22}
-                      height={22}
-                      className="rounded-md"
-                    />
-                  )}
-                  <span>{p.headline}</span>
-                </a>
+                {p.external ? (
+                  <a
+                    href={p.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-wrap items-center gap-2 text-base font-medium text-text-primary hover:underline sm:text-lg"
+                  >
+                    {p.image && (
+                      <Image
+                        src={p.image}
+                        alt=""
+                        width={22}
+                        height={22}
+                        className="rounded-md"
+                      />
+                    )}
+                    <span className="font-semibold text-text-primary">{p.name}</span>
+                    <span className="text-text-muted">·</span>
+                    <span className="text-sm font-normal text-text-muted sm:text-base">
+                      {p.tagline}
+                    </span>
+                    <span className="text-xs text-text-muted">↗</span>
+                  </a>
+                ) : (
+                  <Link
+                    href={p.href}
+                    className="flex flex-wrap items-center gap-2 text-base font-medium text-text-primary hover:underline sm:text-lg"
+                  >
+                    {p.image && (
+                      <Image
+                        src={p.image}
+                        alt=""
+                        width={22}
+                        height={22}
+                        className="rounded-md"
+                      />
+                    )}
+                    <span className="font-semibold text-text-primary">{p.name}</span>
+                    <span className="text-text-muted">·</span>
+                    <span className="text-sm font-normal text-text-muted sm:text-base">
+                      {p.tagline}
+                    </span>
+                    <span className="text-xs text-text-muted">→</span>
+                  </Link>
+                )}
                 <ul className="flex flex-wrap gap-1.5">
                   {p.tags.map((tag) => (
                     <li
