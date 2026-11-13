@@ -60,7 +60,7 @@ export default function NavBar() {
                   <Link
                     href={item.href}
                     aria-current={isActive ? "page" : undefined}
-                    className={`rounded-full px-2 py-1 text-[11px] font-medium tracking-tight transition-colors sm:px-3 sm:py-1.5 sm:text-[13px] sm:tracking-normal ${
+                    className={`rounded-full px-2 py-1 text-[13px] font-medium tracking-tight transition-colors sm:px-3 sm:py-1.5 sm:tracking-normal ${
                       isActive
                         ? "bg-chip-bg text-text-primary"
                         : "text-text-muted hover:text-text-primary"
